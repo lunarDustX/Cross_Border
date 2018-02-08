@@ -1,0 +1,1 @@
+return o_player.patch_number == patch_number;
