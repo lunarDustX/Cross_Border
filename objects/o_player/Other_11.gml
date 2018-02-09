@@ -10,7 +10,7 @@ if (mouse_check_button_pressed(mb_left)) {
 
 	// Take Action
 	var _dis = point_distance(x, y, xnext, ynext);
-	if (grid_place_free(xnext, ynext) && _dis == CELL_SIZE * spd) {
+	if (grid_place_free(xnext+8, ynext+8) && _dis == CELL_SIZE * spd) {
 		// Try to Move
 		state = PLAYER.move;
 		if (instance_exists(o_action_cue)) {

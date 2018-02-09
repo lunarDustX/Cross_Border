@@ -4,6 +4,7 @@
 #macro PATCH_SIZE 6
 #macro MAP_SIZE 3
 
+#macro MAX_BRIDGE 3
 // tile id
 #macro VOID -1 //out of border?
 #macro EMPTY 0
@@ -27,20 +28,29 @@ enum PATCH_TYPE {
 	empty,
 	grass,
 	snow,
+	desert,
 }
 
 // Map 
+
 var _layer_id = layer_get_id("Tiles");
 global.tilemap_id = layer_tilemap_get_id(_layer_id);
-global.remap = false;
+//InitializeAllPatchTemplates();
 
-InitializeAllPatchTemplates();
+InitializeTilesArray();
 
 global.patch_grid = ds_grid_create(MAP_SIZE, MAP_SIZE);
 ds_grid_clear(global.patch_grid, noone);
 global.patch_grid[# 1, 1] = PATCH_TYPE.grass;
+CreateRandomPatch(1, 1, PATCH_TYPE.grass);
+
+global.remap = false;
+
 //
 
 // Set the gui size
 //display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 display_set_gui_size(view_wport[0], view_hport[0]);
+
+
+

@@ -12,7 +12,10 @@ for (var n = 0; n < MAP_SIZE; n++) {
 		var _patch_type = global.patch_grid[# m, n] - 1001;
 		global.patch_grid[# m, n] = _patch_type;
 		
+		CreateRandomPatch(m, n, _patch_type);
+		/* //Template Method
 		var _patch_string_data = LoadRandomPatch(_patch_type);
 		CreatePatchFromString(m, n, _patch_string_data);
+		*/
 	}
 }
