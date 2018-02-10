@@ -35,5 +35,6 @@ evil_sprite = s_evil_sheep;
 
 normal_arr[PATCH_TYPE.grass] = true;
 normal_arr[PATCH_TYPE.snow] = false;
+normal_arr[PATCH_TYPE.desert] = false;
 
 normal = is_normal(x, y);

@@ -4,7 +4,7 @@ if (!instance_exists(o_player)) exit;
 if (target != noone) {
 	// Move towards the player(target)
 	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
-	if (grid_direction_free(x, y, _dir)) {
+	if (grid_direction_free(x+8, y+8, _dir)) {
 		xnext = x + lengthdir_x(CELL_SIZE, _dir);
 		ynext = y + lengthdir_y(CELL_SIZE, _dir);
 		change_state(SHEEP.move);

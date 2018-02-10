@@ -3,23 +3,24 @@ event_user(state);
 
 //patch = calculate_patch_number(x, y);
 
-// Update the depth
-depth = -y;depth = -y;
+// Update the position & depth
+patch_number = calculate_patch_number(x, y);
+depth = -y;
 
 
 #region Update the unit_list
 // Are we active?
 var _index = ds_list_find_index(global.unit_list, id);
 if (instance_exists(o_player)) {
-	if (in_view() && _index == -1) {
+	if (_index == -1 && in_same_patch()) {
 		ds_list_add(global.unit_list, id);
 	}
 }
 
 // Remove from the list
-if (!in_view() && _index != -1) {
-	ds_list_delete(global.unit_list, _index);
-}
+//if (!in_view() && _index != -1) {
+//	ds_list_delete(global.unit_list, _index);
+//}
 #endregion
 
 #region Update the target[not suitable for player]
