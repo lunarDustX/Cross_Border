@@ -14,7 +14,9 @@ if (_xPatch1 != _xPatch2) {
 		var _x = (max(_xPatch1, _xPatch2) *(PATCH_SIZE+1) -1) * CELL_SIZE;
 		if (!place_meeting(_x+8, _y+8, o_bridge_tile)) {
 			var _depth = CalculateTileDepth(_y);
-			instance_create_depth(_x, _y, _depth, o_bridge_tile);	
+			with(instance_create_depth(_x, _y, _depth, o_bridge_tile)) {
+				image_index = 1;	
+			}
 		}
 	}
 }

@@ -8,8 +8,8 @@ SPEED = 2;
 shake = 0;
 
 // Convert
-sprites_arr = [];
-sprites_arr[PATCH_TYPE.empty] = noone;
+//sprites_arr = [];
+//sprites_arr[PATCH_TYPE.empty] = noone;
 
 // Attribute
 enum CREATURE {

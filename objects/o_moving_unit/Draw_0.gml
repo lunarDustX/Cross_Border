@@ -22,5 +22,6 @@ draw_set_font(f_test);
 if (object_index == o_player) draw_set_color(c_orange);
 draw_text(x+2, y-23, "HP:" + string(hp));
 draw_text(x+2, y-15, "AT:" + string(atk));
+//draw_text(x+16, y , string(x)+" "+ string(y));
 draw_set_color(c_white);
 

@@ -27,7 +27,7 @@ if (target != noone) {
 #region // Try to move randomly
 var new_locations = ds_list_create();
 for (_dir=0; _dir<360; _dir+=90) {
-	if (grid_direction_free(x, y, _dir)) {
+	if (grid_direction_free(x+8, y+8, _dir)) {
 		ds_list_add(new_locations, _dir);
 	}
 }
