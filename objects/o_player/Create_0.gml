@@ -15,7 +15,7 @@ state = PLAYER.action;
 hp = 3;
 spd = 1; //move_range
 
-target_arr = [o_sheep];
+target_arr = [o_sheep, o_bat];
 
 // Anims
 sprites_arr[PATCH_TYPE.grass] = s_player;

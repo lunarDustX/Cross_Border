@@ -10,3 +10,11 @@ if (object_index == o_player) {
 		break;
 	}
 }
+
+if (object_index == o_bat) {
+	switch (state) {
+		case BAT.wait:
+			moves = 1;
+		break;
+	}
+}

@@ -18,7 +18,6 @@ enum CREATURE {
 }
 state = 0;
 
-
 hp = 2;
 atk = 1;
 

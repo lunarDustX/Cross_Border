@@ -7,9 +7,9 @@ var _xcell, _ycell, _tile_data;
 
 for (var n = 0; n < MAP_SIZE; n++) {
 	for (var m = 0; m < MAP_SIZE; m++) {
-		if (global.patch_grid[# m, n] < 1001) continue;
+		if (global.patch_grid[# m, n] < BIGNUM) continue;
 		// place new card
-		var _patch_type = global.patch_grid[# m, n] - 1001;
+		var _patch_type = global.patch_grid[# m, n] - BIGNUM;
 		global.patch_grid[# m, n] = _patch_type;
 		
 		CreateRandomPatch(m, n, _patch_type);

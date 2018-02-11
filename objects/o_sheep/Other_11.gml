@@ -2,6 +2,26 @@
 if (!instance_exists(o_player)) exit;
 
 if (target != noone) {
+	// Attack
+	if (point_distance(x, y, target.x, target.y) == CELL_SIZE) {
+		// xnext & ynext for moving
+		var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
+		xnext = x + lengthdir_x(CELL_SIZE, _dir);
+		ynext = y + lengthdir_y(CELL_SIZE, _dir);
+		//
+		change_state(SHEEP.attack);
+		exit;
+	}
+	
+	// remove self before finding a path
+	mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	if (mp_grid_find_path(x, y, target.x, target.y)) { // update xnext & ynext
+		change_state(SHEEP.move);
+		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
+		exit;
+	}
+	
+	/*
 	// Move towards the player(target)
 	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
 	if (grid_direction_free(x+8, y+8, _dir)) {
@@ -11,17 +31,7 @@ if (target != noone) {
 		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
 		exit;
 	} 
-
-	// Attack
-	if (point_distance(x, y, target.x, target.y) == CELL_SIZE) {
-		xnext = x + lengthdir_x(CELL_SIZE, _dir);
-		ynext = y + lengthdir_y(CELL_SIZE, _dir);
-		var player = global.unit_grid[# xnext/CELL_SIZE, ynext/CELL_SIZE];
-		if (player) {
-			change_state(SHEEP.attack);
-			exit;
-		}
-	}
+	*/
 }
 
 #region // Try to move randomly

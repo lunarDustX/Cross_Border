@@ -15,7 +15,7 @@ atk -= delta_atk;
 
 if (hp <= 0) {
 	instance_destroy();
-	show_message("convert kill.");
+	show_message("Achievement: convert kill!");
 }
 
 
