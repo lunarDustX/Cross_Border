@@ -10,9 +10,10 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 	for (var i = 0; i < PATCH_SIZE; i++) {
 		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_SIZE;	
 		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_SIZE;
-		var _index = irandom(array_length_2d(tiles_arr, _patch_type) -1);
+		//var _index = irandom(array_length_2d(tiles_arr, _patch_type) -1);
 		var _depth = CalculateTileDepth(_y);
-		instance_create_depth(_x, _y, _depth, tiles_arr[_patch_type, _index]);
+		//instance_create_depth(_x, _y, _depth, tiles_arr[_patch_type, _index]);
+		instance_create_depth(_x, _y, _depth, tiles_arr[_patch_type]);
 	}
 }
 
@@ -47,4 +48,5 @@ for (var _dy = -1; _dy <= 1; _dy++) {
 		}
 	}
 }
-//show_message(string())
+
+//SpawnMonsterAtCell();

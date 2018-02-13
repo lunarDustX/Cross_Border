@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "fd3326ba-a4ed-4bd4-b654-803cfd0131b9",
     "children": [
-        "420175e1-682c-48e0-9507-2f3b2a40dd2c"
+        "ef36b25f-0709-41d6-8d73-8784f1901168",
+        "fb80bb4f-0b5d-4442-8ac6-1c0cfae189ed"
     ],
     "filterType": "GMObject",
     "folderName": "UI Group",

@@ -14,9 +14,9 @@ enum SHEEP {
 hp = 2;
 atk = 1;
 
+normal_loots = [o_heart];
+evil_loots = [];
 
-
-loots = [o_heart];
 bad_tile_arr = [VOID, EMPTY, RIVER];
 target_arr = [o_player];
 
@@ -37,4 +37,5 @@ normal_arr[PATCH_TYPE.grass] = true;
 normal_arr[PATCH_TYPE.snow] = false;
 normal_arr[PATCH_TYPE.desert] = false;
 
-normal = is_normal(x, y);
+normal = true;
+UpdateMonsterState();

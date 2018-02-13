@@ -10,14 +10,25 @@
 #macro EMPTY 0
 #macro RIVER 6
 
-// unit_grid & monster list
+#macro TILE_UP_DIS 16
+#macro BIGNUM 1001
+
+// audio
+global.audio_em = audio_emitter_create();
+
+// unit_grid
 global.unit_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
 ds_grid_clear(global.unit_grid, noone);
 
+// tile_grid
+global.tile_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
+ds_grid_clear(global.unit_grid, noone);
+
+// Active Monster List
 global.unit_list = ds_list_create();
 global.list_index = 0;
 
-// 
+// game state
 enum TURN {
 	player,
 	computer,
@@ -31,26 +42,19 @@ enum PATCH_TYPE {
 	desert,
 }
 
-// Map 
-
-var _layer_id = layer_get_id("Tiles");
-global.tilemap_id = layer_tilemap_get_id(_layer_id);
-//InitializeAllPatchTemplates();
-
+// map expand
 InitializeTilesArray();
-
 global.patch_grid = ds_grid_create(MAP_SIZE, MAP_SIZE);
 ds_grid_clear(global.patch_grid, noone);
-global.patch_grid[# 1, 1] = PATCH_TYPE.grass;
-CreateRandomPatch(1, 1, PATCH_TYPE.grass);
-
 global.remap = false;
-
-//
-
+global.card_selected = false;
 // Set the gui size
-//display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
-display_set_gui_size(view_wport[0], view_hport[0]);
+//display_set_gui_size(view_wport[0], view_hport[0]);
+display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 
+//tilemap 
+//var _layer_id = layer_get_id("Tiles");
+//global.tilemap_id = layer_tilemap_get_id(_layer_id);
+//InitializeAllPatchTemplates();
 
 

@@ -11,12 +11,12 @@ enum BAT {
 }
 
 // Attributes
-hp = 2;
+hp = 1;
 atk = 1;
 
+normal_loots = [];
+evil_loots = [o_heart];
 
-
-loots = [o_heart];
 bad_tile_arr = [VOID, EMPTY, RIVER];
 target_arr = [o_player];
 
@@ -31,12 +31,16 @@ delta_hp = 1;
 delta_atk = 1;
 
 normal_sprite = s_bat;
-evil_sprite = s_bat;
+evil_sprite = s_vampire;
 
-normal_arr[PATCH_TYPE.grass] = true;
-normal_arr[PATCH_TYPE.snow] = false;
+normal_arr[PATCH_TYPE.grass] = false;
+normal_arr[PATCH_TYPE.snow] = true;
 normal_arr[PATCH_TYPE.desert] = false;
 
-normal = is_normal(x, y);
+normal_loots = [];
+evil_loots = [o_heart];
+
+normal = true;
+UpdateMonsterState();
 
 moves = 1;

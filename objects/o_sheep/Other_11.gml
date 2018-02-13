@@ -17,7 +17,7 @@ if (target != noone) {
 	mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
 	if (mp_grid_find_path(x, y, target.x, target.y)) { // update xnext & ynext
 		change_state(SHEEP.move);
-		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
+		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
 		exit;
 	}
 	

@@ -1,4 +1,7 @@
-
+tiles_arr[PATCH_TYPE.grass] = o_grassTile;
+tiles_arr[PATCH_TYPE.snow] = o_snowTile;
+tiles_arr[PATCH_TYPE.desert] = o_desertTile;
+/*
 tiles_arr[PATCH_TYPE.grass, 0] = o_grassTile_1;
 tiles_arr[PATCH_TYPE.grass, 1] = o_grassTile_2;
 tiles_arr[PATCH_TYPE.grass, 2] = o_grassTile_3;
