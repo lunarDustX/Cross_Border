@@ -11,7 +11,7 @@ global.remap = true;
 
 // graphic
 ExpandMiniMap();
-with (o_card_selecting) {
+with (o_card) {
 	instance_destroy();	
 }
 

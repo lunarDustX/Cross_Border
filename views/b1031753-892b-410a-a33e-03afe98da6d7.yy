@@ -9,7 +9,7 @@
         "f7443457-473b-4d18-a429-a601f5a2b8f1"
     ],
     "filterType": "GMObject",
-    "folderName": "Map Group",
+    "folderName": "MapRoom Group",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

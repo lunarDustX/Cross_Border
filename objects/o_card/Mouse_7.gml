@@ -1,5 +1,5 @@
 /// @description 
-with (o_card_selecting) {
+with (o_card) {
 	if (id == other.id) { 
 		global.card_selected = image_index;
 		if (floating) {
