@@ -1,16 +1,16 @@
 /// @description 
 with (o_card) {
 	if (id == other.id) { 
-		global.card_selected = image_index;
+		global.card_selected = id;
 		if (floating) {
 			
 		} else {
-			y -= fdis;
+			ui_y -= fdis;
 			floating = true;
 		}
 	} else { // another card
 		if (floating) {
-			y += fdis;
+			ui_y += fdis;
 			floating = false;
 		}
 	}

@@ -1,1 +1,1 @@
-/// @description draw nothing
+/// @description disable the default draw event

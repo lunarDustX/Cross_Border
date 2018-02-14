@@ -47,10 +47,14 @@ InitializeTilesArray();
 global.patch_grid = ds_grid_create(MAP_SIZE, MAP_SIZE);
 ds_grid_clear(global.patch_grid, noone);
 global.remap = false;
-global.card_selected = false;
-// Set the gui size
+global.card_selected = noone;
+
+// set GUI size
+global.view_width = camera_get_view_width(view_camera[0]);
+global.view_height = camera_get_view_height(view_camera[0]);
+display_set_gui_size(global.view_width, global.view_height);
 //display_set_gui_size(view_wport[0], view_hport[0]);
-display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
+
 
 //tilemap 
 //var _layer_id = layer_get_id("Tiles");

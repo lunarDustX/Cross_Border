@@ -1,6 +1,6 @@
 /// @description 
-if (global.card_selected) exit;
+if (global.card_selected != noone) exit;
 if (floating) {
 	floating = false;
-	y += fdis;
+	ui_y += fdis;
 }

@@ -1,8 +1,8 @@
 {
-    "id": "2751f039-9956-486e-ae76-5d91ddbefad5",
+    "id": "1c4c41ac-159e-483c-8ecb-b8c55d08ea17",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ExpandMiniMap",
+    "name": "EnterMap",
     "IsCompatibility": false,
     "IsDnD": false
 }

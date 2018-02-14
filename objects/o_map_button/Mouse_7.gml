@@ -1,3 +1,4 @@
 /// @description 
-//show_message("button clicked.");
-room_goto(r_minimap);
+if (!visible) exit;
+visible = false;
+EnterMap();

@@ -1,8 +1,8 @@
 {
-    "id": "2751f039-9956-486e-ae76-5d91ddbefad5",
+    "id": "1d07f47e-8a3d-4e32-8fdc-3969243f28a8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ExpandMiniMap",
+    "name": "SpawnMonsterFromCardAtPatch",
     "IsCompatibility": false,
     "IsDnD": false
 }

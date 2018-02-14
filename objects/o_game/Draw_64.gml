@@ -1,8 +1,8 @@
-/// @description test
-/*
-if (instance_exists(o_player)) {
-	draw_text(10, 10, "HP: " + string(o_player.hp));	
-}
+/// @description Map
+if (!global.pause) exit;
 
-//draw_text(10, 0, string(ds_list_size(global.unit_list)));
-//draw_text(10, 15, string(global.list_index));
+// draw back
+var _c = c_black;
+var _gwidth = global.view_width;
+var _gheight = global.view_height;
+draw_rectangle_color(0, 0, _gwidth, _gheight, _c, _c, _c, _c,false);
