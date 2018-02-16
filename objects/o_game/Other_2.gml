@@ -4,8 +4,9 @@ draw_set_font(f_test);
 
 instance_create_depth(0, 0, BIGNUM, o_bg);
 instance_create_layer(0, 0, "Instances", o_ui_control);
+instance_create_layer(0, 0, "Instances", o_ai_control);
 
-global.pause = false;
+//global.pause = false;
 randomize();
 
 // first patch
@@ -17,7 +18,8 @@ with (_firstPatch) {
 	image_index = patch_type;
 	ExpandMiniMap();
 }
-instance_deactivate_layer("Map");
+//instance_deactivate_layer("Map");
+instance_deactivate_object(o_patch);
 
 global.patch_grid[# 1, 1] = PATCH_TYPE.grass;
 CreateRandomPatch(1, 1, PATCH_TYPE.grass);

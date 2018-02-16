@@ -1,4 +1,3 @@
 /// @description 
-if (!visible) exit;
-visible = false;
 EnterMap();
+instance_destroy();

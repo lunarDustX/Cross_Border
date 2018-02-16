@@ -1,12 +1,18 @@
 /// @description 
 with (o_card) {
 	if (id == other.id) { 
-		global.card_selected = id;
-		if (floating) {
-			
+		if (global.card_selected == id) {
+			ui_y += fdis;
+			floating = false;
+			global.card_selected = noone;
 		} else {
-			ui_y -= fdis;
-			floating = true;
+			if (floating) {
+				
+			} else {
+				ui_y -= fdis;
+				floating = true;
+			}
+			global.card_selected = id;
 		}
 	} else { // another card
 		if (floating) {

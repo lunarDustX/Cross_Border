@@ -1,7 +1,3 @@
-/// @description Map
-/*
-if (!global.map) exit;
-
 // draw back
 var _c = c_black;
 var _gwidth = global.view_width;

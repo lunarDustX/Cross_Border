@@ -7,8 +7,8 @@ var _yPatch = argument1;
 var _card = argument2;
 
 // important
-instance_activate_object(_card);
-global.card_selected = noone;
+//instance_activate_object(_card);
+//global.card_selected = noone;
 
 
 var _patch_type = _card.biome;
