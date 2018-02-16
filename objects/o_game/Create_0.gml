@@ -1,4 +1,7 @@
 /// @description
+// TEST
+	instance_create_layer(-1, -1, "Instances", o_test);
+//
 // metric
 #macro CELL_SIZE 16
 #macro PATCH_SIZE 6

@@ -16,6 +16,6 @@ if (normal) {
 
 for (var i = 0; i < array_length_1d(_loots); i++) {
 	with (instance_create_layer(x, y, "Instances", _loots[i])) {
-		alarm[0] = seconds_to_steps(1);	
+		//alarm[0] = seconds_to_steps(1);	
 	}
 }
