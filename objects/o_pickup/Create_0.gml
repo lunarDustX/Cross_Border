@@ -4,4 +4,4 @@
 canpick = false;
 height = 0;
 zspd = -2.5;
-grav = 0.25;
+grav = 0.5;

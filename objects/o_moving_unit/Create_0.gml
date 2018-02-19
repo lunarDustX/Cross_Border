@@ -9,7 +9,7 @@ shake = 0;
 
 // Convert
 //sprites_arr = [];
-//sprites_arr[PATCH_TYPE.empty] = noone;
+//sprites_arr[BIOME.empty] = noone;
 
 // Attribute
 enum CREATURE {

@@ -4,11 +4,6 @@ event_inherited();
 floating = false;
 fdis = 5;
 
-// biome info
-image_speed = 0;
-biome = irandom_range(1,3);
-image_index = biome;
-
 // monster info
 index = 0;
 monsterNumber = 1;
@@ -18,8 +13,17 @@ monster_grid = ds_grid_create(monsterNumber, 2);
 px = 0;
 py = 0;
 
-// example 
-monster_grid[# 0, 0] = o_fall_monster;
+// Data
+monster_grid[# 0, 0] = o_sheep;
 monster_grid[# 0, 1] = [2, 1];
+
+monster_grid[# 0, 0] = o_bat;
+monster_grid[# 0, 1] = [2, 3];
+
+// biome info
+biome = irandom_range(1,3);
+image_index = biome;
+image_speed = 0;
+
 
 

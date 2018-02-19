@@ -14,7 +14,11 @@ if (object_index == o_player) {
 if (object_index == o_bat) {
 	switch (state) {
 		case BAT.wait:
-			moves = 1;
+			if (normal) {
+				moves = 2;
+			} else {
+				moves = 1;	
+			}
 		break;
 	}
 }

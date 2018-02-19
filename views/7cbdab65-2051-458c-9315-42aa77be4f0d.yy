@@ -7,7 +7,7 @@
         "7279f27f-0f7a-4803-ad8e-26694106c124"
     ],
     "filterType": "GMSprite",
-    "folderName": "Items",
+    "folderName": "Pickups",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

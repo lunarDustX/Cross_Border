@@ -1,5 +1,5 @@
 /// @description
-show_message("patch clicked.");
+//show_message("patch clicked.");
 if (global.card_selected == noone) exit; // not selected
 if (patch_type > 0) exit; // already exist
 if (instance_number(o_card) < 2) exit; // already patch one

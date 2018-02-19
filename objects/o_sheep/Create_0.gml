@@ -22,8 +22,8 @@ target_arr = [o_player];
 
 /*
 // Anims
-sprites_arr[PATCH_TYPE.grass] = s_normal_sheep;
-sprites_arr[PATCH_TYPE.snow] = s_evil_sheep;
+sprites_arr[BIOME.grass] = s_normal_sheep;
+sprites_arr[BIOME.snow] = s_evil_sheep;
 */
 
 // Convert
@@ -33,9 +33,9 @@ delta_atk = 1;
 normal_sprite = s_normal_sheep;
 evil_sprite = s_evil_sheep;
 
-normal_arr[PATCH_TYPE.grass] = true;
-normal_arr[PATCH_TYPE.snow] = false;
-normal_arr[PATCH_TYPE.desert] = false;
+normal_arr[BIOME.grass] = true;
+normal_arr[BIOME.snow] = false;
+normal_arr[BIOME.desert] = false;
 
 normal = true;
 UpdateMonsterState();

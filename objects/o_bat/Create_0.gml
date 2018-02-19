@@ -22,20 +22,25 @@ target_arr = [o_player];
 
 /*
 // Anims
-sprites_arr[PATCH_TYPE.grass] = s_normal_sheep;
-sprites_arr[PATCH_TYPE.snow] = s_evil_sheep;
+sprites_arr[BIOME.grass] = s_normal_sheep;
+sprites_arr[BIOME.snow] = s_evil_sheep;
 */
 
 // Convert
 delta_hp = 1;
 delta_atk = 1;
+delta_move = -1;
+
+hp = 2;
+atk = 1;
+moves = 2;
 
 normal_sprite = s_bat;
 evil_sprite = s_vampire;
 
-normal_arr[PATCH_TYPE.grass] = false;
-normal_arr[PATCH_TYPE.snow] = true;
-normal_arr[PATCH_TYPE.desert] = false;
+normal_arr[BIOME.grass] = false;
+normal_arr[BIOME.snow] = true;
+normal_arr[BIOME.desert] = false;
 
 normal_loots = [];
 evil_loots = [o_heart];
@@ -43,4 +48,4 @@ evil_loots = [o_heart];
 normal = true;
 UpdateMonsterState();
 
-moves = 1;
+

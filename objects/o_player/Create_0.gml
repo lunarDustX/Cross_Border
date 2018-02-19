@@ -18,7 +18,7 @@ spd = 1; //move_range
 target_arr = [o_sheep, o_bat];
 
 // Anims
-sprites_arr[PATCH_TYPE.grass] = s_player;
-sprites_arr[PATCH_TYPE.snow] = s_player;
+sprites_arr[BIOME.grass] = s_player;
+sprites_arr[BIOME.snow] = s_player;
 
 

@@ -3,7 +3,9 @@ var _monster = monster_grid[# index, 0];
 var _pos = monster_grid[# index, 1];
 var _x = _pos[0]*CELL_SIZE + px *(PATCH_SIZE+1)*CELL_SIZE; 
 var _y = _pos[1]*CELL_SIZE + py *(PATCH_SIZE+1)*CELL_SIZE;
-instance_create_layer(_x, _y, "Instances", _monster);
+with (instance_create_layer(_x, _y, "Instances", o_fall_monster)) {
+	monsterType = _monster;	
+}
 
 index++;
 if (index < monsterNumber) {

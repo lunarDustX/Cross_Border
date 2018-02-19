@@ -11,21 +11,7 @@ if (!moving(xnext, ynext, SPEED)) {
 	ypre = y;
 	
 	// change state
-	state = PLAYER.wait;
-	o_game.state = TURN.computer;
-	/*
-	if (object_index == o_bat) {
-		if (moves > 0) {
-			moves--;
-			change_states(action_state, [false]);
-		} else {
-			moves = 1;
-			event_user(END_TURN);
-		}
-	} else {
-		event_user(END_TURN);
-	}
-	*/
+	change_state(PLAYER.wait);
 	
 	//audio_play_sound(a_land, 5, false);
 } else {

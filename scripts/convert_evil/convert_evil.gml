@@ -12,6 +12,7 @@ if (sprite_index != evil_sprite) {
 
 hp += delta_hp;
 atk += delta_atk;
+moves += delta_move;
 
 if (hp <= 0) {
 	instance_destroy();

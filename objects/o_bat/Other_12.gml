@@ -15,28 +15,14 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	UpdateMonsterState();
 	
 	// change state
+	moves--;
 	if (moves > 0) {
-		moves--;
 		change_state(BAT.action);
 	} else {
 		next_unit();
 		change_state(BAT.wait);
 	}
 	
-	
-	/*
-	if (object_index == o_bat) {
-		if (moves > 0) {
-			moves--;
-			change_states(action_state, [false]);
-		} else {
-			moves = 1;
-			event_user(END_TURN);
-		}
-	} else {
-		event_user(END_TURN);
-	}
-	*/
 } else { // moving to target position
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);
 	var _distance = point_distance(xpre, ypre, x, y,);

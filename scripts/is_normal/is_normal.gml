@@ -9,15 +9,15 @@ var _ycell = _y div CELL_SIZE;
 
 switch (global.tile_grid[# _xcell, _ycell].object_index) {
 	case o_grassTile:
-		return normal_arr[PATCH_TYPE.grass];
+		return normal_arr[BIOME.grass];
 	break;
 	
 	case o_snowTile:
-		return normal_arr[PATCH_TYPE.snow];
+		return normal_arr[BIOME.snow];
 	break;
 	
 	case o_desertTile:
-		return normal_arr[PATCH_TYPE.desert];
+		return normal_arr[BIOME.desert];
 	break;
 }
 

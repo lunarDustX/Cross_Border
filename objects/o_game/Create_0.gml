@@ -31,6 +31,9 @@ ds_grid_clear(global.unit_grid, noone);
 global.unit_list = ds_list_create();
 global.list_index = 0;
 
+// Card List
+InitializeCardList();
+
 // game state
 enum TURN {
 	player,
@@ -38,7 +41,7 @@ enum TURN {
 }
 state = TURN.player;
 
-enum PATCH_TYPE {
+enum BIOME {
 	empty,
 	grass,
 	snow,

@@ -1,6 +1,4 @@
 /// @description 
-if (room != r_world) exit;
-
 if (state == TURN.computer) {
 	if (ds_list_size(global.unit_list) > 0) {
 		var unit = ds_list_find_value(global.unit_list, global.list_index);
