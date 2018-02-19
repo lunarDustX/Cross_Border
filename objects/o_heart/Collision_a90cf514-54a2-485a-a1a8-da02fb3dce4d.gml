@@ -1,5 +1,5 @@
 /// @description 
-if (other.object_index != o_player && other.object_index != o_vampire) exit;
+if (other.object_index != o_player && other.sprite_index != s_vampire) exit;
 if (!canpick) exit;
 
 instance_destroy();

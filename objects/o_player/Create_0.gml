@@ -15,10 +15,7 @@ state = PLAYER.action;
 hp = 3;
 spd = 1; //move_range
 
-target_arr = [o_sheep, o_bat];
+target_arr = [o_sheep, o_bat, o_ox, o_zombie, o_snowman];
 
-// Anims
-sprites_arr[BIOME.grass] = s_player;
-sprites_arr[BIOME.snow] = s_player;
 
 

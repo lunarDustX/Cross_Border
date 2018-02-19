@@ -1,7 +1,7 @@
-///@description CreateRandomPatch
+///@description CreatePatchFromCard
 ///@arg xPatch
 ///@arg yPatch
-///@arg patchType
+///@arg card
 var _xPatch = argument0;
 var _yPatch = argument1;
 var _card = argument2;
@@ -11,14 +11,22 @@ var _card = argument2;
 //global.card_selected = noone;
 
 
-var _BIOME = _card.biome;
-// create tiles
+var _biome = _card.biome;
+
 for (var j = 0; j < PATCH_SIZE; j++) {
 	for (var i = 0; i < PATCH_SIZE; i++) {
 		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_SIZE;	
 		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_SIZE;
+		
+		// empty tile 
+		if (irandom(50) == 0) {
+			mp_grid_add_cell(global.AIGrid, _x div CELL_SIZE, _y div CELL_SIZE);	
+			continue;
+		}
+		
+		// create tile
 		var _depth = CalculateTileDepth(_y);
-		instance_create_depth(_x, _y, _depth, tiles_arr[_BIOME]);
+		instance_create_depth(_x, _y, _depth, tiles_arr[_biome]);
 	}
 }
 

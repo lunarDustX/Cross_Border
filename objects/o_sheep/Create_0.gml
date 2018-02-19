@@ -36,6 +36,8 @@ evil_sprite = s_evil_sheep;
 normal_arr[BIOME.grass] = true;
 normal_arr[BIOME.snow] = false;
 normal_arr[BIOME.desert] = false;
+normal_arr[BIOME.forest] = false;
+normal_arr[BIOME.grave] = false;
 
 normal = true;
 UpdateMonsterState();

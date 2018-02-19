@@ -6,7 +6,7 @@ var _xPatch = argument1;
 var _yPatch = argument2;
 
 with (_card) {
-	alarm[0] = irandom_range(8, 15);
+	alarm[0] = seconds_to_steps(0.1);
 	px = _xPatch;
 	py = _yPatch;
 }

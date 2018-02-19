@@ -10,13 +10,26 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	
 	// update AI Grid 
 	mp_grid_add_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	// fly
+	if (sprite_index == s_bat) {
+		for (var j = 0; j < 20; j++) {
+			for (var i = 0; i < 20; i++) {
+				if ((i+1) % (PATCH_SIZE+1) == 0 or (j+1) % (PATCH_SIZE+1) == 0) {
+					if (global.tile_grid[# i, j] == noone) {
+						//show_message(string(i) + " " + string(j)+ " " + string(global.tile_grid[# i, j]));
+						mp_grid_add_cell(global.AIGrid, i, j);
+					}
+				}
+			}
+		}
+	}
 	
 	// convert or not
 	UpdateMonsterState();
 	
 	// change state
 	moves--;
-	if (moves > 0) {
+	if (moves > 0 && sprite_index == s_bat) {
 		change_state(BAT.action);
 	} else {
 		next_unit();

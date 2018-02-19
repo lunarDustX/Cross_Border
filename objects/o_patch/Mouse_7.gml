@@ -17,6 +17,7 @@ with (o_card) {
 	if (id == global.card_selected) { // hide the card
 		ui_y = BIGNUM;	
 	} else {
+		ds_list_add(global.card_list, object_index); 
 		instance_destroy();	// destroy extra cards
 	}
 }

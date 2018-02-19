@@ -12,7 +12,7 @@ if (sprite_index != normal_sprite) {
 
 hp -= delta_hp;
 atk -= delta_atk;
-moves -= delta_move;
+//moves -= delta_move;
 
 if (hp <= 0) {
 	instance_destroy();

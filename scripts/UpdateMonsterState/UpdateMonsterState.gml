@@ -1,7 +1,9 @@
-// on bridge
+
 var _xcell = x div CELL_SIZE;
 var _ycell = y div CELL_SIZE;
-if ((_xcell+1) % 7 == 0 || (_ycell+1) % 7 == 0) {
+
+// on bridge 
+if ((_xcell+1) % (PATCH_SIZE+1) == 0 || (_ycell+1) % (PATCH_SIZE+1) == 0) { 
 	exit;	
 }
 

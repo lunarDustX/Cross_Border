@@ -8,7 +8,12 @@
         "da9eb017-d9a3-4835-bd51-340827fda51c",
         "5289d5b3-7c40-4cd5-8b62-bd9b0f8a4562",
         "225ef699-d339-4fad-91e6-469e8871f998",
-        "8b8c79ef-c887-403a-976c-9cbb2c6bc38e"
+        "8b8c79ef-c887-403a-976c-9cbb2c6bc38e",
+        "635bc413-25a7-4a2f-b5d2-13f6ed50316c",
+        "45758f35-2cea-45eb-b617-6c718f383795",
+        "192ec9bd-d15c-41a4-9924-d931c9d22e81",
+        "7a3dc9c5-ea63-4d1d-8ca0-8c451adf5698",
+        "39286b66-2c02-45c0-8a56-78852e1988d0"
     ],
     "filterType": "GMObject",
     "folderName": "Tiles Group",

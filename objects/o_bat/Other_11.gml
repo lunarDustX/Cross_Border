@@ -15,6 +15,19 @@ if (target != noone) {
 	
 	// remove self before finding a path
 	mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	// fly
+	if (sprite_index == s_bat) {
+		for (var j = 0; j < 20; j++) {
+			for (var i = 0; i < 20; i++) {
+				if ((i+1) % (PATCH_SIZE+1) == 0 or (j+1) % (PATCH_SIZE+1) == 0) {
+					if (mp_grid_get_cell(global.AIGrid, i, j) == -1) {
+						//show_message(string(i) + " " + string(j));
+						mp_grid_clear_cell(global.AIGrid, i, j);
+					}
+				}
+			}
+		}
+	}
 	if (mp_grid_find_path(x, y, target.x, target.y)) { // update xnext & ynext
 		change_state(BAT.move);
 		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;

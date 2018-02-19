@@ -23,6 +23,10 @@ if (global.monsterLog) {
 // close map
 if (global.map) {
 	if (keyboard_check_pressed(vk_escape)) {
-		ExitMap();
+		if (global.remap) {
+			ExitMap();
+		} else {
+			show_message("make a new room")	
+		}
 	}
 }

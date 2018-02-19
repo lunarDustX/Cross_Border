@@ -39,8 +39,10 @@ normal_sprite = s_bat;
 evil_sprite = s_vampire;
 
 normal_arr[BIOME.grass] = false;
-normal_arr[BIOME.snow] = true;
+normal_arr[BIOME.snow] = false;
 normal_arr[BIOME.desert] = false;
+normal_arr[BIOME.forest] = true;
+normal_arr[BIOME.grave] = false;
 
 normal_loots = [];
 evil_loots = [o_heart];

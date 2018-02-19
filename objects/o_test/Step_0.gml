@@ -6,3 +6,11 @@ if (mouse_check_button_released(mb_right)) {
 }
 */
 
+// teleport
+if (mouse_check_button_released(mb_right)) {
+	with (o_player) {
+		x = snap_value(mouse_x, CELL_SIZE);
+		y = snap_value(mouse_y, CELL_SIZE);
+	}
+}
+

@@ -1,6 +1,8 @@
 tiles_arr[BIOME.grass] = o_grassTile;
 tiles_arr[BIOME.snow] = o_snowTile;
 tiles_arr[BIOME.desert] = o_desertTile;
+tiles_arr[BIOME.forest] = o_forestTile;
+tiles_arr[BIOME.grave] = o_graveTile;
 /*
 tiles_arr[BIOME.grass, 0] = o_grassTile_1;
 tiles_arr[BIOME.grass, 1] = o_grassTile_2;

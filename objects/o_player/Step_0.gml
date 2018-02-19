@@ -8,7 +8,7 @@ patch_number = calculate_patch_number(x, y);
 depth = -y;
 
 
-if (hp <= 0) {
+if (hp <= 0) { // dead
 	//show_message("GAME OVER");	
 	//game_end();
 }

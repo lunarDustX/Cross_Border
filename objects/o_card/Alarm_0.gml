@@ -9,7 +9,7 @@ with (instance_create_layer(_x, _y, "Instances", o_fall_monster)) {
 
 index++;
 if (index < monsterNumber) {
-	alarm[0] = irandom_range(8, 15);
+	alarm[0] = irandom_range(2, 5);
 } else { // destroy the card
 	instance_destroy();	
 }

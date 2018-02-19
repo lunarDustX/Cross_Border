@@ -22,3 +22,15 @@ if (object_index == o_bat) {
 		break;
 	}
 }
+
+if (object_index == o_snowman) {
+	switch (state) {
+		case SNOWMAN.wait:
+			if (normal) {
+				moves = 1;
+			} else {
+				moves = 2;	
+			}
+		break;
+	}
+}

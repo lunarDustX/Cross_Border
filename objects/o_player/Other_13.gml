@@ -7,6 +7,8 @@ if (!moving(xnext, ynext, SPEED*2)) { //arrived
 		//audio_play_sound(a_hurt, 5, false);
 		//var _damage = att;
 		//if (_is_player && irandom(4) == 4) _damage+=1;
+		// set player as target 
+		enemy.target = id; 
 		enemy.hp -= atk;
 		//var _text = instance_create_layer(enemy.x+CELL_SIZE/2, enemy.y-CELL_SIZE/2, "Instances", o_text);
 		//_text.image_blend = make_color_hsv(0, 160, 255);

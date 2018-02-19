@@ -25,7 +25,7 @@ ds_grid_clear(global.unit_grid, noone);
 
 // tile_grid
 global.tile_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
-ds_grid_clear(global.unit_grid, noone);
+ds_grid_clear(global.tile_grid, noone);
 
 // Active Monster List
 global.unit_list = ds_list_create();
@@ -46,6 +46,8 @@ enum BIOME {
 	grass,
 	snow,
 	desert,
+	forest,
+	grave,
 }
 
 // map expand

@@ -7,6 +7,12 @@ var _y = argument1;
 var _xcell = _x div CELL_SIZE;
 var _ycell = _y div CELL_SIZE;
 
+if (global.tile_grid[# _xcell, _ycell] == noone) {
+	instance_destroy();
+	show_message("fall death.");
+	exit;
+}
+
 switch (global.tile_grid[# _xcell, _ycell].object_index) {
 	case o_grassTile:
 		return normal_arr[BIOME.grass];
@@ -18,6 +24,18 @@ switch (global.tile_grid[# _xcell, _ycell].object_index) {
 	
 	case o_desertTile:
 		return normal_arr[BIOME.desert];
+	break;
+	
+	case o_forestTile:
+		return normal_arr[BIOME.forest];
+	break;
+	
+	case o_graveTile:
+		return normal_arr[BIOME.grave];
+	break;
+	
+	default:
+		return normal;
 	break;
 }
 
