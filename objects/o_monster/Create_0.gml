@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+monsterName = " ";
+
 normal = true;
 normal_arr = array_create(3, false); // BIOME numbers
 

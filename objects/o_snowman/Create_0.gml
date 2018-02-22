@@ -18,6 +18,8 @@ bad_tile_arr = [VOID, EMPTY, RIVER];
 target_arr = [o_player];
 
 // Convert
+monsterName = "snowman";
+
 hp = 3;
 atk = 1;
 moves = 1;

@@ -10,7 +10,7 @@ var _ycell = _y div CELL_SIZE;
 if (global.tile_grid[# _xcell, _ycell] == noone) {
 	instance_destroy();
 	show_message("fall death.");
-	exit;
+	return true;
 }
 
 switch (global.tile_grid[# _xcell, _ycell].object_index) {

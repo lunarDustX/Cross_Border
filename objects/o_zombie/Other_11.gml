@@ -13,25 +13,26 @@ if (target != noone) {
 		exit;
 	}
 	
-	// remove self before finding a path
+	// Move
+	// remove self before moving
 	mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	
+	// 1. Basic Move Method
+	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
+	if (grid_direction_free(x+8, y+8, _dir)) {
+		xnext = x + lengthdir_x(CELL_SIZE, _dir);
+		ynext = y + lengthdir_y(CELL_SIZE, _dir);
+		change_state(ZOMBIE.move);
+		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
+		exit;
+	} 
+	
+	// 2. Advanced Move Method
 	if (mp_grid_find_path(x, y, target.x, target.y)) { // update xnext & ynext
 		change_state(ZOMBIE.move);
 		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
 		exit;
 	}
-	
-	/*
-	// Move towards the player(target)
-	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
-	if (grid_direction_free(x+8, y+8, _dir)) {
-		xnext = x + lengthdir_x(CELL_SIZE, _dir);
-		ynext = y + lengthdir_y(CELL_SIZE, _dir);
-		change_state(SHEEP.move);
-		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
-		exit;
-	} 
-	*/
 }
 
 #region // Try to move randomly
@@ -51,7 +52,13 @@ if (_list_size > 0) {
 	ynext = y+lengthdir_y(CELL_SIZE, _dir);
 	//audio_play_sound(a_jump, 5, false);
 	change_state(ZOMBIE.move);
+	image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
+	exit;
 } else {
+	if (target != noone) {
+		// update AI Grid 
+		mp_grid_add_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	}
 	next_unit();
 	change_state(ZOMBIE.wait);
 }

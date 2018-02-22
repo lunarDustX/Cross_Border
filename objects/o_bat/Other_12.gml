@@ -10,7 +10,7 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	
 	// update AI Grid 
 	mp_grid_add_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
-	// fly
+	// fly reset
 	if (sprite_index == s_bat) {
 		for (var j = 0; j < 20; j++) {
 			for (var i = 0; i < 20; i++) {

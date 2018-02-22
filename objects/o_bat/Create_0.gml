@@ -11,6 +11,8 @@ enum BAT {
 }
 
 // Attributes
+monsterName = "bat";
+
 hp = 1;
 atk = 1;
 

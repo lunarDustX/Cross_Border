@@ -9,6 +9,9 @@ depth = -y;
 
 
 if (hp <= 0) { // dead
-	//show_message("GAME OVER");	
-	//game_end();
+	var _killer = instance_nearest(x, y, o_monster);
+	if (_killer) {
+		show_message("You are killed by a " + _killer.monsterName);	
+	}
+	hp = 5;
 }

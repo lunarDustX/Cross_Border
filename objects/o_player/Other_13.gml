@@ -5,6 +5,8 @@ if (!moving(xnext, ynext, SPEED*2)) { //arrived
 	var enemy = global.unit_grid[# xnext/CELL_SIZE, ynext/CELL_SIZE];
 	if (enemy) {
 		//audio_play_sound(a_hurt, 5, false);
+		audio_emitter_pitch(global.audio_em, random_range(0.8, 1.2));
+		audio_play_sound_on(global.audio_em, a_hurt, false, 5);
 		//var _damage = att;
 		//if (_is_player && irandom(4) == 4) _damage+=1;
 		// set player as target 

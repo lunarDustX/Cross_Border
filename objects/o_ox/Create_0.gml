@@ -11,6 +11,8 @@ enum OX {
 }
 
 // Attributes
+monsterName = "ox";
+
 hp = 2;
 atk = 1;
 

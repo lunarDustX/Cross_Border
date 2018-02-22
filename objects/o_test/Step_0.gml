@@ -6,11 +6,19 @@ if (mouse_check_button_released(mb_right)) {
 }
 */
 
+/*
 // teleport
 if (mouse_check_button_released(mb_right)) {
 	with (o_player) {
 		x = snap_value(mouse_x, CELL_SIZE);
 		y = snap_value(mouse_y, CELL_SIZE);
 	}
+}
+*/
+
+if (mouse_check_button_released(mb_right)) {
+	var _x = snap_value(mouse_x, CELL_SIZE);
+	var _y = snap_value(mouse_y, CELL_SIZE);
+	instance_create_layer(_x, _y, "Instances", o_sheep);	
 }
 

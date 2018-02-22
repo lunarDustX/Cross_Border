@@ -13,15 +13,27 @@ if (target != noone) {
 		exit;
 	}
 	
+	// Move
 	// remove self before finding a path
 	mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
-	// fly
+	
+	// 1. Basic Move Method
+	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
+	if (grid_direction_free(x+8, y+8, _dir)) {
+		xnext = x + lengthdir_x(CELL_SIZE, _dir);
+		ynext = y + lengthdir_y(CELL_SIZE, _dir);
+		change_state(BAT.move);
+		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
+		exit;
+	} 
+	
+	// 2. Advanced Move Method
+	// fly over no bridge tile
 	if (sprite_index == s_bat) {
 		for (var j = 0; j < 20; j++) {
 			for (var i = 0; i < 20; i++) {
 				if ((i+1) % (PATCH_SIZE+1) == 0 or (j+1) % (PATCH_SIZE+1) == 0) {
 					if (mp_grid_get_cell(global.AIGrid, i, j) == -1) {
-						//show_message(string(i) + " " + string(j));
 						mp_grid_clear_cell(global.AIGrid, i, j);
 					}
 				}
@@ -33,18 +45,6 @@ if (target != noone) {
 		image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
 		exit;
 	}
-	
-	/*
-	// Move towards the player(target)
-	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
-	if (grid_direction_free(x+8, y+8, _dir)) {
-		xnext = x + lengthdir_x(CELL_SIZE, _dir);
-		ynext = y + lengthdir_y(CELL_SIZE, _dir);
-		change_state(SHEEP.move);
-		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
-		exit;
-	} 
-	*/
 }
 
 #region // Try to move randomly
@@ -64,7 +64,13 @@ if (_list_size > 0) {
 	ynext = y+lengthdir_y(CELL_SIZE, _dir);
 	//audio_play_sound(a_jump, 5, false);
 	change_state(BAT.move);
+	image_xscale = (target.x - x != 0) ? sign(target.x - x)*(-1) : image_xscale;
+	exit;
 } else {
+	if (target != noone) {
+		// update AI Grid 
+		mp_grid_add_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	}
 	next_unit();
 	change_state(BAT.wait);
 }

@@ -11,6 +11,8 @@ enum ZOMBIE {
 }
 
 // Attributes
+monsterName = "zombie";
+
 hp = 2;
 atk = 1;
 
