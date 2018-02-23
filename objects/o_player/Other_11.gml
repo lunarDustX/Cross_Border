@@ -4,6 +4,19 @@ if (!instance_exists(o_action_cue)) {
 }
 
 // Get the action
+if (keyboard_check_released(ord("F"))) {
+	if (mana >= 2) {
+		mana -= 2;
+		FrozenMagic();	
+		change_state(PLAYER.wait);
+		if (instance_exists(o_action_cue)) {
+			instance_destroy(o_action_cue);
+		}
+		exit;
+	}
+}
+
+
 if (mouse_check_button_pressed(mb_left)) {
 	xnext = snap_value(mouse_x, CELL_SIZE);
 	ynext = snap_value(mouse_y, CELL_SIZE);
@@ -23,7 +36,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			if (object_is_ancestor(unit.object_index, o_moving_unit)) {
 				if (is_in_array(unit.object_index, target_arr)) {
 					// Attack
-					state = PLAYER.attack;
+					change_state(PLAYER.attack);
 					if (instance_exists(o_action_cue)) {
 						instance_destroy(o_action_cue);
 					}

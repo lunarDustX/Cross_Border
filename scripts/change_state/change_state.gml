@@ -34,3 +34,16 @@ if (object_index == o_snowman) {
 		break;
 	}
 }
+
+
+if (object_index == o_zombie) {
+	switch (state) {
+		case ZOMBIE.wait:
+			if (normal) {
+				moves = 1;
+			} else {
+				moves = 2;	
+			}
+		break;
+	}
+}

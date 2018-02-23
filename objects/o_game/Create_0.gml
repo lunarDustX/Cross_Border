@@ -7,7 +7,7 @@
 #macro PATCH_SIZE 6
 #macro MAP_SIZE 3
 
-#macro MAX_BRIDGE 3
+#macro MAX_BRIDGE 4
 // tile id
 #macro VOID -1 //out of border?
 #macro EMPTY 0

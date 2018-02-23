@@ -13,9 +13,9 @@ if (global.monsterLog) {
 				draw_sprite(monsterLogSprites_arr[i], image_index, _x, _y);	
 			}
 		} else {
-			draw_sprite(s_monsterNotFound, 0, _x, _y);
+			//draw_sprite(s_monsterNotFound, 0, _x, _y);
 		}
-		if (i == monsterLogIndex) { 
+		if (i == monsterLogIndex) { // rectangle
 			draw_sprite(s_currentMonsterLog, 0, _x, _y);
 		}
 	}

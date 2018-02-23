@@ -1,7 +1,22 @@
 /// @description action
 if (!instance_exists(o_player)) exit;
 
-if (target != noone) {
+if (frozen > 0) {
+	/*
+	if (global.tile_grid[# x div CELL_SIZE, y div CELL_SIZE] == noone) {
+		show_message("Achievement: frozen bat");
+		instance_destroy();
+		exit;
+	}
+	*/
+	show_debug_message(monsterName +" frozen");
+	frozen--;
+	next_unit();
+	change_state(BAT.wait);
+	exit;
+}
+
+if (target != noone) { // CHASE OR ATTACK
 	// Attack
 	if (point_distance(x, y, target.x, target.y) == CELL_SIZE) {
 		// xnext & ynext for moving

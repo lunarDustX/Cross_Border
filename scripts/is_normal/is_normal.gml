@@ -8,9 +8,13 @@ var _xcell = _x div CELL_SIZE;
 var _ycell = _y div CELL_SIZE;
 
 if (global.tile_grid[# _xcell, _ycell] == noone) {
-	instance_destroy();
-	show_message("fall death.");
-	return true;
+	if (sprite_index == s_bat) {
+		return normal;
+	} else {
+		instance_destroy();
+		show_debug_message("fall death");
+		return true;
+	}
 }
 
 switch (global.tile_grid[# _xcell, _ycell].object_index) {

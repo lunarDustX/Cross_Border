@@ -11,7 +11,8 @@ enum OX {
 }
 
 // Attributes
-monsterName = "ox";
+monsterName = "ox-minotaur";
+monsterID = ID_OX;
 
 hp = 2;
 atk = 1;
@@ -38,7 +39,7 @@ evil_sprite = s_minotaur;
 normal_arr[BIOME.grass] = true;
 normal_arr[BIOME.snow] = false;
 normal_arr[BIOME.desert] = false;
-normal_arr[BIOME.forest] = false;
+normal_arr[BIOME.forest] = true;
 normal_arr[BIOME.grave] = false;
 
 normal = true;

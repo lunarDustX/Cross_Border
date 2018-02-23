@@ -15,8 +15,13 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	UpdateMonsterState();
 	
 	// change state
-	next_unit();
-	state = ZOMBIE.wait;
+	moves--;
+	if (moves > 0) {
+		change_state(ZOMBIE.action);
+	} else {
+		next_unit();
+		change_state(ZOMBIE.wait);
+	}
 	
 } else { // moving to target position
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);

@@ -1,6 +1,14 @@
 /// @description action
 if (!instance_exists(o_player)) exit;
 
+if (frozen > 0) {
+	show_debug_message(monsterName +" frozen");
+	frozen--;
+	next_unit();
+	change_state(BAT.wait);
+	exit;
+}
+
 if (target != noone) {
 	// Attack
 	if (point_distance(x, y, target.x, target.y) == CELL_SIZE) {

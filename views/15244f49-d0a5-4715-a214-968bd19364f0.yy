@@ -15,7 +15,10 @@
         "c9ddc4c3-52a1-46ee-a35f-d427141090aa",
         "8fab055c-498a-4e57-bbe9-78ce71dbdd62",
         "be655cf1-47e9-4695-baaa-b9781d7906f6",
-        "d4edc10e-5423-4a5f-99cb-a53f22913d47"
+        "d4edc10e-5423-4a5f-99cb-a53f22913d47",
+        "7bd2e351-2d80-4900-833f-5cac6e4a7342",
+        "8527597a-de38-4151-a747-e812fa957e92",
+        "cd708bc9-ab8f-41b7-ae15-fcc073428f49"
     ],
     "filterType": "GMSprite",
     "folderName": "Monsters",

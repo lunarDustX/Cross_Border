@@ -26,7 +26,7 @@ if (global.map) {
 		if (global.remap) {
 			ExitMap();
 		} else {
-			show_message("make a new room")	
+			show_message("Place the card to extend map");	
 		}
 	}
 }

@@ -11,7 +11,8 @@ enum BAT {
 }
 
 // Attributes
-monsterName = "bat";
+monsterName = "bat-vampire";
+monsterID = ID_BAT;
 
 hp = 1;
 atk = 1;
@@ -41,7 +42,7 @@ normal_sprite = s_bat;
 evil_sprite = s_vampire;
 
 normal_arr[BIOME.grass] = false;
-normal_arr[BIOME.snow] = false;
+normal_arr[BIOME.snow] = true;
 normal_arr[BIOME.desert] = false;
 normal_arr[BIOME.forest] = true;
 normal_arr[BIOME.grave] = false;
