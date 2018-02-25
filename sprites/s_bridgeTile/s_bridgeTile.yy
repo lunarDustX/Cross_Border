@@ -2,7 +2,7 @@
     "id": "e0b2b434-eb6d-40b7-bc74-2cc036354971",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_bridge_tile_1",
+    "name": "s_bridgeTile",
     "For3D": false,
     "HTile": false,
     "VTile": false,

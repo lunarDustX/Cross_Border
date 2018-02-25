@@ -10,8 +10,10 @@ with (instance_create_layer(_x, _y, "Instances", o_fall)) {
 index++;
 if (index < monsterNumber) {
 	alarm[0] = irandom_range(2, 5);
-} else { // destroy the card
+} else { 
+	/*
 	with (o_camera) {
 		alarm[0] = seconds_to_steps(1); // unlock camera	
 	}
+	*/
 }

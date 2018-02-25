@@ -36,10 +36,3 @@ instance_create_layer(_x,  _y, "Instances", o_player);
 instance_create_layer(0, 0, "Instances", o_camera);
 
 
-
-/*
-global.patch_grid[# 1, 2] = BIOME.snow;
-CreateRandomPatch(1, 2, BIOME.snow);
-
-global.patch_grid[# 0, 1] = BIOME.desert;
-CreateRandomPatch(0, 1, BIOME.desert);

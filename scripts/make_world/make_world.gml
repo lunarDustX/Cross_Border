@@ -12,8 +12,6 @@ for (var n = 0; n < MAP_SIZE; n++) {
 		var _patch_type = global.patch_grid[# m, n] - BIGNUM;
 		global.patch_grid[# m, n] = _patch_type;
 		
-		//CreateRandomPatch(m, n, _patch_type);
-		//if (global.card_selected) show_message("hi");
 		CreatePatchFromCard(m, n, global.card_selected);
 		/* //Template Method
 		var _patch_string_data = LoadRandomPatch(_patch_type);
