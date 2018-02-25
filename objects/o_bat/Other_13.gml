@@ -6,7 +6,7 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 		audio_play_sound_on(global.audio_em, a_hurt, false, 5);
 		
 		target.hp -= atk;
-		with (instance_create_layer(target.x+CELL_SIZE/2, target.y-CELL_SIZE/2, "Instances", o_text)) {
+		with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
 			textColor = c_red;
 			text = "-" + string(other.atk);
 		}
@@ -14,7 +14,7 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 		// drink blood
 		if (sprite_index == s_vampire && irandom(2) == 2) { // 0.3333333
 			hp++;
-			with (instance_create_layer(x+CELL_SIZE/2, y-CELL_SIZE/2, "Instances", o_text)) {
+			with (instance_create_layer(x+CELL_WIDTH/2, y-CELL_HEIGHT/2, "Instances", o_text)) {
 				textColor = c_lime;
 				text = "+1";
 			}	

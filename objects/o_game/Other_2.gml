@@ -30,8 +30,8 @@ global.patch_grid[# _mx, _my] = BIOME.grass;
 CreateRandomPatch(_mx, _my, BIOME.grass);
 
 // PlayerSpawn
-var _x = _mx * CELL_SIZE * (PATCH_SIZE+1) + 2 *CELL_SIZE;
-var _y = _my * CELL_SIZE * (PATCH_SIZE+1) + 2 *CELL_SIZE;
+var _x = _mx * CELL_WIDTH * (PATCH_SIZE+1) + 2 *CELL_WIDTH;
+var _y = _my * CELL_HEIGHT * (PATCH_SIZE+1) + 2 *CELL_HEIGHT;
 instance_create_layer(_x,  _y, "Instances", o_player);
 instance_create_layer(0, 0, "Instances", o_camera);
 

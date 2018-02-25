@@ -1,6 +1,6 @@
 ///@description convert_normal
-var _x = snap_value(x, CELL_SIZE);
-var _y = snap_value(y, CELL_SIZE);
+var _x = snap_value(x, CELL_WIDTH);
+var _y = snap_value(y, CELL_HEIGHT);
 // smoke effect
 with (instance_create_depth(_x, _y, depth-1, o_smoke)) {
 	parent = other.id;

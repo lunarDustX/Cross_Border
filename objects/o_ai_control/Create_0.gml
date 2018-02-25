@@ -1,5 +1,5 @@
 /// @description 
-global.AIGrid = mp_grid_create(0, 0, room_width/CELL_SIZE, room_height/CELL_SIZE, CELL_SIZE, CELL_SIZE);
+global.AIGrid = mp_grid_create(0, 0, room_width/CELL_WIDTH, room_height/CELL_HEIGHT, CELL_WIDTH, CELL_HEIGHT);
 
 for (var _y = 0; _y < 20; _y++) {
 	for (var _x = 0; _x < 20 ; _x++) {

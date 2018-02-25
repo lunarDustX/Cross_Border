@@ -3,7 +3,10 @@
 	instance_create_layer(-1, -1, "Instances", o_test);
 //
 // metric
-#macro CELL_SIZE 16
+//#macro CELL_SIZE 16
+#macro CELL_WIDTH 105	
+#macro CELL_HEIGHT 100
+
 #macro PATCH_SIZE 6
 #macro MAP_SIZE 3
 
@@ -20,11 +23,11 @@
 global.audio_em = audio_emitter_create();
 
 // unit_grid
-global.unit_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
+global.unit_grid = ds_grid_create(room_width div CELL_WIDTH, room_height div CELL_HEIGHT);
 ds_grid_clear(global.unit_grid, noone);
 
 // tile_grid
-global.tile_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
+global.tile_grid = ds_grid_create(room_width div CELL_WIDTH, room_height div CELL_HEIGHT);
 ds_grid_clear(global.tile_grid, noone);
 
 // reborn 

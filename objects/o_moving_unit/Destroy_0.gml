@@ -1,7 +1,7 @@
 ///@description dead
 event_inherited();
 // 1.Remove from unit grid
-ds_grid_set(global.unit_grid, x div CELL_SIZE, y div CELL_SIZE, noone);
+ds_grid_set(global.unit_grid, x div CELL_WIDTH, y div CELL_HEIGHT, noone);
 
 // 2.remove from active enimy list
 var _index = ds_list_find_index(global.unit_list, id);

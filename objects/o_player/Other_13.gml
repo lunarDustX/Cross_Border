@@ -2,7 +2,7 @@
 if (!moving(xnext, ynext, SPEED*2)) { //arrived
 	change_state(PLAYER.atk_back);
 	
-	var enemy = global.unit_grid[# xnext/CELL_SIZE, ynext/CELL_SIZE];
+	var enemy = global.unit_grid[# xnext div CELL_WIDTH, ynext div CELL_HEIGHT];
 	if (enemy) {
 		//audio_play_sound(a_hurt, 5, false);
 		audio_emitter_pitch(global.audio_em, random_range(0.8, 1.2));
@@ -13,7 +13,7 @@ if (!moving(xnext, ynext, SPEED*2)) { //arrived
 		enemy.target = id;  // set player as target 
 		enemy.hp -= _dmg;
 		
-		with (instance_create_layer(enemy.x+CELL_SIZE/2, enemy.y-CELL_SIZE/2, "Instances", o_text)) {
+		with (instance_create_layer(enemy.x+CELL_WIDTH/2, enemy.y-CELL_HEIGHT/2, "Instances", o_text)) {
 			//image_blend = make_color_hsv(0, 160, 255);
 			textColor = c_red;
 			text = "-"+string(_dmg);

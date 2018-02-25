@@ -1,15 +1,15 @@
 /// @description move
 if (!moving(xnext, ynext, SPEED)) { // after moving
 	// update unit grid
-	global.unit_grid[# xpre div CELL_SIZE, ypre div CELL_SIZE] = noone;
-	global.unit_grid[# x div CELL_SIZE, y div CELL_SIZE] = id;
+	global.unit_grid[# xpre div CELL_WIDTH, ypre div CELL_HEIGHT] = noone;
+	global.unit_grid[# x div CELL_WIDTH, y div CELL_HEIGHT] = id;
 	// reset position vars
 	yoffset = 0;
 	xpre = x;
 	ypre = y;
 	
 	// update AI Grid 
-	mp_grid_add_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+	mp_grid_add_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
 	
 	// convert or not
 	UpdateMonsterState();

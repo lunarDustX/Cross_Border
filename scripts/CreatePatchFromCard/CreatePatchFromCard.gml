@@ -12,15 +12,17 @@ var _card = argument2;
 
 
 var _biome = _card.biome;
+
+#region no anim version
 /*
 for (var j = 0; j < PATCH_SIZE; j++) {
 	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_SIZE;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_SIZE;
+		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		
 		// empty tile 
 		if (irandom(50) == 0) {
-			mp_grid_add_cell(global.AIGrid, _x div CELL_SIZE, _y div CELL_SIZE);	
+			mp_grid_add_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);	
 			continue;
 		}
 		
@@ -30,6 +32,8 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 	}
 }
 */
+#endregion
+
 #region with anim version
 
 global.tileList = ds_list_create();
@@ -37,8 +41,8 @@ global.tileIndex = 0;
 
 for (var j = 0; j < PATCH_SIZE; j++) {
 	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_SIZE;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_SIZE;
+		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		var _depth = CalculateTileDepth(_y);		
 		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
 		ds_list_add(global.tileList, _tile);

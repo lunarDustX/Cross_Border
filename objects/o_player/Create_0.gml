@@ -12,6 +12,8 @@ enum PLAYER {
 state = PLAYER.action;
 
 // Attribute
+SPEED = 6;
+
 hp = 3;
 maxhp = 5;
 

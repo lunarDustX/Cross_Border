@@ -37,7 +37,7 @@ if (_index != -1) { // active
 		with (o_unit) { // moving or static
 			if (is_in_array(object_index, other.target_arr)) { 
 				//if (point_distance(x, y, other.x, other.y) <= other.fov*CELL_SIZE) { // in view
-					other.target = id;
+				other.target = id;
 				//}
 			}
 		}

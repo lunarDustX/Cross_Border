@@ -1,10 +1,8 @@
 ///@description move
 // Update the yoffset
 if (!moving(xnext, ynext, SPEED)) {
-	//ds_grid_set(global.unit_grid, xpre div CELL_SIZE, ypre div CELL_SIZE, noone);
-	//ds_grid_set(global.unit_grid, x div CELL_SIZE, y div CELL_SIZE, id);
-	global.unit_grid[# xpre div CELL_SIZE, ypre div CELL_SIZE] = noone;
-	global.unit_grid[# x div CELL_SIZE, y div CELL_SIZE] = id;
+	global.unit_grid[# xpre div CELL_WIDTH, ypre div CELL_HEIGHT] = noone;
+	global.unit_grid[# x div CELL_WIDTH, y div CELL_HEIGHT] = id;
 	// reset
 	yoffset = 0;
 	xpre = x;

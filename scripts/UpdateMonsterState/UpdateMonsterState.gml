@@ -1,6 +1,6 @@
 
-var _xcell = x div CELL_SIZE;
-var _ycell = y div CELL_SIZE;
+var _xcell = x div CELL_WIDTH;
+var _ycell = y div CELL_HEIGHT;
 
 // on bridge 
 if ((_xcell+1) % (PATCH_SIZE+1) == 0 || (_ycell+1) % (PATCH_SIZE+1) == 0) { 

@@ -32,7 +32,7 @@ if (monsterID >= 0) {
 if (object_index == o_snowman) {
 	with (o_player) {
 		mana = min(maxmana, mana+2);	
-		with (instance_create_layer(x +CELL_SIZE/2, y -CELL_SIZE/2, "Instances", o_text)) {
+		with (instance_create_layer(x +CELL_WIDTH/2, y -CELL_HEIGHT/2, "Instances", o_text)) {
 			vspeed = -2;
 			textColor = c_blue;
 			text = "+2";
@@ -41,7 +41,7 @@ if (object_index == o_snowman) {
 } else {
 	with (o_player) {
 		mana = min(maxmana, mana+1);
-		with (instance_create_layer(x +CELL_SIZE/2, y -CELL_SIZE/2, "Instances", o_text)) {
+		with (instance_create_layer(x +CELL_WIDTH/2, y -CELL_HEIGHT/2, "Instances", o_text)) {
 			vspeed = -2;
 			textColor = c_blue;
 			text = "+1";

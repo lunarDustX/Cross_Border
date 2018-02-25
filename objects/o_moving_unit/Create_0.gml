@@ -3,8 +3,8 @@ event_inherited();
 
 // Effect
 yoffset = 0;
-JUMP_HEIGHT = 8;
-SPEED = 2;
+JUMP_HEIGHT = 40;
+//SPEED = 6;
 shake = 0;
 
 // Convert

@@ -1,2 +1,2 @@
 /// @description 
-mp_grid_clear_cell(global.AIGrid, x div CELL_SIZE, y div CELL_SIZE);
+mp_grid_clear_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);

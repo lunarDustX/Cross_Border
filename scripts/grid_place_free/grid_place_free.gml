@@ -4,9 +4,9 @@
 var _x = argument0;
 var _y = argument1;
 
-var _xCell = floor(_x/CELL_SIZE);
-var _yCell = floor(_y/CELL_SIZE);
-
+var _xCell = _x div CELL_WIDTH;
+var _yCell = _y div CELL_HEIGHT;
+show_debug_message(string(_xCell) + " " + string(_yCell));
 //var _tile_id =  tilemap_get_at_pixel(global.tilemap_id, _x, _y);
 //var _tile_ok = !is_in_array(_tile_id, bad_tile_arr);
 //var _tile_id = instance_position(_x, _y, o_tile); 

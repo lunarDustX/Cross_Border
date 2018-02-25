@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+SPEED = 10;
+
 frozen = 0;
 
 monsterName = " ";

@@ -4,8 +4,8 @@
 var _x = argument0;
 var _y = argument1;
 
-var _xcell = _x div CELL_SIZE;
-var _ycell = _y div CELL_SIZE;
+var _xcell = _x div CELL_WIDTH;
+var _ycell = _y div CELL_HEIGHT;
 
 if (global.tile_grid[# _xcell, _ycell] == noone) {
 	if (sprite_index == s_bat) {

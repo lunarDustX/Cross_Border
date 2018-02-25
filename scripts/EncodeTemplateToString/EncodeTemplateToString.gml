@@ -1,6 +1,6 @@
 
-//xCells = room_width div CELL_SIZE;
-//yCells = room_height div CELL_SIZE;
+//xCells = room_width div CELL_WIDTH;
+//yCells = room_height div CELL_HEIGHT;
 
 var _layer_id = layer_get_id("Tiles");
 var _map_id = layer_tilemap_get_id(_layer_id);
