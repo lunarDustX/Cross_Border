@@ -4,6 +4,7 @@ mx = 0;
 my = 0;
 patch_type = BIOME.empty;
 
-// alpha ajustment
-alarm[11] = 1;
+// alpha 
+alpha = 0.1;
+
 

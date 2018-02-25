@@ -43,7 +43,7 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 		var _depth = CalculateTileDepth(_y);
 		//instance_create_depth(_x, _y, _depth, tiles_arr[_BIOME, _index]);
 		
-		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth, tiles_arr[_BIOME, _index]);
+		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
 		ds_list_add(global.tileList, _tile);
 	}
 }

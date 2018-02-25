@@ -7,15 +7,17 @@ event_inherited();
 path_delete(path);
 
 // loot
-var _loots = [];
-if (normal) {
-	_loots = normal_loots;
-} else {
-	_loots = evil_loots;
-}
-
-for (var i = 0; i < array_length_1d(_loots); i++) {
-	instance_create_layer(x, y, "Instances", _loots[i]);
+if (random(1) <= lootChance) {
+	var _loots = [];
+	if (normal) {
+		_loots = normal_loots;
+	} else {
+		_loots = evil_loots;
+	}
+	
+	for (var i = 0; i < array_length_1d(_loots); i++) {
+		instance_create_layer(x, y, "Instances", _loots[i]);
+	}
 }
 
 // Unlock monsterLog

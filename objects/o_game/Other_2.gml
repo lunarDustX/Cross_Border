@@ -22,7 +22,8 @@ with (_firstPatch) {
 	patch_type = BIOME.grass; // NEXT: random card
 	image_index = patch_type;
 	ExpandMiniMap();
-}
+} 
+global.newPatch = _mx + _my * MAP_SIZE;
 instance_deactivate_object(o_patch);
 
 global.patch_grid[# _mx, _my] = BIOME.grass;

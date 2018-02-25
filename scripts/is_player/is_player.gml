@@ -1,1 +1,0 @@
-return object_index == o_player;

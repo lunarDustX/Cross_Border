@@ -1,5 +1,6 @@
 /// @description
 shake = 0;
+cameraLock = false;
 
 if (instance_exists(o_player)) {
 	x = o_player.x-camera_get_view_width(view_camera[0])/2;

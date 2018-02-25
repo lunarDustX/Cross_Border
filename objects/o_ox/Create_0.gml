@@ -17,17 +17,12 @@ monsterID = ID_OX;
 hp = 2;
 atk = 1;
 
+lootChance = 0.5;
 normal_loots = [o_heart];
 evil_loots = [];
 
 bad_tile_arr = [VOID, EMPTY, RIVER];
 target_arr = [o_player];
-
-/*
-// Anims
-sprites_arr[BIOME.grass] = s_normal_sheep;
-sprites_arr[BIOME.snow] = s_evil_sheep;
-*/
 
 // Convert
 delta_hp = 1;

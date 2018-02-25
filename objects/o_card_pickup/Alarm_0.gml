@@ -11,5 +11,7 @@ index++;
 if (index < monsterNumber) {
 	alarm[0] = irandom_range(2, 5);
 } else { // destroy the card
-	//instance_destroy();	
+	with (o_camera) {
+		alarm[0] = seconds_to_steps(1); // unlock camera	
+	}
 }

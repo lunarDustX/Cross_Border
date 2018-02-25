@@ -27,6 +27,10 @@ ds_grid_clear(global.unit_grid, noone);
 global.tile_grid = ds_grid_create(room_width div CELL_SIZE, room_height div CELL_SIZE);
 ds_grid_clear(global.tile_grid, noone);
 
+// reborn 
+global.RebornArr = array_create(9, 0);
+//
+
 // Active Monster List
 global.unit_list = ds_list_create();
 global.list_index = 0;

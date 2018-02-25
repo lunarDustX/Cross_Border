@@ -12,7 +12,15 @@ if (!moving(xnext, ynext, SPEED)) {
 	
 	// change state
 	change_state(PLAYER.wait);
-	
+	// ***
+		var _pn = calculate_patch_number(x, y);
+		if (_pn != patch_number) {
+			patch_number = _pn;
+			if (ds_list_size(global.unit_list) > 0) { // active monster exists
+				SpawnNewMonsterAtPatch(_pn);
+			}
+		} 
+	// ***
 	//audio_play_sound(a_land, 5, false);
 } else {
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);

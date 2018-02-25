@@ -1,11 +1,15 @@
-/// @description Make the camera follow the player
-if (instance_exists(o_player)) {
-	var _target_x = o_player.x;
-	var _target_y = o_player.y;
-} else exit;
+/// @description Following Player
+if (!instance_exists(o_player)) exit;
+if (cameraLock) exit;
+// 
+var _targetX = o_player.x -global.view_width/2; //camera_get_view_width(view_camera[0])/2;
+var _targetY = o_player.y -global.view_height/2;//camera_get_view_height(view_camera[0])/2;
 
 // Move the camera
-x = lerp(x, _target_x-camera_get_view_width(view_camera[0])/2, .1);
-y = lerp(y, _target_y-camera_get_view_height(view_camera[0])/2, .1);
+
+x = lerp(x, _targetX, 0.08); //show_message(string(x)); 
+y = lerp(y, _targetY, 0.08);
+//x = NewLerp(x, _targetX, 0.1);
+//y = NewLerp(y, _targetY, 0.1);
 camera_set_view_pos(view_camera[0], x+random_range(-shake, shake), y+random_range(-shake, shake));
 

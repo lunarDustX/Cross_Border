@@ -20,3 +20,5 @@ hp = 1;
 atk = 1;
 
 path = path_add();
+
+lootChance = 0;
