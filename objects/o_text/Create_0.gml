@@ -1,5 +1,5 @@
 /// @description 
-vspeed = -1;
+vspeed = -4;
 scale = 1;
 count = 0;
 text = " ";

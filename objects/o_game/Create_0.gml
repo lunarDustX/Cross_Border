@@ -16,18 +16,18 @@
 #macro EMPTY 0
 #macro RIVER 6
 
-#macro TILE_UP_DIS 16
-#macro BIGNUM 1001
+#macro TILE_UP_DIS 200
+#macro BIGNUM 2002
 
 // audio
 global.audio_em = audio_emitter_create();
 
 // unit_grid
-global.unit_grid = ds_grid_create(room_width div CELL_WIDTH, room_height div CELL_HEIGHT);
+global.unit_grid = ds_grid_create(20, 20);
 ds_grid_clear(global.unit_grid, noone);
 
 // tile_grid
-global.tile_grid = ds_grid_create(room_width div CELL_WIDTH, room_height div CELL_HEIGHT);
+global.tile_grid = ds_grid_create(20, 20);
 ds_grid_clear(global.tile_grid, noone);
 
 // reborn 

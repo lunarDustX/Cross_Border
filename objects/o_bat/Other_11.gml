@@ -1,20 +1,22 @@
 /// @description action
 if (!instance_exists(o_player)) exit;
 
+#region ICE
 if (frozen > 0) {
-	/*
-	if (global.tile_grid[# x div CELL_SIZE, y div CELL_SIZE] == noone) {
-		show_message("Achievement: frozen bat");
-		instance_destroy();
-		exit;
-	}
-	*/
 	show_debug_message(monsterName +" frozen");
 	frozen--;
 	next_unit();
 	change_state(BAT.wait);
 	exit;
+} else {
+	with (o_ice) {
+		if (parent == other.id) {
+			instance_destroy();	
+			parent.image_speed = 1;
+		}
+	}
 }
+#endregion
 
 if (target != noone) { // CHASE OR ATTACK
 	// Attack

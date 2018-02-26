@@ -12,3 +12,4 @@ if (state == TURN.computer) {
 		o_player.state = PLAYER.action;
 	}
 }
+

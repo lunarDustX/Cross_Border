@@ -1,4 +1,4 @@
-var _margin = 4;
+var _margin = 24;
 for (var _dy = -1; _dy <= 1; _dy++) {
 	for (var _dx = -1; _dx <= 1; _dx++) {
 		if (_dx * _dy != 0) continue; // 1.diagonal

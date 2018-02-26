@@ -17,9 +17,9 @@ monsterID = ID_BAT;
 hp = 1;
 atk = 1;
 
-lootChance = 0.3;
+lootChance = 0.7;
 normal_loots = [];
-evil_loots = [o_max_heart];
+evil_loots = [o_heart];
 
 bad_tile_arr = [VOID, EMPTY, RIVER];
 target_arr = [o_player];

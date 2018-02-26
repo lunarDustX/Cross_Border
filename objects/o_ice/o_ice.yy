@@ -5,13 +5,13 @@
     "name": "o_ice",
     "eventList": [
         {
-            "id": "3bf0a37d-8de4-43d4-ae40-5753cd1249dd",
+            "id": "0b882c92-e134-4ed7-845f-bd005a794e96",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "05ae7d07-3ea6-4245-a125-da08703442fd"
         }
     ],
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "bde3a404-9498-435e-bdc4-19102926e289",
     "visible": true
 }

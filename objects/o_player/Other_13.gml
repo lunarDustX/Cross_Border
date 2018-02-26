@@ -18,7 +18,7 @@ if (!moving(xnext, ynext, SPEED*2)) { //arrived
 			textColor = c_red;
 			text = "-"+string(_dmg);
 		}
-		set_shake(enemy, 1, seconds_to_steps(.25));
+		set_shake(enemy, 4, seconds_to_steps(.25));
 		//set_shake(o_camera, 2, seconds_to_steps(.2));
 		//create_blood(enemy.x+CELL_SIZE/2, enemy.y+CELL_SIZE/2, 8, 2);
 	}

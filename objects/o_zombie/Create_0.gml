@@ -29,7 +29,7 @@ evil_sprite = choose(s_skeleton_axe, s_skeleton_hammer, s_skeleton_sword);
 
 switch (evil_sprite) {
 	case s_skeleton_axe:
-		delta_hp = -1;
+		delta_hp = 0;
 		delta_atk = 1;
 		delta_moves = 1;
 	break;
@@ -41,9 +41,9 @@ switch (evil_sprite) {
 	break;
 	
 	case s_skeleton_sword:
-		delta_hp = -1;
-		delta_atk = 3;
-		delta_moves = 1;
+		delta_hp = 0;
+		delta_atk = 2;
+		delta_moves = 0;
 	break;
 }
 

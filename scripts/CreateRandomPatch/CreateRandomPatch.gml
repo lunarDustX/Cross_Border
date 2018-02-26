@@ -24,7 +24,7 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 #region anim version
 
 global.tileList = ds_list_create();
-global.tileIndex = 0;
+//global.tileIndex = 0; // in order
 
 for (var j = 0; j < PATCH_SIZE; j++) {
 	for (var i = 0; i < PATCH_SIZE; i++) {
@@ -35,7 +35,9 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 		ds_list_add(global.tileList, _tile);
 	}
 }
-TileAppear(global.tileIndex);
+//TileAppear(global.tileIndex); // in order
+var _index = irandom(ds_list_size(global.tileList)-1);
+TileAppear(_index);
 
 #endregion
 

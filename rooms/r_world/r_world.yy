@@ -237,7 +237,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 2000,
+            "depth": 5000,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

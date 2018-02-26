@@ -1,13 +1,22 @@
 /// @description action
 if (!instance_exists(o_player)) exit;
 
+#region ICE
 if (frozen > 0) {
 	show_debug_message(monsterName +" frozen");
 	frozen--;
 	next_unit();
 	change_state(ZOMBIE.wait);
 	exit;
+} else {
+	with (o_ice) {
+		if (parent == other.id) {
+			instance_destroy();	
+			parent.image_speed = 1;
+		}
+	}
 }
+#endregion
 
 if (target != noone) {
 	// Attack

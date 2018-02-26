@@ -4,6 +4,10 @@ if (other.sprite_index != s_vampire) exit;
 
 
 if (other.state == BAT.wait or other.state == BAT.action) {
+	if (other.x div CELL_WIDTH != x div CELL_WIDTH) exit;
+	if (other.y div CELL_HEIGHT != y div CELL_HEIGHT) exit;
+	
+	// PICK UP
 	instance_destroy(); // destroy the heart
 	other.hp++;
 	with (instance_create_layer(other.x+CELL_WIDTH/2, other.y-CELL_HEIGHT/2, "Instances", o_text)) {

@@ -5,7 +5,9 @@ event_inherited();
 
 SPEED = 10;
 
+//
 frozen = 0;
+animSpd = 5;
 
 monsterName = " ";
 monsterID = -1;
@@ -24,3 +26,6 @@ atk = 1;
 path = path_add();
 
 lootChance = 0;
+
+// diection
+image_xscale = choose(-1, 1);

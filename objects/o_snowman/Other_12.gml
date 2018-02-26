@@ -28,6 +28,6 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);
 	var _distance = point_distance(xpre, ypre, x, y,);
 	yoffset = abs(sin(pi/(_total_distance/_distance)))*JUMP_HEIGHT;
-	image_xscale = (x == xnext)? image_xscale : sign(xnext-x)*(-1);
+	image_xscale = (x == xnext)? image_xscale : sign(xnext-x);
 }
 

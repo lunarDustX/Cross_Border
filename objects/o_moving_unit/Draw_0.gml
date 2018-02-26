@@ -1,10 +1,11 @@
 /// @description Custom draw
 
-
 // Draw the shadow
-//var _shadow_scale = 1-.5/(JUMP_HEIGHT/yoffset);
-//draw_sprite_ext(s_shadow, 0, x+CELL_WIDTH/2, y+CELL_HEIGHT/2, _shadow_scale, _shadow_scale, 0, c_white, 1);
+var _shadow_scale = 1-.5/(JUMP_HEIGHT/yoffset);
+var _shadow_offsetY = 30;
+draw_sprite_ext(s_shadow, 0, x+CELL_WIDTH/2, y+CELL_HEIGHT/2+_shadow_offsetY, _shadow_scale, _shadow_scale, 0, c_white, 1);
 
+draw_sprite_ext(sprite_index, image_index, x+random_range(-shake, shake)+CELL_WIDTH/2, y-yoffset+random_range(-shake, shake)+CELL_HEIGHT/2, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 // Draw self
 /*
@@ -15,7 +16,6 @@ if (sprite_index != sprites_arr[_patch_type]) {
 }
 */
 
-draw_sprite_ext(sprite_index, image_index, x+random_range(-shake, shake)+CELL_WIDTH/2, y-yoffset+random_range(-shake, shake)+CELL_HEIGHT/2, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 /*
 // TEST : draw attributs

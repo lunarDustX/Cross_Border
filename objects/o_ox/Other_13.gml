@@ -12,10 +12,10 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 			text = "-" + string(other.atk);
 		}
 		
-		set_shake(target, 1, seconds_to_steps(.25));
+		set_shake(target, 4, seconds_to_steps(.25));
 		//set_shake(o_camera, 2, seconds_to_steps(.2));
 		//create_blood(enemy.x+CELL_SIZE/2, enemy.y+CELL_SIZE/2, 8, 2);
 	}
 } else {
-	image_xscale = (x == xpre) ? image_xscale : sign(xnext-x)*(-1);
+	image_xscale = (x == xpre) ? image_xscale : sign(xnext-x);
 }

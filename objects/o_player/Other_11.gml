@@ -1,9 +1,16 @@
 /// @description action
+if (o_camera.cameraLock) exit;
+
+#region action cue
+/*
 if (!instance_exists(o_action_cue)) {
 	instance_create_layer(x, y, "Instances", o_action_cue);
 }
+*/
+#endregion
 
-// Get the action
+// ACTION
+// Frozen Magic
 if (keyboard_check_released(ord("F"))) {
 	if (mana >= 2) {
 		mana -= 2;

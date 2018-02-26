@@ -5,16 +5,6 @@
     "name": "o_effect",
     "eventList": [
         {
-            "id": "65bc8ea1-d54c-4e1a-af25-83f230e16834",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "b3c8d47e-8dd7-407c-890f-8a3fb8a1b6e9"
-        },
-        {
             "id": "e59fe5ad-9117-4222-a778-d17700750db5",
             "modelName": "GMEvent",
             "mvc": "1.0",
