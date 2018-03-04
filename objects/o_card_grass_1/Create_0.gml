@@ -13,5 +13,6 @@ monster_grid[# 1, 1] = [2, 2];
 
 // biome info
 biome = BIOME.grass;
-image_index = biome;
+//image_index = biome;
+sprite_index = s_card_grass;
 

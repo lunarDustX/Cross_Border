@@ -15,6 +15,7 @@ if (sprite_index != evil_sprite) {
 // data
 hp += delta_hp;
 atk += delta_atk;
+moves = 0;
 //moves += delta_move;
 
 if (hp <= 0) {

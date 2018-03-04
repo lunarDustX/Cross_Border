@@ -26,8 +26,8 @@ with (_firstPatch) {
 global.newPatch = _mx + _my * MAP_SIZE;
 instance_deactivate_object(o_patch);
 
-global.patch_grid[# _mx, _my] = BIOME.grass;
-CreateRandomPatch(_mx, _my, BIOME.grass);
+global.patch_grid[# _mx, _my] = choose(BIOME.grass, BIOME.snow);
+CreateRandomPatch(_mx, _my, global.patch_grid[# _mx, _my]);
 
 // PlayerSpawn
 var _x = _mx * CELL_WIDTH * (PATCH_SIZE+1) + 2 *CELL_WIDTH;

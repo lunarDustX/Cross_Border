@@ -26,7 +26,9 @@ monster_grid[# 1, 1] = [2, 3];
 // biome info
 biome = irandom_range(1,5);
 image_index = biome;
-image_speed = 0;
+//image_speed = 0;
+
+depth = -1;
 
 
 

@@ -5,10 +5,18 @@ if (!instance_exists(o_player)) exit;
 if (frozen > 0) {
 	show_debug_message(monsterName +" frozen");
 	frozen--;
+	if (frozen == 0) {
+		with (o_ice) {
+			if (parent == other.id) {
+				image_index = 1;
+			}
+		}
+	} 
 	next_unit();
-	change_state(OX.wait);
+	change_state(BAT.wait);
 	exit;
 } else {
+	frozen = -1;
 	with (o_ice) {
 		if (parent == other.id) {
 			instance_destroy();	

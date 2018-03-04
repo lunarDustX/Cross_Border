@@ -12,6 +12,7 @@ if (sprite_index != normal_sprite) {
 
 hp -= delta_hp;
 atk -= delta_atk;
+moves = 0;
 //moves -= delta_move;
 
 if (hp <= 0) {

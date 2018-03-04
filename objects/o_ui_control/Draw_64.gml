@@ -1,5 +1,6 @@
 /// @description Manage all GUI
 #region Common Game UI
+/*
 for (var i = 4; i >=1 ; i--) {
 	if (i == 2) continue;
 	timer[i]++;
@@ -9,7 +10,12 @@ for (var i = 4; i >=1 ; i--) {
 	}
 	draw_sprite(bg[i], imageIndex[i], 0, 0);
 }
-//draw_sprite(s_bg_0, 0, 0, 0);
+*/
+draw_sprite(s_bg_4, 1, 0, 0);
+draw_sprite(s_bg_3, 1, 0, 0);
+//draw_sprite(s_bg_2, 1, 0, 0);
+draw_sprite(s_bg_1, 1, 0, 0);
+draw_sprite(s_bg_0, 0, 0, 0);
 #endregion
 
 #region Monster Log ["M"]
@@ -37,6 +43,9 @@ if (global.monsterLog) {
 #region Map
 if (global.map) {
 	DrawGUIBackground();	
+	if (global.remap) {
+		draw_text(600, 1000, "Press ESC to contine");	
+	}
 }
 #endregion
 

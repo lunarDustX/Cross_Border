@@ -4,7 +4,7 @@
 draw_sprite(s_player_panel, 0, 1326, 976);
 
 // compass & setting
-draw_sprite(s_compass, 0, 24, 1004);
+// draw_sprite(s_compass, 0, 24, 1004);
 draw_sprite(s_setting, 0, 26, 1110);
 
 // 1. hp

@@ -16,4 +16,5 @@ monster_grid[# 2, 1] = [1, 2];
 
 // biome info
 biome = BIOME.snow;
-image_index = biome;
+//image_index = biome;
+sprite_index = s_card_snow;

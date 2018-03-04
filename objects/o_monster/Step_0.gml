@@ -14,8 +14,7 @@ if (hp > 0) {
 	var _index = ds_list_find_index(global.unit_list, id);
 	if (instance_exists(o_player)) {
 		if (_index == -1) { // not in the list
-			//if (in_same_patch() || target != noone) {
-			if (in_same_patch()) {
+			if (in_same_patch() || target != noone) {
 				ds_list_add(global.unit_list, id);
 			}
 		}

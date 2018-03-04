@@ -1,12 +1,13 @@
 /// @description action
+if (instance_exists(o_gameover)) exit;
 if (o_camera.cameraLock) exit;
 
 #region action cue
-/*
+
 if (!instance_exists(o_action_cue)) {
 	instance_create_layer(x, y, "Instances", o_action_cue);
 }
-*/
+
 #endregion
 
 // ACTION
