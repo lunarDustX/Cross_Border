@@ -1,8 +1,8 @@
 {
-    "id": "75479229-5719-4d51-8ce5-e575401785c2",
+    "id": "93eb5998-ae8b-40f5-aa15-c9fd5e04fe63",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "CheckMap",
+    "name": "CloseMap",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,6 +1,9 @@
 /// @description 
 event_inherited();
 
+// Magic
+#macro MAGIC_COST 0
+
 // State
 enum PLAYER {
 	wait,
@@ -8,6 +11,7 @@ enum PLAYER {
 	move,
 	attack,
 	atk_back,
+	magic = 11,
 }
 state = PLAYER.action;
 

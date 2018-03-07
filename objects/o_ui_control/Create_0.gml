@@ -22,7 +22,7 @@ imageIndex[3] = 0;
 imageIndex[4] = 0;
 #endregion
 
-instance_create_depth(24, 1004, depth-1, o_campass);
+instance_create_depth(24, 1004, depth-1, o_compass);
 
 // Monster Log
 #macro monsterAmount 9

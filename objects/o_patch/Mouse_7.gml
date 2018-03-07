@@ -38,5 +38,4 @@ with (o_card) {
 */
 
 // go back
-show_debug_message("Instruction: Press ESC to go back.");
 //alarm[11] = seconds_to_steps(1.0);

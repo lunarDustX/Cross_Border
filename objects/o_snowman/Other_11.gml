@@ -3,7 +3,7 @@ if (!instance_exists(o_player)) exit;
 
 #region Ice
 if (frozen > 0) {
-	show_debug_message(monsterName +" frozen");
+	//show_debug_message(monsterName +" frozen");
 	frozen--;
 	if (frozen == 0) {
 		with (o_ice) {
@@ -44,7 +44,7 @@ if (target != noone) {
 	
 	// 1. Basic Move Method
 	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);
-	if (grid_direction_free(x+8, y+8, _dir)) {
+	if (grid_direction_free(x, y, _dir)) {
 		xnext = x + lengthdir_x(CELL_WIDTH, _dir);
 		ynext = y + lengthdir_y(CELL_HEIGHT, _dir);
 		change_state(SNOWMAN.move);
@@ -63,7 +63,7 @@ if (target != noone) {
 #region // Try to move randomly
 var new_locations = ds_list_create();
 for (_dir=0; _dir<360; _dir+=90) {
-	if (grid_direction_free(x+8, y+8, _dir)) {
+	if (grid_direction_free(x, y, _dir)) {
 		ds_list_add(new_locations, _dir);
 	}
 }

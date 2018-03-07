@@ -13,10 +13,10 @@ if (!instance_exists(o_action_cue)) {
 // ACTION
 // Frozen Magic
 if (keyboard_check_released(ord("F"))) {
-	if (mana >= 2) {
-		mana -= 2;
-		FrozenMagic();	
-		change_state(PLAYER.wait);
+	if (mana >= MAGIC_COST) {
+		mana -= MAGIC_COST;
+		//FrozenMagic();	
+		change_state(PLAYER.magic);
 		if (instance_exists(o_action_cue)) {
 			instance_destroy(o_action_cue);
 		}

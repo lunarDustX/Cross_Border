@@ -2,9 +2,18 @@
     "id": "f5cab1c8-57c7-4502-bdfa-2c82fc669279",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_campass",
+    "name": "o_compass",
     "eventList": [
-        
+        {
+            "id": "06aee9a8-9e25-44f8-a2d2-1ee9e38534d6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 6,
+            "m_owner": "f5cab1c8-57c7-4502-bdfa-2c82fc669279"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

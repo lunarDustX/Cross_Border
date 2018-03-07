@@ -19,14 +19,14 @@ var _firstPatch = instance_create_layer(800 + (_mx - 1) *((sprite_get_width(s_pa
 with (_firstPatch) {
 	mx = _mx;
 	my = _my;
-	patch_type = BIOME.grass; // NEXT: random card
+	patch_type = choose(BIOME.grass, BIOME.snow);
 	image_index = patch_type;
 	ExpandMiniMap();
 } 
 global.newPatch = _mx + _my * MAP_SIZE;
 instance_deactivate_object(o_patch);
 
-global.patch_grid[# _mx, _my] = choose(BIOME.grass, BIOME.snow);
+global.patch_grid[# _mx, _my] = _firstPatch.patch_type;
 CreateRandomPatch(_mx, _my, global.patch_grid[# _mx, _my]);
 
 // PlayerSpawn

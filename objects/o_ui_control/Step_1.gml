@@ -24,7 +24,7 @@ if (global.monsterLog) {
 if (global.map) {
 	if (keyboard_check_pressed(vk_escape)) {
 		if (global.remap) {
-			ExitMap();
+			ExitMapAfterPlacing();
 		} else {
 			show_debug_message("Instruction: place the card");	
 		}
