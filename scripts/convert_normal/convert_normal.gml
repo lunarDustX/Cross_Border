@@ -17,7 +17,10 @@ moves = 0;
 
 if (hp <= 0) {
 	instance_destroy();
-	show_message("Achievement: convert kill!");
+	if (global.achievement_convertkill == false) {
+		global.achievement_convertkill = true;
+		show_message("Achievement: convert kill!");
+	}
 }
 
 

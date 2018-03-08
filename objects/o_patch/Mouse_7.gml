@@ -3,9 +3,6 @@
 if (global.card_selected == noone) exit; // not selected
 if (patch_type > 0) exit; // already exist
 if (global.remap) exit;
-//if (instance_number(o_card) < 2) exit; // already patch one
-
-
 
 // update Patch Grid
 patch_type = global.card_selected.biome; 
@@ -20,7 +17,7 @@ for (var i = 0; i < array_length_1d(global.RebornArr); i++) {
 }
 global.RebornArr[_pn] = 0;
 
-//
+// for cameraLock
 global.newPatch = _pn;
 
 // graphic

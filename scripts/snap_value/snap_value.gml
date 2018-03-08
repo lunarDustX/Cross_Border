@@ -2,4 +2,4 @@
 ///@arg size
 var _value = argument0;
 var _size = argument1;
-return floor(_value/_size)*_size;
+return (_value div _size)*_size;

@@ -2,7 +2,8 @@
 //show_debug_overlay(true);
 draw_set_font(f_test);
 
-// instance_create_depth(0, 0, BIGNUM, o_bg);
+InitializeAchievements();
+
 instance_create_layer(0, 0, "Instances", o_ui_control);
 instance_create_layer(0, 0, "Instances", o_ai_control);
 

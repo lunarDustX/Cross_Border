@@ -1,8 +1,8 @@
 {
-    "id": "359037fe-63f8-45c7-8ed5-553322fe71b9",
+    "id": "13ec528a-1d79-4790-9abe-65906b268af1",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "snap_value",
+    "name": "InitializeAchievements",
     "IsCompatibility": false,
     "IsDnD": false
 }

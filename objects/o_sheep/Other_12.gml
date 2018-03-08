@@ -12,7 +12,7 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	mp_grid_add_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
 	
 	// convert or not
-	UpdateMonsterState();
+	UpdateMonsterStateAfterMoving();
 	
 	// change state
 	next_unit();

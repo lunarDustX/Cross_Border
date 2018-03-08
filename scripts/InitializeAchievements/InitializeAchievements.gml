@@ -1,0 +1,1 @@
+global.achievement_convertkill = false;

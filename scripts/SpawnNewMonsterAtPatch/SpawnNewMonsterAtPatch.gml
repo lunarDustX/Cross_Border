@@ -1,7 +1,7 @@
 ///@description SpawnNewMonsterAtPatch
 ///@arg patchNumber
 var _patchNumner = argument0;
-if (global.RebornArr[_patchNumner] > 0) {
+if (global.RebornArr[_patchNumner] > 0) { // Only Spawn Once
 	global.RebornArr[_patchNumner]--;
 	var _xPatch = _patchNumner mod MAP_SIZE;
 	var _yPatch = _patchNumner div MAP_SIZE;

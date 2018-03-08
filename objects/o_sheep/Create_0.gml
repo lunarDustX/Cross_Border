@@ -42,4 +42,4 @@ normal_arr[BIOME.forest] = false;
 normal_arr[BIOME.grave] = false;
 
 normal = true;
-UpdateMonsterState();
+UpdateMonsterStateAfterMoving();

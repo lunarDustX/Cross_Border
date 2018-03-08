@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-SPEED = 10;
+SPEED = 12;
 
 //
 frozen = 0;

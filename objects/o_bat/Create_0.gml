@@ -52,6 +52,6 @@ normal_loots = [];
 evil_loots = [o_heart];
 
 normal = true;
-UpdateMonsterState();
+UpdateMonsterStateAfterMoving();
 
 
