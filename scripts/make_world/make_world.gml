@@ -13,6 +13,7 @@ for (var n = 0; n < MAP_SIZE; n++) {
 		global.patch_grid[# m, n] = _patch_type;
 		
 		CreatePatchFromCard(m, n, global.card_selected);
+		global.discoveredPatch++;
 		/* //Template Method
 		var _patch_string_data = LoadRandomPatch(_patch_type);
 		CreatePatchFromString(m, n, _patch_string_data);

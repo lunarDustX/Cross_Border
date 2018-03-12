@@ -1,0 +1,1 @@
+global.PATCH_SIZE = 3;

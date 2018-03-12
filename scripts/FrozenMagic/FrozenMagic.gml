@@ -2,7 +2,7 @@ var _dir;
 for (_dir=0; _dir<360; _dir+=90) {
 	var _x = o_player.x + lengthdir_x(CELL_WIDTH, _dir);
 	var _y = o_player.y + lengthdir_y(CELL_HEIGHT, _dir);
-	with (instance_position(_x, _y, o_monster)) { // Potential Bug?
+	with (instance_position(_x, _y, o_monster)) { // Potential Bug 
 		if (frozen < 0) {
 			with (instance_create_layer(_x+CELL_WIDTH/2, _y+CELL_HEIGHT-15, "Instances", o_ice)) { // ice effect		
 				parent = other.id;

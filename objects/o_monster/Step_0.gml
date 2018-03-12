@@ -8,7 +8,7 @@ patch_number = calculate_patch_number(x, y);
 depth = -y;
 
 
-#region Update the unit_list
+#region Update the ActiveMonster List
 // Are we active?
 if (hp > 0) {
 	var _index = ds_list_find_index(global.unit_list, id);

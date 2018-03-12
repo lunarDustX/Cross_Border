@@ -2,7 +2,7 @@
 
 // compass & setting
 // draw_sprite(s_compass, 0, 24, 1004);
-draw_sprite(s_setting, 0, 26, 1110);
+// draw_sprite(s_setting, 0, 26, 1110);
 
 // 0. state panel
 draw_sprite(s_player_panel, 0, 1326, 976);

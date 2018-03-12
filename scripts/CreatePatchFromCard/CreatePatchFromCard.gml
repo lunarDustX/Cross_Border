@@ -10,10 +10,10 @@ var _biome = _card.biome;
 
 #region no anim version
 /*
-for (var j = 0; j < PATCH_SIZE; j++) {
-	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
+for (var j = 0; j < global.PATCH_SIZE; j++) {
+	for (var i = 0; i < global.PATCH_SIZE; i++) {
+		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		
 		// empty tile 
 		if (irandom(50) == 0) {
@@ -34,13 +34,13 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 global.tileList = ds_list_create();
 //global.tileIndex = 0;
 
-for (var j = 0; j < PATCH_SIZE; j++) {
-	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
+for (var j = 0; j < global.PATCH_SIZE; j++) {
+	for (var i = 0; i < global.PATCH_SIZE; i++) {
+		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		
 		// empty tile 
-		if (irandom(50) == 0) {
+		if (irandom(50) == 0 && room != r_tutorial) {
 			mp_grid_add_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);	
 			continue;
 		}

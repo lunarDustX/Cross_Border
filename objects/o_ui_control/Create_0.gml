@@ -23,6 +23,7 @@ imageIndex[4] = 0;
 #endregion
 
 instance_create_depth(24, 1004, depth-1, o_compass);
+instance_create_depth(26, 1110, depth-2, o_setting);
 
 // Monster Log
 #macro monsterAmount 9
@@ -43,8 +44,9 @@ monsterLogSprites_arr = array_create(monsterAmount, s_monsterNotFound);
 #macro ID_SKELETON_B 8
 #macro ID_SKELETON_C 9
 
-// map
+// map & setting
 global.map = false;
+global.setting = false;
 
 
 					  

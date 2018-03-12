@@ -10,8 +10,8 @@ var _yPatch2 = argument3;
 
 if (_xPatch1 != _xPatch2) {
 	for (var k = 0; k < MAX_BRIDGE; k++) {
-		var _y = (irandom(PATCH_SIZE-1) + _yPatch1 *(PATCH_SIZE+1)) * CELL_HEIGHT;
-		var _x = (max(_xPatch1, _xPatch2) *(PATCH_SIZE+1) -1) * CELL_WIDTH;
+		var _y = (irandom(global.PATCH_SIZE-1) + _yPatch1 *(global.PATCH_SIZE+1)) * CELL_HEIGHT;
+		var _x = (max(_xPatch1, _xPatch2) *(global.PATCH_SIZE+1) -1) * CELL_WIDTH;
 		if (!place_meeting(_x+8, _y+8, o_bridge_tile)) {
 			mp_grid_clear_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);
 			var _depth = CalculateTileDepth(_y);
@@ -24,8 +24,8 @@ if (_xPatch1 != _xPatch2) {
 
 if (_yPatch1 != _yPatch2) {
 	for (var k = 0; k < MAX_BRIDGE; k++) {
-		var _x = (irandom(PATCH_SIZE-1) + _xPatch1 *(PATCH_SIZE+1)) * CELL_WIDTH;
-		var _y = (max(_yPatch1, _yPatch2) *(PATCH_SIZE+1) -1) * CELL_HEIGHT;
+		var _x = (irandom(global.PATCH_SIZE-1) + _xPatch1 *(global.PATCH_SIZE+1)) * CELL_WIDTH;
+		var _y = (max(_yPatch1, _yPatch2) *(global.PATCH_SIZE+1) -1) * CELL_HEIGHT;
 		if (!place_meeting(_x+8, _y+8, o_bridge_tile)) {
 			mp_grid_clear_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);
 			var _depth = CalculateTileDepth(_y);

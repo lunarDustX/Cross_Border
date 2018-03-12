@@ -20,7 +20,7 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	if (sprite_index == s_bat) {
 		for (var j = 0; j < 20; j++) {
 			for (var i = 0; i < 20; i++) {
-				if ((i+1) % (PATCH_SIZE+1) == 0 or (j+1) % (PATCH_SIZE+1) == 0) {
+				if ((i+1) % (global.PATCH_SIZE+1) == 0 or (j+1) % (global.PATCH_SIZE+1) == 0) {
 					if (global.tile_grid[# i, j] == noone) {
 						//show_message(string(i) + " " + string(j)+ " " + string(global.tile_grid[# i, j]));
 						mp_grid_add_cell(global.AIGrid, i, j);

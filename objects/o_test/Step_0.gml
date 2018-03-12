@@ -24,14 +24,19 @@ if (mouse_check_button_released(mb_right)) {
 }
 */
 
+/*
 // SpawnCard
-if (instance_number(o_monster) <= 0 && instance_number(o_card_pickup) == 0) { // time to spawn
-	if (alarm[0] == -1) {
-		alarm[0] = seconds_to_steps(0.5);
+if (!instance_exists(o_card_pickup)) {
+	if (instance_number(o_monster) == 0 && instance_number(o_fall) == 0) { // time to spawn
+		if (alarm[0] == -1) {
+			alarm[0] = seconds_to_steps(0.5);
+		}
 	}
 }
+*/
 
-// DestroyCard
+/*
+// DestroyCard 
 if (instance_number(o_monster) > 0) {
 	if (instance_exists(o_card_pickup))	{
 		with (o_card_pickup) {

@@ -1,5 +1,5 @@
 /// @description Manage all GUI
-#region Common Game UI
+#region Background 
 /*
 for (var i = 4; i >=1 ; i--) {
 	if (i == 2) continue;
@@ -46,6 +46,12 @@ if (global.map) {
 	if (global.remap) {
 		draw_text(600, 1000, "Press ESC to contine");	
 	}
+}
+#endregion
+
+#region Setting
+if (global.setting) {
+	DrawGUIBackground();	
 }
 #endregion
 

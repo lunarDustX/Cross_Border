@@ -59,7 +59,7 @@ if (target != noone) { // CHASE OR ATTACK
 	if (sprite_index == s_bat) {
 		for (var j = 0; j < 20; j++) {
 			for (var i = 0; i < 20; i++) {
-				if ((i+1) % (PATCH_SIZE+1) == 0 or (j+1) % (PATCH_SIZE+1) == 0) { // gap row OR gap column
+				if ((i+1) % (global.PATCH_SIZE+1) == 0 or (j+1) % (global.PATCH_SIZE+1) == 0) { // gap row OR gap column
 					if (mp_grid_get_cell(global.AIGrid, i, j) == -1 && global.unit_grid[# i, j] == noone) { // if no monster here
 						mp_grid_clear_cell(global.AIGrid, i, j);
 					}

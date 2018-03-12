@@ -6,7 +6,7 @@ event_inherited();
 SPEED = 12;
 
 //
-frozen = 0;
+frozen = -1;
 animSpd = 5;
 
 monsterName = " ";

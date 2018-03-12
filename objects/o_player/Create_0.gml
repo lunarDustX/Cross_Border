@@ -18,7 +18,7 @@ state = PLAYER.action;
 // Attribute
 SPEED = 10;
 
-hp = 4;
+hp = 5;
 maxhp = 5;
 
 mana = 2;

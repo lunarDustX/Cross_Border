@@ -15,7 +15,7 @@ for (var i = 1; i <= string_length(_patch_string_data); i++) {
 		_tile_data -= 87;
 	}
 	// set cell
-	var _xcell = _x_patch *PATCH_SIZE + (i-1) mod PATCH_SIZE;
-	var _ycell = _y_patch *PATCH_SIZE + (i-1) div PATCH_SIZE;
+	var _xcell = _x_patch *global.PATCH_SIZE + (i-1) mod global.PATCH_SIZE;
+	var _ycell = _y_patch *global.PATCH_SIZE + (i-1) div global.PATCH_SIZE;
 	tilemap_set(global.tilemap_id, _tile_data, _xcell, _ycell);
 }

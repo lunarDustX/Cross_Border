@@ -3,14 +3,13 @@
 	instance_create_layer(-1, -1, "Instances", o_test);
 //
 // metric
-//#macro CELL_SIZE 16
 #macro CELL_WIDTH 105	
 #macro CELL_HEIGHT 100
 
-#macro PATCH_SIZE 6
 #macro MAP_SIZE 3
 
 #macro MAX_BRIDGE 4
+
 // tile id
 #macro VOID -1 //out of border?
 #macro EMPTY 0
@@ -64,8 +63,8 @@ ds_grid_clear(global.patch_grid, noone);
 global.remap = false;
 global.card_selected = noone;
 
-// set GUI size
-global.view_width = camera_get_view_width(view_camera[0]);
+// set GUI size : 1600 * 1200
+global.view_width = camera_get_view_width(view_camera[0]); 
 global.view_height = camera_get_view_height(view_camera[0]);
 display_set_gui_size(global.view_width, global.view_height);
 //display_set_gui_size(view_wport[0], view_hport[0]);

@@ -8,10 +8,10 @@ var _biome = argument2;
 
 #region no-anim version
 /*
-for (var j = 0; j < PATCH_SIZE; j++) {
-	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
+for (var j = 0; j < global.PATCH_SIZE; j++) {
+	for (var i = 0; i < global.PATCH_SIZE; i++) {
+		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		//var _index = irandom(array_length_2d(tiles_arr, _BIOME) -1);
 		var _depth = CalculateTileDepth(_y);
 		//instance_create_depth(_x, _y, _depth, tiles_arr[_BIOME, _index]);
@@ -26,10 +26,10 @@ for (var j = 0; j < PATCH_SIZE; j++) {
 global.tileList = ds_list_create();
 //global.tileIndex = 0; // in order
 
-for (var j = 0; j < PATCH_SIZE; j++) {
-	for (var i = 0; i < PATCH_SIZE; i++) {
-		var _x = (_xPatch * (PATCH_SIZE+1) + i) *CELL_WIDTH;	
-		var _y = (_yPatch * (PATCH_SIZE+1) + j) *CELL_HEIGHT;
+for (var j = 0; j < global.PATCH_SIZE; j++) {
+	for (var i = 0; i < global.PATCH_SIZE; i++) {
+		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
+		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		var _depth = CalculateTileDepth(_y);		
 		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
 		ds_list_add(global.tileList, _tile);
