@@ -1,4 +1,6 @@
 ///@description convert_normal
+PlaySound(a_convert);
+
 var _x = snap_value(x, CELL_WIDTH);
 var _y = snap_value(y, CELL_HEIGHT);
 // smoke effect

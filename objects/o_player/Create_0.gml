@@ -2,7 +2,7 @@
 event_inherited();
 
 // Magic
-#macro MAGIC_COST 0
+#macro MAGIC_COST 2
 
 // State
 enum PLAYER {

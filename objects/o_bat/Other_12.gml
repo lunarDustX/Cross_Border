@@ -1,5 +1,7 @@
 /// @description move
 if (!moving(xnext, ynext, SPEED)) { // after moving
+	PlaySound(a_land);
+	
 	// update unit grid
 	global.unit_grid[# xpre div CELL_WIDTH, ypre div CELL_HEIGHT] = noone;
 	global.unit_grid[# x div CELL_WIDTH, y div CELL_HEIGHT] = id;

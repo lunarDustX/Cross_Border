@@ -56,10 +56,17 @@ enum BIOME {
 	grave,
 }
 
-// map expand
 InitializeTilesArray();
+
+// map expand
 global.patch_grid = ds_grid_create(MAP_SIZE, MAP_SIZE);
-ds_grid_clear(global.patch_grid, noone);
+if (room == r_game) {
+	ds_grid_clear(global.patch_grid, noone);
+} else if (room == r_tutorial) {
+	ds_grid_clear(global.patch_grid, 0);
+	global.patch_grid[# 1, 1] = noone;
+	global.patch_grid[# 2, 1] = noone;
+}
 global.remap = false;
 global.card_selected = noone;
 

@@ -8,7 +8,8 @@
         "f5cab1c8-57c7-4502-bdfa-2c82fc669279",
         "8cdc7028-43da-467d-bb3c-d056f9408b25",
         "0160c1ad-23ee-4d75-968b-4b56b0b096db",
-        "9a9ffa45-2974-42f9-9d0f-f0ea3ee1c06b"
+        "9a9ffa45-2974-42f9-9d0f-f0ea3ee1c06b",
+        "d0309b4a-7fd4-40e8-8e7c-881a556ca07b"
     ],
     "filterType": "GMObject",
     "folderName": "UI Group",
