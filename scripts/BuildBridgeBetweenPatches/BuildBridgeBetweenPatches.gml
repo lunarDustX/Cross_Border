@@ -8,6 +8,12 @@ var _yPatch1 = argument1;
 var _xPatch2 = argument2;
 var _yPatch2 = argument3;
 
+// out of border
+if (_xPatch1 < 0 || _xPatch1 > MAP_SIZE-1) exit;
+if (_xPatch2 < 0 || _xPatch2 > MAP_SIZE-1) exit;
+if (_yPatch1 < 0 || _yPatch1 > MAP_SIZE-1) exit;
+if (_yPatch2 < 0 || _yPatch2 > MAP_SIZE-1) exit;
+
 if (room == r_tutorial) {
 	if (_xPatch1 != _xPatch2) {
 		var _y = (1 + _yPatch1 *(global.PATCH_SIZE+1)) * CELL_HEIGHT;

@@ -813,7 +813,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/ExpandMiniMap\/ExpandMiniMap.yy",
+                "resourcePath": "scripts\/UpdateMap\/UpdateMap.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2903,7 +2903,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/o_instructionText\/o_instructionText.yy",
+                "resourcePath": "objects\/o_instructionBox\/o_instructionBox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4425,6 +4425,25 @@
                 ],
                 "resourcePath": "views\/ea25c27e-18d2-4ad2-942f-486f9f844189.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eb8006c3-1d88-4bcd-9f5d-225f52f2b2b0",
+            "Value": {
+                "id": "df198118-1f85-4e81-97ab-bd98bcf2c225",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/f_instruction\/f_instruction.yy",
+                "resourceType": "GMFont"
             }
         },
         {

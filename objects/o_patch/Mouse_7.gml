@@ -7,7 +7,8 @@ if (global.remap) exit;
 // update Patch Grid
 patch_type = global.card_selected.biome; 
 image_index = patch_type;  // alpha = 1;
-global.patch_grid[# mx, my] = patch_type + BIGNUM;
+//global.patch_grid[# mx, my] = patch_type + BIGNUM;
+global.patch_grid[# mx, my] = id;
 global.remap = true;
 
 // reset RebornArr
@@ -21,7 +22,7 @@ global.RebornArr[_pn] = 0;
 global.newPatch = _pn;
 
 // graphic
-ExpandMiniMap();
+UpdateMap();
 
 /* 
 with (o_card) {

@@ -17,7 +17,7 @@ if (global.RebornArr[_patchNumner] > 0) { // Only Spawn Once
 	var _y = _yCell * CELL_HEIGHT;
 	
 	var _monster;
-	switch (global.patch_grid[# _xPatch, _yPatch]) {
+	switch (global.patch_grid[# _xPatch, _yPatch].patch_type ) {
 		case BIOME.grass: 
 			_monster = o_ox;
 		break;

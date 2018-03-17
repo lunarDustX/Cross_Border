@@ -28,15 +28,16 @@ with (_firstPatch) {
 	my = _my;
 	patch_type = BIOME.grass; //choose(BIOME.grass, BIOME.snow);
 	image_index = patch_type;
-	ExpandMiniMap();
+	UpdateMap();
 } 
 global.newPatch = _mx + _my * MAP_SIZE;
 instance_deactivate_object(o_patch);
 
 global.discoveredPatch = 1;
 
-global.patch_grid[# _mx, _my] = _firstPatch.patch_type;
-CreateRandomPatch(_mx, _my, global.patch_grid[# _mx, _my]);
+//global.patch_grid[# _mx, _my] = _firstPatch.patch_type;
+global.patch_grid[# _mx, _my] = _firstPatch;
+CreateRandomPatch(_mx, _my, _firstPatch.patch_type);
 
 // PlayerSpawn
 if (room == r_game) {
@@ -51,5 +52,9 @@ instance_create_layer(_x,  _y, "Instances", o_player);
 //
 instance_create_layer(0, 0, "Instances", o_camera);
 instance_create_depth(0, 0, 4900, o_sea);
+
+if (room == r_tutorial) {
+	instance_create_layer(0, 0, "Map", o_instructionBox);	
+}
 
 

@@ -46,7 +46,8 @@ for (var _dy = -1; _dy <= 1; _dy++) {
 	for (var _dx = -1; _dx <= 1; _dx++) {
 		if (_dx * _dy != 0) continue; // 1.diagonal
 		if (_dx == 0 && _dy == 0) continue; // 2.self
-		if (global.patch_grid[# _xPatch+_dx, _yPatch+_dy] > 0 && global.patch_grid[# _xPatch+_dx, _yPatch+_dy] < BIGNUM) { // BIOME.empty = 0
+		//if (global.patch_grid[# _xPatch+_dx, _yPatch+_dy] > 0 && global.patch_grid[# _xPatch+_dx, _yPatch+_dy] < BIGNUM) { // BIOME.empty = 0
+		if (global.patch_grid[# _xPatch+_dx, _yPatch+_dy] != noone) {
 			BuildBridgeBetweenPatches(_xPatch, _yPatch, _xPatch+_dx, _yPatch+_dy);
 		}
 	}

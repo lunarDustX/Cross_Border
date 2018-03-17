@@ -31,7 +31,14 @@ if (!instance_exists(o_card_pickup)) {
 				if (global.discoveredPatch < 2) {
 					alarm[0] = seconds_to_steps(0.5);	
 				} else {
-					room_goto(r_start);	
+					with (o_instructionBox) {
+						if (index < 7) {
+							index = 7;	
+						}
+					}
+					if (keyboard_check_pressed(vk_enter)) {
+						room_goto(r_game);	
+					}
 				}
 			}
 			if (room == r_game) {
