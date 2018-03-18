@@ -1,6 +1,8 @@
 /// @description 
-if (object_index == o_bat && global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT] == noone) {
-	// special case
+var _xCell = x div CELL_WIDTH;
+var _yCell = y div CELL_HEIGHT;
+if (global.tile_grid[# _xCell, _yCell] == noone) {
+	// special case bat?
 } else {
-	mp_grid_clear_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
+	mp_grid_clear_cell(global.AIGrid, _xCell, _xCell);
 }

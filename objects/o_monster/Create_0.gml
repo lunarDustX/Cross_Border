@@ -27,5 +27,5 @@ path = path_add();
 
 lootChance = 0;
 
-// diection
+// random diection
 image_xscale = choose(-1, 1);

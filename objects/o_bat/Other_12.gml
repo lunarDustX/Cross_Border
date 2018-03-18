@@ -9,7 +9,7 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	// update AI Grid 
 	mp_grid_add_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
 	if (global.tile_grid[# xpre div CELL_WIDTH, ypre div CELL_HEIGHT] == noone) {
-		mp_grid_add_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
+		mp_grid_add_cell(global.AIGrid, xpre div CELL_WIDTH, ypre div CELL_HEIGHT);
 	}
 	
 	// reset position vars
@@ -24,7 +24,6 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 			for (var i = 0; i < 20; i++) {
 				if ((i+1) % (global.PATCH_SIZE+1) == 0 or (j+1) % (global.PATCH_SIZE+1) == 0) {
 					if (global.tile_grid[# i, j] == noone) {
-						//show_message(string(i) + " " + string(j)+ " " + string(global.tile_grid[# i, j]));
 						mp_grid_add_cell(global.AIGrid, i, j);
 					}
 				}

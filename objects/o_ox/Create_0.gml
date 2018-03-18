@@ -17,7 +17,7 @@ monsterID = ID_OX;
 hp = 2;
 atk = 1;
 
-lootChance = 0.5;
+lootChance = 0.4;
 normal_loots = [o_heart];
 evil_loots = [];
 

@@ -21,7 +21,9 @@ if (hp <= 0) {
 	instance_destroy();
 	if (global.achievement_convertkill == false) {
 		global.achievement_convertkill = true;
-		show_message("Achievement: convert kill!");
+		with (instance_create_layer(0, 0, "Instances", o_hintBox)) {
+			text = "Achievement: convert kill!";
+		}
 	}
 }
 

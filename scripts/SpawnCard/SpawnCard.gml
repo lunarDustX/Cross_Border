@@ -1,10 +1,13 @@
+#region tutorial
 if (room == r_tutorial) {
 	var _x = o_player.x+ CELL_WIDTH;
 	var _y = o_player.y+ CELL_HEIGHT;
 	var _card = o_card_tutorial;
 	instance_create_layer(_x, _y, "Instances", _card);	
 } 
+#endregion
 
+#region game
 if (room == r_game) {
 	var new_locations = ds_list_create();
 	var _dir;
@@ -20,6 +23,7 @@ if (room == r_game) {
 		var _x = o_player.x+lengthdir_x(CELL_WIDTH, _dir);
 		var _y = o_player.y+lengthdir_y(CELL_HEIGHT, _dir);	
 
+		
 		var _size = ds_list_size(global.card_list);
 		if (_size < 1) show_message("BUG: not enough card");
 
@@ -27,7 +31,9 @@ if (room == r_game) {
 		var _card = global.card_list[|_index];
 		instance_create_layer(_x, _y, "Instances", _card);	
 		ds_list_delete(global.card_list, _index);
+		
 	} else {
 		show_message("BUG: nowhere to spawn card.");	
 	}
 }
+#endregion

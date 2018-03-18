@@ -1,4 +1,4 @@
-/// @description show player state
+/// @description Displays Player State
 
 // compass & setting
 // draw_sprite(s_compass, 0, 24, 1004);
@@ -11,9 +11,9 @@ draw_sprite(s_player_panel, 0, 1326, 976);
 if (hp > 0) {
 	for (var i = 0; i < maxhp; i++) {
 		if (i+1 <= hp) {
-			draw_sprite(s_onehp, 1, 1374+ i*40, 1028);
+			draw_sprite(s_hp, 4, 1374+ i*40, 1028);
 		} else {
-			draw_sprite(s_onehp, 0, 1374+ i*40, 1028);
+			draw_sprite(s_hp, 0, 1374+ i*40, 1028);
 		}
 	}
 }

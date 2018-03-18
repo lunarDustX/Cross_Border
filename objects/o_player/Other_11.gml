@@ -15,12 +15,17 @@ if (!instance_exists(o_action_cue)) {
 if (keyboard_check_released(ord("F"))) {
 	if (mana >= MAGIC_COST) {
 		mana -= MAGIC_COST;
-		//FrozenMagic();	
+		//PlaySound();
 		change_state(PLAYER.magic);
 		if (instance_exists(o_action_cue)) {
 			instance_destroy(o_action_cue);
 		}
 		exit;
+	} else {
+		//PlaySound();
+		with (instance_create_layer(0, 0, "Instances", o_hintBox)) {
+			text = "You dont have enough mana to use this Magic";
+		}
 	}
 }
 #endregion
@@ -39,6 +44,9 @@ if (mouse_check_button_pressed(mb_right)) {
 				instance_destroy(o_action_cue);
 			}
 			exit;
+		} else {
+			show_message("You dont have enough mana to use this Magic");
+			//PlaySound();
 		}
 	}
 }

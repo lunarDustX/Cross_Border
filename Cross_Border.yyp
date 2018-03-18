@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "002f0436-164f-4595-91cd-29248f08aff1",
+            "Value": {
+                "id": "77c546cd-c81a-447c-8816-60c7776a82af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_101\/o_card_grass_101.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "00490c2c-b55c-477d-8ae0-ada57490bc4e",
             "Value": {
                 "id": "020c0377-0d44-4420-946a-84f8b8f1e06b",
@@ -112,6 +131,25 @@
                 ],
                 "resourcePath": "views\/03de66bf-f997-4c6c-be4e-2de50067d4a8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "040fc5b4-b11e-4af7-a343-c45b2bcccbfb",
+            "Value": {
+                "id": "d016413b-0b17-4b82-90a0-4b6d25fc2a67",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_301\/o_card_grave_301.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -340,6 +378,25 @@
                 ],
                 "resourcePath": "views\/0ddd996e-4783-4238-b14e-a94d663cbd9b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "11099a03-725a-45e3-9d8e-b48f182452a2",
+            "Value": {
+                "id": "56a3baf2-c00c-41df-8e90-ebe61ba5ecf7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_103\/o_card_grave_103.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -647,6 +704,25 @@
             }
         },
         {
+            "Key": "1e272af2-9134-4934-9974-1dbf410fc476",
+            "Value": {
+                "id": "dc40b344-f57d-4e75-b21d-1198a68dc6bb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_103\/o_card_grass_103.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e81d214-627c-41c2-aff4-81c558096dc4",
             "Value": {
                 "id": "cda6e2a1-180a-4381-a635-5d2e2237cd0c",
@@ -739,6 +815,25 @@
                 ],
                 "resourcePath": "sprites\/s_vampire\/s_vampire.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "242e3c76-0d37-431c-9f5d-bf6b17b0980c",
+            "Value": {
+                "id": "d270b245-dd88-4f70-977a-b3d6a66117b0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_103\/o_card_snow_103.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1198,6 +1293,25 @@
             }
         },
         {
+            "Key": "3a3b2bc6-1fe6-4e70-9587-05185f18d373",
+            "Value": {
+                "id": "64a83760-4ecd-4c57-ac4c-60c902f572e6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_101\/o_card_snow_101.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b4a3c8c-071e-495a-8373-2d0235a83dc5",
             "Value": {
                 "id": "f1393e81-ba13-4923-a097-32b912da4d35",
@@ -1350,6 +1464,25 @@
             }
         },
         {
+            "Key": "4125121b-f694-45ac-8624-ff2991fa2d74",
+            "Value": {
+                "id": "9ff17183-e42b-4f44-a217-196a9050621f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_301\/o_card_grass_301.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "420175e1-682c-48e0-9507-2f3b2a40dd2c",
             "Value": {
                 "id": "7ad10963-9629-4a95-a5d2-0f02aa7cb7a3",
@@ -1483,6 +1616,25 @@
             }
         },
         {
+            "Key": "4ce0b8d1-cca8-4fb8-b5ea-5eaeb01f836e",
+            "Value": {
+                "id": "f29dc1a3-15ed-44cd-b464-344bee64ced9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_302\/o_card_snow_302.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e7227da-0423-476f-bc37-4965044a95f7",
             "Value": {
                 "id": "66933c33-ab45-40cd-9471-e0494bab817c",
@@ -1521,6 +1673,25 @@
             }
         },
         {
+            "Key": "4ed5297e-fc7a-415e-b335-d09ec59b7b98",
+            "Value": {
+                "id": "e78e18b8-27cb-4ecf-a28a-8c74c5ff196e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_302\/o_card_grave_302.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "508308b7-bb47-40f4-a43c-34b01cd1eb40",
             "Value": {
                 "id": "50570e10-1ec6-4654-965b-9a28328606c9",
@@ -1536,6 +1707,63 @@
                     "default"
                 ],
                 "resourcePath": "objects\/o_tile\/o_tile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5084be75-edf2-4b99-af04-6c940b015a94",
+            "Value": {
+                "id": "b46599d1-bace-4a39-8de5-86f8cb5f0fce",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_201\/o_card_grass_201.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "50c2b90b-a443-4090-a03e-13de4d5ea48d",
+            "Value": {
+                "id": "55871c04-0134-43d7-bd46-0e425d26d6ac",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_301\/o_card_forest_301.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "512e0fcb-ff34-44fc-b73f-b2799226b8bb",
+            "Value": {
+                "id": "03f5118f-5ec1-4dca-8a4a-48938997244b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_201\/o_card_snow_201.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1749,6 +1977,25 @@
             }
         },
         {
+            "Key": "5febec06-c6cf-4700-ace2-3f5ccacdf829",
+            "Value": {
+                "id": "6717eed7-0507-476e-a49e-c4d01bfd9dc1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_102\/o_card_snow_102.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "616abb25-6217-4efd-bff5-de21484e746f",
             "Value": {
                 "id": "091dbdfb-cfae-4af8-bd73-8b0a17b6098d",
@@ -1783,6 +2030,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/o_forestTile\/o_forestTile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "63801122-05c9-4119-9572-529947c2eb9b",
+            "Value": {
+                "id": "e405a461-a06d-4b27-8cd6-73c6821df4d1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_202\/o_card_grass_202.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1936,6 +2202,25 @@
                 ],
                 "resourcePath": "sprites\/s_forestTile\/s_forestTile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6a1a1ba7-7a1a-4fa7-b4e6-9eaed5fccefa",
+            "Value": {
+                "id": "604e30da-fa6b-441e-bc9d-3c70dd50a81a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_202\/o_card_grave_202.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2281,6 +2566,25 @@
             }
         },
         {
+            "Key": "7d176208-f5f1-4c67-b408-706b4947993e",
+            "Value": {
+                "id": "d14e99da-b867-4667-ab1c-92767323e885",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CalculatePatchDepth\/CalculatePatchDepth.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7e093a2a-e51c-4a1e-9a53-f9080d38730b",
             "Value": {
                 "id": "69194750-56fd-4555-96be-2f6774497406",
@@ -2433,6 +2737,25 @@
             }
         },
         {
+            "Key": "86571f0d-023f-452c-98e4-483f30b5d6ad",
+            "Value": {
+                "id": "ccd554a4-8ed3-4be1-8fb8-560b9acdace0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_101\/o_card_grave_101.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "86ab9d97-ad98-4977-8060-4f45c6c7d790",
             "Value": {
                 "id": "42a426d3-6503-477a-9cb7-d153362b3402",
@@ -2528,6 +2851,44 @@
             }
         },
         {
+            "Key": "8a2a3331-141c-4560-870c-7d3599f5992d",
+            "Value": {
+                "id": "e85f4b1b-f645-4db2-9452-b8499e84d854",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_302\/o_card_grass_302.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8a2fdfb9-a1f0-4890-b642-67b11656a968",
+            "Value": {
+                "id": "28be88cf-ddee-4ef4-8e1e-da30efb5a5e5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_hintBox\/o_hintBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8af96280-8fb1-4330-9be8-deee6fde6c54",
             "Value": {
                 "id": "8f5f3b47-3d61-40bb-a76c-133e87c67b8b",
@@ -2620,6 +2981,25 @@
                 ],
                 "resourcePath": "views\/8e148c37-f131-4067-8121-c9b90cc4c721.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8e1d091a-c630-48c8-9192-9e36cd56ce3c",
+            "Value": {
+                "id": "70ce4a89-1bf0-4dac-b0f7-a32e6377c6d0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_101\/o_card_forest_101.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3003,6 +3383,25 @@
             }
         },
         {
+            "Key": "9f538909-6851-463c-9548-8a04d8bf619e",
+            "Value": {
+                "id": "6b22ab55-2287-47f5-b9dc-b0540bdab745",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/s_hp\/s_hp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2402c93-21e4-49a5-b9ea-03e6ecc06a3b",
             "Value": {
                 "id": "17665002-9c0e-4cde-a769-389e13bc54c8",
@@ -3136,9 +3535,9 @@
             }
         },
         {
-            "Key": "abecfb8b-dc6a-4fa4-925e-f69af28d569e",
+            "Key": "aa9e03f8-7829-4696-874f-06313b35ec2b",
             "Value": {
-                "id": "79637c6d-579a-4ef6-8b0f-89c159bea0e2",
+                "id": "66e29237-2c2b-42ad-ac5f-bdb92078b243",
                 "modelName": "GMResourceInfo",
                 "mvc": "1.0",
                 "configDeltaFiles": [
@@ -3150,8 +3549,8 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/s_onehp\/s_onehp.yy",
-                "resourceType": "GMSprite"
+                "resourcePath": "objects\/o_card_snow_202\/o_card_snow_202.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3304,6 +3703,25 @@
                 ],
                 "resourcePath": "views\/b283061c-5af8-4ce3-aabc-f70211d19789.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2eb6188-47b7-4ff2-8dde-15b3a45829c5",
+            "Value": {
+                "id": "6ffd7086-eaa3-4dea-9090-d91933f6d8f9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_201\/o_card_grave_201.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3475,6 +3893,25 @@
                 ],
                 "resourcePath": "views\/bad4646c-4129-45bc-a9b3-dc318cc59bcc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bd824a4c-2006-4980-a63a-963a178fffb1",
+            "Value": {
+                "id": "0863e7e5-494f-4d17-8456-fd637cdf50c1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_102\/o_card_forest_102.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3668,6 +4105,44 @@
             }
         },
         {
+            "Key": "c3493473-d489-435d-b1c8-721815173ffd",
+            "Value": {
+                "id": "64102361-5e87-493a-8ec3-e8a4bad68329",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_202\/o_card_forest_202.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c40a5437-0b74-44c5-bbae-17be7d8d58e7",
+            "Value": {
+                "id": "2fa13325-abaf-49f7-a127-28efd999d651",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_103\/o_card_forest_103.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5becb80-23d3-4347-b950-06729054dd9e",
             "Value": {
                 "id": "ab2e0787-8de9-4701-99d5-c9a89a360385",
@@ -3760,6 +4235,25 @@
                 ],
                 "resourcePath": "scripts\/OpenMap\/OpenMap.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c88a125e-97d3-4de8-9bba-72c828b696cc",
+            "Value": {
+                "id": "c6c14c09-6226-4864-a7a1-0dc544b99f7e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grave_102\/o_card_grave_102.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4219,6 +4713,44 @@
             }
         },
         {
+            "Key": "dee482d5-aa8f-4551-9a3e-e666c29b7363",
+            "Value": {
+                "id": "2611d1ec-87df-4a69-b83b-241f950f06f8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_201\/o_card_forest_201.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dfa4c994-abcb-4f15-b4e7-fa06542507b1",
+            "Value": {
+                "id": "a8882b69-e9b0-40d9-a2e0-a9265f6299d1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_grass_102\/o_card_grass_102.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dfae13eb-0c12-47e3-9b4c-3fb6daab520f",
             "Value": {
                 "id": "10d10f6a-760f-4215-914d-050a89a4d26e",
@@ -4409,6 +4941,25 @@
             }
         },
         {
+            "Key": "e8558d26-9f98-4327-b1eb-2f9d5fdf0b52",
+            "Value": {
+                "id": "75c2c471-127f-4250-a14a-327fb0bff7ab",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_snow_301\/o_card_snow_301.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ea25c27e-18d2-4ad2-942f-486f9f844189",
             "Value": {
                 "id": "f9735623-056a-4b68-9601-c6519fb968b2",
@@ -4519,6 +5070,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/o_card_grave_2\/o_card_grave_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f31699b8-5cdb-46d4-a373-936554288fc2",
+            "Value": {
+                "id": "076bd81b-0f9a-4dae-bd8f-db8baa9795aa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_card_forest_302\/o_card_forest_302.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4711,6 +5281,25 @@
                 "resourcePath": "views\/fe6497ae-5309-4838-a3d8-09c3cbf0661f.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe655690-2994-4c8f-a679-1673379a088c",
+            "Value": {
+                "id": "f90addf4-9719-48f5-bbcb-08e56beb44a9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/InitializeCardsArray\/InitializeCardsArray.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -4737,6 +5326,7 @@
         "79bcf427-3e84-4b67-bfef-6dbc1a4558bb",
         "5bc4373f-0cdd-4b22-afbc-3cef2160bebf",
         "fa4cb282-35eb-4a2a-829b-e19fdf25d757",
+        "fe655690-2994-4c8f-a679-1673379a088c",
         "b55a2436-9870-4092-9cb3-6b8de297d52d",
         "7ade3a8b-474c-404f-a4bb-0532d0206964",
         "0c8e54eb-f342-4d80-a2e2-ad987df2f3a4",
@@ -4747,6 +5337,7 @@
         "1c93892e-795e-438c-95b5-3358da426193",
         "b536e139-cae1-4883-b37f-78cd23f1d713",
         "2751f039-9956-486e-ae76-5d91ddbefad5",
+        "7d176208-f5f1-4c67-b408-706b4947993e",
         "3a1c125b-ceb2-4773-9627-3963a809a7cf",
         "1d07f47e-8a3d-4e32-8fdc-3969243f28a8",
         "05f5bcce-460c-4cf0-8fb5-dd8b285e20c1",

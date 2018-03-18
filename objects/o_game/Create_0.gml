@@ -39,6 +39,7 @@ global.list_index = 0;
 
 // Card List
 InitializeCardList();
+InitializeCardsArray();
 
 // game state
 enum TURN {
@@ -51,9 +52,9 @@ enum BIOME {
 	empty,
 	grass,
 	snow,
-	desert,
 	forest,
 	grave,
+	desert,
 }
 
 InitializeTilesArray();

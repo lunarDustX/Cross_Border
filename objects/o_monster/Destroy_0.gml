@@ -6,12 +6,12 @@ event_inherited();
 // destroy path
 path_delete(path);
 
-// effect destroy
+// destroy effect 
 with (o_effect) {
 	if (parent == other.id) instance_destroy();	
 }
 
-// loot
+#region loot
 if (random(1) <= lootChance) {
 	var _loots = [];
 	if (normal) {
@@ -24,16 +24,18 @@ if (random(1) <= lootChance) {
 		instance_create_layer(x, y, "Instances", _loots[i]);
 	}
 }
+#endregion
 
-// Unlock monsterLog
+#region Unlock monsterLog
 if (monsterID >= 0) {
 	if (o_ui_control.monsterLogFound_arr[monsterID] == false) {
 		show_debug_message("monsterLog Unlocked: " + monsterName);
 		o_ui_control.monsterLogFound_arr[monsterID] = true;
 	}
 }
+#endregion
 
-// increase mana
+#region increase mana
 if (object_index == o_snowman) {
 	with (o_player) {
 		mana = min(maxmana, mana+2);	
@@ -53,4 +55,5 @@ if (object_index == o_snowman) {
 		}
 	}
 }
+#endregion
 

@@ -1,5 +1,5 @@
 /// @description
-//show_message("patch clicked.");
+//show_debug_message("patch clicked.");
 if (global.card_selected == noone) exit; // not selected
 if (patch_type > 0) exit; // already exist
 if (global.remap) exit;
@@ -23,6 +23,14 @@ global.newPatch = _pn;
 
 // graphic
 UpdateMap();
+
+
+// new method
+instance_destroy(global.card_selected);
+var _cards = global.CardsArr[patch_type, patch_depth];
+var _index = irandom(array_length_1d(_cards)-1);
+var _card = _cards[_index];
+global.card_selected = instance_create_layer(-BIGNUM, 0, "Instances", _card);
 
 /* 
 with (o_card) {

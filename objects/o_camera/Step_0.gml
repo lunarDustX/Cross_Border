@@ -7,7 +7,7 @@ var _targetY = o_player.y -global.view_height/2;//camera_get_view_height(view_ca
 
 // Move the camera
 
-x = lerp(x, _targetX, 0.08); //show_message(string(x)); 
+x = lerp(x, _targetX, 0.08); 
 y = lerp(y, _targetY, 0.08);
 camera_set_view_pos(view_camera[0], x+random_range(-shake, shake), y+random_range(-shake, shake));
 

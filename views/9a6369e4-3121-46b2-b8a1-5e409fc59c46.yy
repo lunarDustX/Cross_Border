@@ -6,7 +6,14 @@
     "children": [
         "de638160-eefd-4bd1-9a74-349a822e1d78",
         "616abb25-6217-4efd-bff5-de21484e746f",
-        "132f81c1-6d8c-487c-89f3-c100ab59bf9c"
+        "132f81c1-6d8c-487c-89f3-c100ab59bf9c",
+        "3a3b2bc6-1fe6-4e70-9587-05185f18d373",
+        "5febec06-c6cf-4700-ace2-3f5ccacdf829",
+        "242e3c76-0d37-431c-9f5d-bf6b17b0980c",
+        "512e0fcb-ff34-44fc-b73f-b2799226b8bb",
+        "aa9e03f8-7829-4696-874f-06313b35ec2b",
+        "e8558d26-9f98-4327-b1eb-2f9d5fdf0b52",
+        "4ce0b8d1-cca8-4fb8-b5ea-5eaeb01f836e"
     ],
     "filterType": "GMObject",
     "folderName": "Snow Cards",

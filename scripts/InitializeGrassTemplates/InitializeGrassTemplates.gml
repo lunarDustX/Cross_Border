@@ -5,4 +5,3 @@ ds_list_add(global.grass_templates_list,
 ds_list_add(global.grass_templates_list,
 			"033330222222333333222222333333022220");
 			
-//show_message(ds_list_find_value(global.grass_templates_list, 0));
