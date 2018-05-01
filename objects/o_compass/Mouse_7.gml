@@ -1,5 +1,6 @@
-/// @description Insert 
-show_debug_message("compass clicked.");
+/// @description  
+if (!visible) exit;
+
 if (!global.map) {
 	OpenMap();	
 } else {

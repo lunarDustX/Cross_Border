@@ -1,30 +1,7 @@
 /// @description action
-if (!instance_exists(o_player)) exit;
+event_inherited();
 
-#region ICE
-if (frozen > 0) {
-	//show_debug_message(monsterName +" frozen");
-	frozen--;
-	if (frozen == 0) {
-		with (o_ice) {
-			if (parent == other.id) {
-				image_index = 1;
-			}
-		}
-	} 
-	next_unit();
-	change_state(BAT.wait);
-	exit;
-} else {
-	frozen = -1;
-	with (o_ice) {
-		if (parent == other.id) {
-			instance_destroy();	
-			parent.image_speed = 1;
-		}
-	}
-}
-#endregion
+if (!action) exit;
 
 if (target != noone) { // CHASE OR ATTACK
 	// Attack
@@ -40,9 +17,7 @@ if (target != noone) { // CHASE OR ATTACK
 	
 	// Move
 	// remove self before finding a path
-	//if (global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT]) {
 	mp_grid_clear_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
-	//}
 	
 	// 1. Basic Move Method
 	var _dir = snap_value(point_direction(x, y, target.x, target.y), 90);

@@ -7,6 +7,7 @@
 // 0. state panel
 draw_sprite(s_player_panel, 0, 1326, 976);
 
+/*
 // 1. hp
 if (hp > 0) {
 	for (var i = 0; i < maxhp; i++) {
@@ -17,6 +18,7 @@ if (hp > 0) {
 		}
 	}
 }
+*/
 
 // 2. Mana
 draw_sprite(s_mana, mana, 1420, 1073);

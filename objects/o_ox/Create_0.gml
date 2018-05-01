@@ -21,8 +21,8 @@ lootChance = 0.4;
 normal_loots = [o_heart];
 evil_loots = [];
 
-bad_tile_arr = [VOID, EMPTY, RIVER];
-target_arr = [o_player];
+bad_tiles_arr = [];
+targets_arr = [o_player];
 
 // Convert
 delta_hp = 1;

@@ -1,5 +1,5 @@
 /// @description 
 text = "";
-alpha = 0.8;
+alpha = 1;
 time = 0;
 alarm[0] = room_speed;

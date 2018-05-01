@@ -1,12 +1,15 @@
 /// @description 
-/* monster number
-draw_text(10, 10, "monster: " + string(instance_number(o_monster)));
-*/
+
+//draw_text(20, 20, "TURN: " + string(o_game.state));
 
 /*
-var _size = ds_list_size(global.unit_list);
-draw_text(10, 10, string(_size));
+// mana
+if (instance_exists(o_player)) {
+	var _t = o_player.abc;
+	draw_text(20, 20, "abc: " + string(_t));
+}
 */
 
-/*
-draw_text(10, 10, "cards: " + string(instance_number(o_card_pickup)));
+if (instance_exists(o_player)) {
+	draw_text(20, 20, "webbed: " + string(o_player.webbed));	
+}

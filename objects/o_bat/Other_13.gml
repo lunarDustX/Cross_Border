@@ -2,22 +2,26 @@
 if (!moving(xnext, ynext, SPEED*2)) { // arrived
 	change_state(BAT.atk_back);
 	if (target) {
-		audio_emitter_pitch(global.audio_em, random_range(0.8, 1.2));
-		audio_play_sound_on(global.audio_em, a_hurt, false, 5);
-		
-		target.hp -= atk;
-		with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
-			textColor = c_red;
-			text = "-" + string(other.atk);
+		var _m = random(1);
+		if (_m < target.miss_rate) {
+			// MISS	
+			with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
+				textColor = c_lime;
+				text = "MISS";
+			}
+		} else {
+			// HIT
+			PlaySound(a_hurt);
+			target.hp -= atk;
+			with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
+				textColor = c_red;
+				text = "-" + string(other.atk);
+			}
 		}
 		
 		// drink blood
-		if (sprite_index == s_vampire && irandom(2) == 2) { // 0.3333333
-			hp++;
-			with (instance_create_layer(x+CELL_WIDTH/2, y-CELL_HEIGHT/2, "Instances", o_text)) {
-				textColor = c_lime;
-				text = "+1";
-			}	
+		if (sprite_index == s_vampire && irandom(1) < 0.34) { // 0.3333333
+			xyz = true;	
 		}
 		
 		set_shake(target, 4, seconds_to_steps(.25));

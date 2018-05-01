@@ -1,6 +1,8 @@
 /// @description Find visual cue for actions
-bad_tile_arr = o_player.bad_tile_arr;
 
+//bad_tiles_arr = o_player.bad_tiles_arr;
+
+// 0.no action 1.move 2.attack
 for (var j=0; j<3; j++) {
 	for (var i=0; i<3; i++) {
 		if (j==1 && i==1) continue;
@@ -8,7 +10,7 @@ for (var j=0; j<3; j++) {
 		var _y = (y-CELL_HEIGHT)+j*CELL_HEIGHT;
 		active_cues[i, j] = grid_place_free(_x, _y) && point_distance(x, y, _x, _y) < (CELL_WIDTH + 1);
 		var _monster = global.unit_grid[# _x div CELL_WIDTH, _y div CELL_HEIGHT];
-		if (_monster != noone && is_in_array(_monster.object_index, o_player.target_arr)) {
+		if (_monster != noone && is_in_array(_monster.object_index, o_player.targets_arr)) {
 			active_cues[i, j] = 2;
 		}
 	}

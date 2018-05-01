@@ -1,2 +1,2 @@
-/// @description go back to game
-//ExitMap();
+/// @description back to game
+ExitMapAfterPlacing();

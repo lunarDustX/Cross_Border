@@ -32,7 +32,8 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	}
 	
 	// convert or not
-	UpdateMonsterStateAfterMoving();
+	var _convert = UpdateMonsterStateAfterMoving();
+	if (_convert) exit;
 	
 	// change state
 	moves--;

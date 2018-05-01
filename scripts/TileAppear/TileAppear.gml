@@ -2,7 +2,7 @@
 var _index = argument0;
 var _tile = global.tileList[|_index];
 
-/* in order version
+/* appear in order version
 with (_tile) {
 	y -= BIGNUM;
 	targetY = y-TILE_UP_DIS;	

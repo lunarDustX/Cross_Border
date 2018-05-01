@@ -15,4 +15,7 @@ if (normal != _normal) {
 	} else {
 		convert_evil();	
 	}
+	return true;
+} else {
+	return false;	
 }

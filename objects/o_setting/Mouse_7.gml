@@ -1,3 +1,8 @@
 /// @description 
-show_debug_message(string(global.setting));
-global.setting = !global.setting;
+if (!visible) exit;
+
+if (global.setting) {
+	CloseSetting();
+} else {
+	OpenSetting();	
+}

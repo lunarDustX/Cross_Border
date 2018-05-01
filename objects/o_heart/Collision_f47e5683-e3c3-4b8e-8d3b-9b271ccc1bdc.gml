@@ -14,7 +14,18 @@ if (other.state == PLAYER.wait) {
 		text = "+1";
 	}
 	// sound
-	audio_play_sound(a_hp, 5, false);	
+	PlaySound(a_hp);
+	
+	// effect
+	with (o_player) {
+		repeat(10) {
+			instance_create_layer(x+random(CELL_WIDTH), y+random(CELL_HEIGHT), "Instances", o_heal_effect);
+		}
+	}
+	
+	//with (other) {
+	//	change_state(PLAYER.heal);	
+	//}
 }
 
 

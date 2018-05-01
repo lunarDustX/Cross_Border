@@ -17,17 +17,21 @@ if (sprite_index != evil_sprite) {
 // data
 hp += delta_hp;
 atk += delta_atk;
-moves = 0;
-//moves += delta_move;
+
+
 
 if (hp <= 0) {
 	instance_destroy();
+	next_unit();
 	if (global.achievement_convertkill == false) {
 		global.achievement_convertkill = true;
-		with (instance_create_layer(0, 0, "Instances", o_hintBox)) {
-			text = "Achievement: convert kill!";
+		with (create_textbox_at_center("新成就：转换击杀！")) {
+			alarm[0] = seconds_to_steps(1.0);	
 		}
 	}
 	//show_message(string(ds_list_size(global.unit_list)));
+} else {
+	next_unit();
+	change_state(CREATURE.wait);	
 }
 

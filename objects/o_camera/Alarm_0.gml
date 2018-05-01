@@ -1,2 +1,2 @@
-/// @description camera lock
+/// @description camera unlock
 cameraLock = false;

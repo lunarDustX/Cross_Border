@@ -1,4 +1,6 @@
 /// @description Check Input
+
+#region MonsterLog
 if (global.monsterLog) {
 	if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))) {
 		//monsterLogIndex = (monsterLogIndex + 1) % monsterAmount;	
@@ -19,14 +21,31 @@ if (global.monsterLog) {
 		}	
 	}
 }
+#endregion
 
-// close map
-if (global.map) {
-	if (keyboard_check_pressed(vk_escape)) {
+#region ESC
+if (keyboard_check_pressed(vk_escape)) {
+	/*
+	if (global.map) {
+		// close map
 		if (global.remap) {
 			ExitMapAfterPlacing();
 		} else {
-			show_debug_message("Instruction: place the card");	
+		
 		}
 	}
+	*/
+	
+	if (global.setting) {
+		CloseSetting();
+	}
 }
+#endregion
+
+#region TAB
+if (keyboard_check_pressed(vk_tab)) {
+	if (instance_exists(o_player)) {
+		global.stats = !global.stats;	
+	}
+}
+#endregion

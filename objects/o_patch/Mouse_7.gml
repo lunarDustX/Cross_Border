@@ -24,7 +24,6 @@ global.newPatch = _pn;
 // graphic
 UpdateMap();
 
-
 // new method
 instance_destroy(global.card_selected);
 var _cards = global.CardsArr[patch_type, patch_depth];
@@ -32,16 +31,5 @@ var _index = irandom(array_length_1d(_cards)-1);
 var _card = _cards[_index];
 global.card_selected = instance_create_layer(-BIGNUM, 0, "Instances", _card);
 
-/* 
-with (o_card) {
-	if (id == global.card_selected) { // hide the card
-		ui_y = BIGNUM;	
-	} else {
-		ds_list_add(global.card_list, object_index); 
-		instance_destroy();	// destroy extra cards
-	}
-}
-*/
-
 // go back
-//alarm[11] = seconds_to_steps(1.0);
+alarm[11] = seconds_to_steps(1.6);

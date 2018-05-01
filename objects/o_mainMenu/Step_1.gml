@@ -1,6 +1,6 @@
 /// @description 
 if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
-	if (index < 2) {
+	if (index < 1) {
 		index++;
 		PlaySound(a_select);
 	}
@@ -21,7 +21,8 @@ if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
 		break;
 		
 		case 1:
-			room_goto(r_tutorial);
+			//room_goto(r_tutorial);
+			game_end();
 		break;
 		
 		case 2:

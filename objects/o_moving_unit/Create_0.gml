@@ -26,11 +26,18 @@ ynext = 0;
 xpre = x;
 ypre = y;
 
-target_arr = [];
+targets_arr = [];
 target = noone;
 fov = 4;
 
-bad_tile_arr = [VOID, EMPTY];
+bad_tiles_arr = [];
+
+critical_rate = 0;
+miss_rate = 0;
+
+// 
+webbed = false;
+myWeb = noone;
 
 
 

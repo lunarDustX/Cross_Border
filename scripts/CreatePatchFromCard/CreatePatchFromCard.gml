@@ -39,19 +39,45 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
 		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		
-		// empty tile 
-		if (irandom(50) == 0 && room != r_tutorial) {
-			mp_grid_add_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);	
-			continue;
+		// generate empty tiles randomly
+		if (random(1) <= 0.04 && room != r_tutorial) {
+			var _monsterHere = false;
+			for (var k = 0; k < _card.monsterNumber; k++) {
+				var pos = _card.monster_grid[# k, 1];
+				if (pos[0] == i && pos[1] == j) {
+					_monsterHere = true;
+					break;
+				end;
+			}
+			if (_monsterHere == false) { // make it empty
+				mp_grid_add_cell(global.AIGrid, _x div CELL_WIDTH, _y div CELL_HEIGHT);	
+				continue;
+			}
 		}
-		
-		// create tile
+
+		// make biome stiles
 		var _depth = CalculateTileDepth(_y);		
 		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
 		ds_list_add(global.tileList, _tile);
+		
+		// gernerate trees randomly
+		if (random(1) <= 0.04) {
+			var _monsterHere = false;
+			for (var k = 0; k < _card.monsterNumber; k++) {
+				var pos = _card.monster_grid[# k, 1];
+				if (pos[0] == i && pos[1] == j) {
+					_monsterHere = true;
+					break;
+				}
+			}
+			if (_monsterHere) continue;
+			with (instance_create_depth(_x, _y, _depth-1, o_web)) {
+				parentTile = _tile;	
+			}
+		}
 	}
 }
-//TileAppear(global.tileIndex);
+
 var _index = irandom(ds_list_size(global.tileList)-1);
 TileAppear(_index);
 

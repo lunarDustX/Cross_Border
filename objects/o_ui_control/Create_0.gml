@@ -22,11 +22,23 @@ imageIndex[3] = 0;
 imageIndex[4] = 0;
 #endregion
 
+// Player HP
+for (var i = 0; i < 5; i++) {
+	with (instance_create_depth(1374 + i*40, 1028, depth-1, o_hp)) {
+		index = i+1;
+		image_speed = 0;
+		image_index = image_number-1;
+	}
+}
+
+// Buttons
 instance_create_depth(24, 1004, depth-1, o_compass);
-instance_create_depth(26, 1110, depth-2, o_setting);
+instance_create_depth(57, 1141, depth-2, o_setting);
+
+instance_create_depth(global.view_width/2+50, global.view_height-100, depth-1, o_freeze_magic);
 
 // Monster Log
-#macro monsterAmount 9
+#macro monsterAmount 11
 global.monsterLog = false;
 monsterLogIndex = 0;
 monsterLogFound_arr = array_create(monsterAmount, false);
@@ -43,10 +55,12 @@ monsterLogSprites_arr = array_create(monsterAmount, s_monsterNotFound);
 #macro ID_SKELETON_A 7
 #macro ID_SKELETON_B 8
 #macro ID_SKELETON_C 9
+#macro ID_GHOST 10
 
 // map & setting
 global.map = false;
 global.setting = false;
 
+global.stats = false;
 
 					  

@@ -8,7 +8,7 @@ monster_grid = ds_grid_create(monsterNumber, 2);
 monster_grid[# 0, 0] = o_zombie;
 monster_grid[# 0, 1] = [2, 2];
 
-monster_grid[# 1, 0] = o_zombie;
+monster_grid[# 1, 0] = o_ghost;
 monster_grid[# 1, 1] = [3, 3];
 
 

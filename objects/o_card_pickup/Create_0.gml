@@ -1,8 +1,9 @@
 /// @description 
 // fall effect
 height = 800;
-grav = 4;
+grav = 3;
 vspd = 0;
+onGround = false;
 
 // floating effect
 floating = false;

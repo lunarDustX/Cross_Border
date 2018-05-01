@@ -11,21 +11,18 @@ enum SNOWMAN {
 }
 
 // Attributes
-normal_loots = [o_heart];
-evil_loots = [];
-
-bad_tile_arr = [VOID, EMPTY, RIVER];
-target_arr = [o_player];
+bad_tiles_arr = [];
+targets_arr = [o_player];
 
 // Convert
 monsterName = "snow-snowman";
 monsterID = ID_SNOWMAN_BIG;
 
-hp = 4;
+hp = 3;
 atk = 1;
 moves = 1;
 
-delta_hp = -2;
+delta_hp = -1;
 delta_atk = 0;
 delta_moves = 1;
 

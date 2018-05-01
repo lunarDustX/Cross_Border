@@ -2,6 +2,7 @@
 // Inherit the parent event
 event_inherited();
 
+xyz = false;
 enum BAT {
 	wait,
 	action,
@@ -11,7 +12,7 @@ enum BAT {
 }
 
 // Attributes
-monsterName = "bat-vampire";
+monsterName = "bampire";
 monsterID = ID_BAT;
 
 hp = 1;
@@ -21,8 +22,8 @@ lootChance = 0.7;
 normal_loots = [];
 evil_loots = [o_heart];
 
-bad_tile_arr = [VOID, EMPTY, RIVER];
-target_arr = [o_player];
+bad_tiles_arr = [];
+targets_arr = [o_player];
 
 /*
 // Anims
@@ -35,7 +36,7 @@ delta_hp = 1;
 delta_atk = 1;
 delta_move = -1;
 
-hp = 2;
+hp = 1;
 atk = 1;
 moves = 2;
 

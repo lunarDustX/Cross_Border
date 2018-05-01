@@ -24,18 +24,21 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 #region anim version
 
 global.tileList = ds_list_create();
-//global.tileIndex = 0; // in order
 
 for (var j = 0; j < global.PATCH_SIZE; j++) {
 	for (var i = 0; i < global.PATCH_SIZE; i++) {
 		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
 		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
-		var _depth = CalculateTileDepth(_y);		
-		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
+		var _depth = CalculateTileDepth(_y);	
+		//if (random(1) <= 0.3) {
+		//	var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  o_waterTile);
+		//} else {
+			var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
+		//}
+		
 		ds_list_add(global.tileList, _tile);
 	}
 }
-//TileAppear(global.tileIndex); // in order
 var _index = irandom(ds_list_size(global.tileList)-1);
 TileAppear(_index);
 

@@ -1,10 +1,9 @@
 /// @description 
-if (o_game.state == TURN.computer) exit;
 
 event_user(state);
 
-// Update the position & depth
-//patch_number = calculate_patch_number(x, y);
+if (o_game.state == TURN.computer) exit;
+
 depth = -y;
 
 

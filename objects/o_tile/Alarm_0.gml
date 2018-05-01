@@ -19,7 +19,7 @@ if (_size > 0) {
 } else {
 	ds_list_destroy(global.tileList);
 	
-	with (o_camera) { // unlock camera
+	with (o_camera) { // unlock camera in 2 seconds
 		alarm[0] = seconds_to_steps(2.0); 	
 	}
 }

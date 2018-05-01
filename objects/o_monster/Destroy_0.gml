@@ -1,7 +1,9 @@
 /// @description 
-
-// Inherit the parent event
 event_inherited();
+
+// remove from active enimy list
+var _index = ds_list_find_index(global.unit_list, id);
+ds_list_delete(global.unit_list, _index);
 
 // destroy path
 path_delete(path);
@@ -11,20 +13,8 @@ with (o_effect) {
 	if (parent == other.id) instance_destroy();	
 }
 
-#region loot
-if (random(1) <= lootChance) {
-	var _loots = [];
-	if (normal) {
-		_loots = normal_loots;
-	} else {
-		_loots = evil_loots;
-	}
-	
-	for (var i = 0; i < array_length_1d(_loots); i++) {
-		instance_create_layer(x, y, "Instances", _loots[i]);
-	}
-}
-#endregion
+// death effect
+instance_create_layer(x, y, "Instances", o_death_effect);
 
 #region Unlock monsterLog
 if (monsterID >= 0) {
@@ -36,24 +26,9 @@ if (monsterID >= 0) {
 #endregion
 
 #region increase mana
-if (object_index == o_snowman) {
-	with (o_player) {
-		mana = min(maxmana, mana+2);	
-		with (instance_create_layer(x +CELL_WIDTH/2, y -CELL_HEIGHT/2, "Instances", o_text)) {
-			vspeed = -8;
-			textColor = c_blue;
-			text = "+2";
-		}
-	}
-} else {
-	with (o_player) {
-		mana = min(maxmana, mana+1);
-		with (instance_create_layer(x +CELL_WIDTH/2, y -CELL_HEIGHT/2, "Instances", o_text)) {
-			vspeed = -8;
-			textColor = c_blue;
-			text = "+1";
-		}
-	}
+with (o_player) {
+	abc = true;	
 }
 #endregion
 
+global.kills++;

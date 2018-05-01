@@ -2,8 +2,7 @@
 if (!moving(xnext, ynext, SPEED*2)) { // arrived
 	change_state(SHEEP.atk_back);
 	if (target) {
-		audio_emitter_pitch(global.audio_em, random_range(0.8, 1.2));
-		audio_play_sound_on(global.audio_em, a_hurt, false, 5);
+		PlaySound(a_hurt);
 		//var _damage = att;
 		//if (_is_player && irandom(4) == 4) _damage+=1;
 		target.hp -= atk;

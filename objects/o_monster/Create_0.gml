@@ -3,11 +3,13 @@
 // Inherit the parent event
 event_inherited();
 
+action = true;
+
 SPEED = 12;
 
 //
 frozen = -1;
-animSpd = 5;
+myIce = noone;
 
 monsterName = " ";
 monsterID = -1;

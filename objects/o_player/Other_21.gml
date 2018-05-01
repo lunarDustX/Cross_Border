@@ -1,4 +1,4 @@
-/// @description Magic
+/// @description magic
 if (sprite_index != s_player_magic) {
 	image_index = 0;
 	sprite_index = s_player_magic;

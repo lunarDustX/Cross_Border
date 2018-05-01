@@ -1,7 +1,12 @@
 /// @description
+
 // TEST
 	instance_create_layer(-1, -1, "Instances", o_test);
+	
+	//window_set_cursor(cr_none);
+	//cursor = noone;
 //
+
 // metric
 #macro CELL_WIDTH 105	
 #macro CELL_HEIGHT 100
@@ -19,7 +24,7 @@
 #macro BIGNUM 2002
 
 // audio
-global.audio_em = audio_emitter_create();
+mute = false;
 
 // unit_grid
 global.unit_grid = ds_grid_create(20, 20);
@@ -76,6 +81,7 @@ global.view_width = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
 display_set_gui_size(global.view_width, global.view_height);
 //display_set_gui_size(view_wport[0], view_hport[0]);
+
 
 
 //tilemap 

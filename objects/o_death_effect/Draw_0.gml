@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, image_index, x+ CELL_WIDTH/2, y+CELL_HEIGHT/2);

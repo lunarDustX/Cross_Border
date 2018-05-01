@@ -11,17 +11,14 @@ enum ZOMBIE {
 }
 
 // Attributes
-monsterName = "zombie-?";
+monsterName = "zomleton";
 monsterID = ID_ZOMBIE;
 
-hp = 2;
+hp = 4;
 atk = 1;
 
-normal_loots = [o_heart];
-evil_loots = [];
-
-bad_tile_arr = [VOID, EMPTY, RIVER];
-target_arr = [o_player];
+bad_tiles_arr = [];
+targets_arr = [o_player];
 
 // Convert
 normal_sprite = s_zombie;
@@ -29,20 +26,20 @@ evil_sprite = choose(s_skeleton_axe, s_skeleton_hammer, s_skeleton_sword);
 
 switch (evil_sprite) {
 	case s_skeleton_axe:
-		delta_hp = 0;
+		delta_hp = -2;
 		delta_atk = 1;
 		delta_moves = 1;
 	break;
 	
 	case s_skeleton_hammer:
-		delta_hp = -1;
+		delta_hp = -3;
 		delta_atk = 1;
 		delta_moves = 1;
 	break;
 	
 	case s_skeleton_sword:
-		delta_hp = 0;
-		delta_atk = 2;
+		delta_hp = -2;
+		delta_atk = 1;
 		delta_moves = 0;
 	break;
 }

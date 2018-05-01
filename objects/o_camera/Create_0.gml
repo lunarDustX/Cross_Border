@@ -1,4 +1,4 @@
-/// @description
+/// @description Vars
 shake = 0;
 cameraLock = false;
 

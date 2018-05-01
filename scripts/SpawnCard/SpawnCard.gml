@@ -9,6 +9,7 @@ if (room == r_tutorial) {
 
 #region game
 if (room == r_game) {
+	
 	var new_locations = ds_list_create();
 	var _dir;
 	for (_dir=0; _dir<360; _dir+=90) {
@@ -20,9 +21,12 @@ if (room == r_game) {
 	var _list_size = ds_list_size(new_locations);
 	if (_list_size > 0) { // select a direction
 		_dir = new_locations[| irandom(_list_size-1)];
+	
 		var _x = o_player.x+lengthdir_x(CELL_WIDTH, _dir);
 		var _y = o_player.y+lengthdir_y(CELL_HEIGHT, _dir);	
-
+	
+		//var _x = o_player.x;// + CELL_WIDTH;
+		//var _y = o_player.y;
 		
 		var _size = ds_list_size(global.card_list);
 		if (_size < 1) show_message("BUG: not enough card");

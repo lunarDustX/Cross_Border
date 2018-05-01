@@ -2,6 +2,16 @@
 if (instance_exists(o_gameover)) exit;
 if (o_camera.cameraLock) exit;
 
+RestoreMana();
+
+// webbed
+if (webbed) {
+	if (!instance_exists(o_web_button)) {
+		instance_create_depth(global.view_width/2, 400, depth-1, o_web_button);
+	} 
+	exit;
+}
+
 #region action cue
 
 if (!instance_exists(o_action_cue)) {
@@ -12,7 +22,7 @@ if (!instance_exists(o_action_cue)) {
 
 // ACTION
 #region Frozen Magic
-if (keyboard_check_released(ord("F"))) {
+if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("F"))) {
 	if (mana >= MAGIC_COST) {
 		mana -= MAGIC_COST;
 		//PlaySound();
@@ -23,19 +33,20 @@ if (keyboard_check_released(ord("F"))) {
 		exit;
 	} else {
 		//PlaySound();
-		with (instance_create_layer(0, 0, "Instances", o_hintBox)) {
-			text = "You dont have enough mana to use this Magic";
+		with (create_textbox_at_center("法力不足")) {
+			alarm[0] = seconds_to_steps(1.0);	
 		}
 	}
 }
 #endregion
+
 #region Teleport Magic
 if (mouse_check_button_pressed(mb_right)) {
 	var _x = snap_value(mouse_x, CELL_WIDTH);
 	var _y = snap_value(mouse_y, CELL_HEIGHT);
 	if (grid_place_free(_x, _y)) {
-		if (mana >= MAGIC_COST) { // Teleport
-			mana -= MAGIC_COST;
+		if (mana >= 1) { // Teleport
+			mana -= 1;
 			x = _x;
 			y = _y;
 			UpdatePlayerStateAfterMoving();
@@ -45,46 +56,19 @@ if (mouse_check_button_pressed(mb_right)) {
 			}
 			exit;
 		} else {
-			show_message("You dont have enough mana to use this Magic");
+			with (create_textbox_at_center("法力不足")) {
+				alarm[0] = seconds_to_steps(1.0);	
+			}
 			//PlaySound();
 		}
 	}
 }
 #endregion
-#region Move OR Attack
-if (mouse_check_button_pressed(mb_left)) {
-	xnext = snap_value(mouse_x, CELL_WIDTH);
-	ynext = snap_value(mouse_y, CELL_HEIGHT);
 
-	var _dis = point_distance(x, y, xnext, ynext);
-	if (grid_place_free(xnext, ynext) && _dis < (CELL_WIDTH + 1)) {
-		// Move
-		change_state(PLAYER.move);
-		if (instance_exists(o_action_cue)) {
-			instance_destroy(o_action_cue);
-		}
-	} else {
-		// Attack
-		var unit = global.unit_grid[# xnext div CELL_WIDTH, ynext div CELL_HEIGHT];
-		if (unit && _dis < CELL_WIDTH*2) { 
-			if (object_is_ancestor(unit.object_index, o_moving_unit)) {
-				if (is_in_array(unit.object_index, target_arr)) {
-					// Attack
-					change_state(PLAYER.attack);
-					if (instance_exists(o_action_cue)) {
-						instance_destroy(o_action_cue);
-					}
-				} else if (unit == id){ // Click Self
-					// Wait
-					change_state(PLAYER.wait);
-					if (instance_exists(o_action_cue)) {
-						instance_destroy(o_action_cue);
-					}
-				}
-			} else {
-				
-			}
-		}
-	}
-}
+#region Move OR Attack
+
+CheckNumpadInputs();
+
+CheckMouseInputs();
+
 #endregion

@@ -6,6 +6,7 @@ InitializeAchievements();
 
 instance_create_layer(0, 0, "Instances", o_ui_control);
 instance_create_layer(0, 0, "Instances", o_ai_control);
+instance_create_layer(0, 0, "Instances", o_bgm_controller);
 
 randomize();
 
@@ -24,6 +25,7 @@ var _firstPatch = instance_create_layer(800 + (_mx - 1) *((sprite_get_width(s_pa
 										"Map", 
 										o_patch);
 with (_firstPatch) {
+	alpha = 1;
 	mx = _mx;
 	my = _my;
 	patch_type = BIOME.grass; //choose(BIOME.grass, BIOME.snow);
@@ -56,5 +58,7 @@ instance_create_depth(0, 0, 4900, o_sea);
 if (room == r_tutorial) {
 	instance_create_layer(0, 0, "Map", o_instructionBox);	
 }
+
+global.kills = 0;
 
 
