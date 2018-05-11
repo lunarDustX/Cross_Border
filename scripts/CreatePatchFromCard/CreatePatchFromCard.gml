@@ -39,7 +39,7 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
 		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		
-		// generate empty tiles randomly
+		// EMPTY TILES [avoid monster position]
 		if (random(1) <= 0.04 && room != r_tutorial) {
 			var _monsterHere = false;
 			for (var k = 0; k < _card.monsterNumber; k++) {
@@ -55,13 +55,47 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 			}
 		}
 
-		// make biome stiles
-		var _depth = CalculateTileDepth(_y);		
-		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
+		// Generate Tiles!
+		var _depth = CalculateTileDepth(_y);	
+		var _p;
+		switch (_card.biome_depth) {
+			case 1: 
+				_p = 0.5;
+			break;
+			case 2: 
+				_p = 0.75;
+			break;
+			case 3: 
+				_p = 0.9;
+			break;
+		}
+		var _tileType = noone;
+		if (random(1) < _p) {
+			if (_biome == BIOME.forest && random(1) < 0.12) {
+				_tileType = o_waterTile;
+			} else {
+				_tileType = tiles_arr[_biome];	
+			}
+		} else {
+			_tileType = o_stoneTile;	
+		}
+		
+		var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  _tileType);
 		ds_list_add(global.tileList, _tile);
 		
-		// gernerate trees randomly
-		if (random(1) <= 0.04) {
+		// Gernerate TREES? 
+		switch (_card.biome_depth) {
+			case 1: 
+				_p = 0.01;
+			break;
+			case 2: 
+				_p = 0.05;
+			break;
+			case 3: 
+				_p = 0.08;
+			break;
+		}
+		if (random(1) <= _p) {
 			var _monsterHere = false;
 			for (var k = 0; k < _card.monsterNumber; k++) {
 				var pos = _card.monster_grid[# k, 1];
@@ -70,9 +104,25 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 					break;
 				}
 			}
-			if (_monsterHere) continue;
-			with (instance_create_depth(_x, _y, _depth-1, o_web)) {
-				parentTile = _tile;	
+			if (_monsterHere) continue; // avoid monster
+			
+			var _dec = noone;
+			switch (_biome) {
+				case BIOME.grass:
+					_dec = o_web;
+				break;
+				case BIOME.grave:
+					_dec = o_spike;
+				break;
+				case BIOME.forest:
+					_dec = o_flower;
+				break;
+				default: _dec = o_tree;
+			}
+			if (_dec != noone) {
+				with (instance_create_depth(_x, _y, _depth-1, _dec)) {
+					parentTile = _tile;	
+				}
 			}
 		}
 	}
@@ -83,16 +133,16 @@ TileAppear(_index);
 
 #endregion
 
-// Check 4 directions to build bridge
+#region bridge connection
 for (var _dy = -1; _dy <= 1; _dy++) {
 	for (var _dx = -1; _dx <= 1; _dx++) {
 		if (_dx * _dy != 0) continue; // 1.diagonal
 		if (_dx == 0 && _dy == 0) continue; // 2.self
-		//if (global.patch_grid[# _xPatch+_dx, _yPatch+_dy] > 0 && global.patch_grid[# _xPatch+_dx, _yPatch+_dy] < BIGNUM) { // BIOME.empty = 0
 		if (global.patch_grid[# _xPatch+_dx, _yPatch+_dy] != noone) {
 			BuildBridgeBetweenPatches(_xPatch, _yPatch, _xPatch+_dx, _yPatch+_dy);
 		}
 	}
 }
+#endregion
 
 SpawnMonsterFromCardAtPatch(_card, _xPatch, _yPatch);

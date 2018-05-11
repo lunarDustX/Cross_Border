@@ -1,7 +1,7 @@
 /// @description 
 // fall effect
 height = 800;
-grav = 3;
+grav = 1.2;
 vspd = 0;
 onGround = false;
 
@@ -27,6 +27,8 @@ monster_grid[# 1, 1] = [2, 3];
 // biome info
 biome = irandom_range(1,5);
 image_index = biome;
+
+biome_depth = 1;
 //image_speed = 0;
 
 depth = -1;

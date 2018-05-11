@@ -13,7 +13,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		// ATTACK
 		var unit = global.unit_grid[# xnext div CELL_WIDTH, ynext div CELL_HEIGHT];
 		if (unit && _dis < CELL_HEIGHT*2) { 
-			if (object_is_ancestor(unit.object_index, o_moving_unit)) {
+			if (object_is_ancestor(unit.object_index, o_unit)) {
 				if (is_in_array(unit.object_index, targets_arr)) {
 					// Attack
 					change_state(PLAYER.attack);

@@ -19,7 +19,7 @@ if (sprite_index != sprites_arr[_patch_type]) {
 
 /*
 // TEST : draw attributs
-draw_set_font(f_test);
+draw_set_font(f_wawa);
 if (object_index == o_player) draw_set_color(c_orange);
 draw_text(x+2, y-23, "HP:" + string(hp));
 draw_text(x+2, y-15, "AT:" + string(atk));

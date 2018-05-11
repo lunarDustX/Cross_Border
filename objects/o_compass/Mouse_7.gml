@@ -4,5 +4,9 @@ if (!visible) exit;
 if (!global.map) {
 	OpenMap();	
 } else {
-	CloseMap();	
+	if (global.remap) {
+		ExitMapAfterPlacing();		
+	} else {
+		CloseMap();	
+	}
 }

@@ -1,6 +1,6 @@
 /// @description 
 
 if (y != targetY) {
-	y = lerp(y, targetY, 0.1);
+	y = lerp(y, targetY, 0.06);
 }
 

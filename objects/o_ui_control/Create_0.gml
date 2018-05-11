@@ -31,14 +31,17 @@ for (var i = 0; i < 5; i++) {
 	}
 }
 
-// Buttons
+#region Buttons
 instance_create_depth(24, 1004, depth-1, o_compass);
 instance_create_depth(57, 1141, depth-2, o_setting);
 
-instance_create_depth(global.view_width/2+50, global.view_height-100, depth-1, o_freeze_magic);
+// magic button
+instance_create_depth(global.view_width/2, global.view_height-100, depth-1, o_ice_magic);
+instance_create_depth(global.view_width/2+100, global.view_height-100, depth-1, o_fire_magic);
+#endregion
 
 // Monster Log
-#macro monsterAmount 11
+#macro monsterAmount 12
 global.monsterLog = false;
 monsterLogIndex = 0;
 monsterLogFound_arr = array_create(monsterAmount, false);
@@ -56,6 +59,7 @@ monsterLogSprites_arr = array_create(monsterAmount, s_monsterNotFound);
 #macro ID_SKELETON_B 8
 #macro ID_SKELETON_C 9
 #macro ID_GHOST 10
+#macro ID_SPIDER 11
 
 // map & setting
 global.map = false;

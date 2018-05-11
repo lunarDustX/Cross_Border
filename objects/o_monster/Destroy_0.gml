@@ -27,7 +27,7 @@ if (monsterID >= 0) {
 
 #region increase mana
 with (o_player) {
-	abc = true;	
+	abc++;	
 }
 #endregion
 

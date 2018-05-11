@@ -5,7 +5,7 @@ event_inherited();
 
 action = true;
 
-SPEED = 12;
+SPEED = 6.6;
 
 //
 frozen = -1;

@@ -44,7 +44,9 @@ if (global.monsterLog) {
 if (global.map) {
 	//DrawGUIBackground();	
 	draw_sprite(s_mapBG, 0, 0, 0);
-	
+	if (global.card_selected && !global.remap) {
+		draw_sprite(global.card_selected.sprite_index, 0,200, 300);	
+	}
 	//if (global.remap) {
 	//	draw_text(600, 1000, "Press ESC to contine");	
 	//}
@@ -60,9 +62,11 @@ if (global.setting) {
 #region stats
 
 if (global.stats && instance_exists(o_player)) {
-	draw_set_font(f_text);
-	draw_text(20, 60, "暴击率: " + string(o_player.critical_rate*100) + "%");
-	draw_text(20, 100, "闪避率: " + string(o_player.miss_rate*100) + "%");
+	draw_set_font(f_wawa);
+	draw_text(20, 60, "生命值: " + string(o_player.hp) + "/" + string(o_player.maxhp));
+	draw_text(20, 100, "法力值: " + string(o_player.mana) + "/" + string(o_player.maxmana));
+	draw_text(20, 140, "暴击率: " + string(o_player.critical_rate*100) + "%");
+	draw_text(20, 180, "闪避率: " + string(o_player.miss_rate*100) + "%");
 }
 
 #endregion

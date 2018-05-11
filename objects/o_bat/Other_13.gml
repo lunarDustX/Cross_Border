@@ -11,18 +11,20 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 			}
 		} else {
 			// HIT
-			PlaySound(a_hurt);
+			PlaySound(a_hit);
 			target.hp -= atk;
 			with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
 				textColor = c_red;
 				text = "-" + string(other.atk);
 			}
+			
+			// drink blood
+			if (sprite_index == s_vampire && irandom(1) < 0.34) { // 0.3333333
+				xyz = true;	
+			}
 		}
 		
-		// drink blood
-		if (sprite_index == s_vampire && irandom(1) < 0.34) { // 0.3333333
-			xyz = true;	
-		}
+		
 		
 		set_shake(target, 4, seconds_to_steps(.25));
 		//set_shake(o_camera, 2, seconds_to_steps(.2));

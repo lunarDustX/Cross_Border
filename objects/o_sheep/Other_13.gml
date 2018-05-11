@@ -2,7 +2,7 @@
 if (!moving(xnext, ynext, SPEED*2)) { // arrived
 	change_state(SHEEP.atk_back);
 	if (target) {
-		PlaySound(a_hurt);
+		PlaySound(a_hit);
 		//var _damage = att;
 		//if (_is_player && irandom(4) == 4) _damage+=1;
 		target.hp -= atk;

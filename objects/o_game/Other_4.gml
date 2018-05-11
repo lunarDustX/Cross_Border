@@ -1,6 +1,6 @@
 /// @description 
 //show_debug_overlay(true);
-draw_set_font(f_test);
+draw_set_font(f_wawa);
 
 InitializeAchievements();
 
@@ -28,7 +28,7 @@ with (_firstPatch) {
 	alpha = 1;
 	mx = _mx;
 	my = _my;
-	patch_type = BIOME.grass; //choose(BIOME.grass, BIOME.snow);
+	patch_type = choose(BIOME.grass, BIOME.snow, BIOME.forest, BIOME.grave);
 	image_index = patch_type;
 	UpdateMap();
 } 
@@ -50,6 +50,10 @@ if (room == r_game) {
 	var _y = _my * CELL_HEIGHT * (global.PATCH_SIZE+1);	
 }
 instance_create_layer(_x,  _y, "Instances", o_player);
+
+// CardSpawn
+SpawnCardAtPosition(o_player.x-CELL_WIDTH, o_player.y);
+SpawnCardAtPosition(o_player.x+CELL_WIDTH, o_player.y);
 
 //
 instance_create_layer(0, 0, "Instances", o_camera);

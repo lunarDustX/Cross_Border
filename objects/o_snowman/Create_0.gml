@@ -11,7 +11,7 @@ enum SNOWMAN {
 }
 
 // Attributes
-bad_tiles_arr = [];
+bad_tiles_arr = [o_waterTile];
 targets_arr = [o_player];
 
 // Convert

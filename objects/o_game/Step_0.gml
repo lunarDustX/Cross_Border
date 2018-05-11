@@ -25,8 +25,17 @@ if (state == TURN.computer) {
 
 #region SpawnCard
 if (!instance_exists(o_card_pickup)) {
-	if (instance_number(o_monster) == 0 && instance_number(o_fall) == 0) { // time to spawn
-		if (alarm[0] == -1) {
+	if (instance_number(o_monster) == 0 && instance_number(o_fall) == 0) { // No monster existed
+		if (alarm[0] == -1) {	
+			if (room == r_game) {
+				if (global.discoveredPatch < 9) {
+					alarm[0] = seconds_to_steps(0.5);	
+				}	
+			} else {
+				
+			}
+			
+			/*
 			if (room == r_tutorial) {
 				if (global.discoveredPatch < 2) {
 					alarm[0] = seconds_to_steps(0.5);	
@@ -41,13 +50,7 @@ if (!instance_exists(o_card_pickup)) {
 					}
 				}
 			}
-			if (room == r_game) {
-				if (global.discoveredPatch < 9) {
-					alarm[0] = seconds_to_steps(0.5);	
-				}	
-			} else {
-				
-			}
+			*/
 		}
 	}
 }

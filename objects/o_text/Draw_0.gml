@@ -10,7 +10,7 @@ draw_set_color(textColor);
 draw_text(x-4, y-4, text);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
-draw_set_font(f_test);
+draw_set_font(f_wawa);
 
 /*
 draw_set_font(f_text);
@@ -19,4 +19,4 @@ draw_set_color(textColor);
 draw_text(x-4, y-4, text);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
-draw_set_font(f_test);
+draw_set_font(f_wawa);

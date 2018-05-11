@@ -1,8 +1,7 @@
 /// @description 
+if (o_game.state == TURN.computer) exit;
 
 event_user(state);
-
-if (o_game.state == TURN.computer) exit;
 
 depth = -y;
 

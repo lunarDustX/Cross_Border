@@ -10,6 +10,8 @@ if (instance_exists(o_player)) {
 }
 */
 
+/*
 if (instance_exists(o_player)) {
 	draw_text(20, 20, "webbed: " + string(o_player.webbed));	
 }
+*/

@@ -9,7 +9,6 @@ if (room == r_tutorial) {
 
 #region game
 if (room == r_game) {
-	
 	var new_locations = ds_list_create();
 	var _dir;
 	for (_dir=0; _dir<360; _dir+=90) {

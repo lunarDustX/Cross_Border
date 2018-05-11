@@ -2,7 +2,7 @@ event_inherited();
 
 depth = -1000;
 margin = 8;
-text = "This is a textbox \nwith some dialogue.";
+text = "This is a textbox\nwith some dialogue.";
 width = string_width(text)+margin;
 height = string_height(text)+margin;
 spd = .5;

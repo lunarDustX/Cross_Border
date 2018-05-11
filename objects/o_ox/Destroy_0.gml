@@ -1,4 +1,4 @@
-/// @description 
+/// @description loot
 event_inherited();
 
 var _loot = noone;

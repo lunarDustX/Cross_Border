@@ -59,6 +59,7 @@ enum BIOME {
 	snow,
 	forest,
 	grave,
+	stone,
 	desert,
 }
 

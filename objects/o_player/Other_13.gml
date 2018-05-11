@@ -11,7 +11,32 @@ if (!moving(xnext, ynext, SPEED*2)) { //arrived
 			enemy.target = id;  // set player as target 
 			enemy.hp -= _dmg;
 		
-			PlaySound(a_hurt);
+			PlaySound(a_hit);
+			
+			#region PlayHurtSound
+			switch (enemy.sprite_index) {
+				case s_ox:
+					PlaySound(a_ox);
+				break;
+				
+				case s_bat:
+					PlaySound(a_bat);
+				break;
+				
+				case s_vampire:
+					PlaySound(a_vampire)
+				break;
+				
+				case s_snowman_big:
+					PlaySound(a_snow_big);
+				break;
+				
+				case s_snowman_small:
+					PlaySound(a_snow_small);
+				break;
+			}
+			#endregion
+			
 			with (instance_create_layer(enemy.x+CELL_WIDTH/2, enemy.y-CELL_HEIGHT/2, "Instances", o_text)) {
 				textColor = c_red;
 				text = "-"+string(_dmg);

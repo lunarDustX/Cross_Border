@@ -30,12 +30,15 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 		var _x = (_xPatch * (global.PATCH_SIZE+1) + i) *CELL_WIDTH;	
 		var _y = (_yPatch * (global.PATCH_SIZE+1) + j) *CELL_HEIGHT;
 		var _depth = CalculateTileDepth(_y);	
-		//if (random(1) <= 0.3) {
-		//	var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  o_waterTile);
-		//} else {
-			var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
-		//}
 		
+		
+		if (random(1) <= 0.3) {
+			var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  o_stoneTile);
+		} else {
+			var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  tiles_arr[_biome]);
+		}
+		
+		//var _tile = instance_create_depth(_x, _y+TILE_UP_DIS+BIGNUM, _depth,  o_stoneTile);
 		ds_list_add(global.tileList, _tile);
 	}
 }
@@ -44,7 +47,7 @@ TileAppear(_index);
 
 #endregion
 
-// Check four directions to build bridge
+#region bridge connection
 for (var _dy = -1; _dy <= 1; _dy++) {
 	for (var _dx = -1; _dx <= 1; _dx++) {
 		if (_dx * _dy != 0) continue; // 1.diagonal
@@ -55,3 +58,4 @@ for (var _dy = -1; _dy <= 1; _dy++) {
 		}
 	}
 }
+#endregion

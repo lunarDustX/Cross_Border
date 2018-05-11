@@ -1,5 +1,5 @@
 /// @description 
-if (other.webbed) exit;
+if (other.webbed or other.object_index == o_spider) exit;
 
 if (other.state == CREATURE.wait) {
 	if (in_same_cell(self, other)) {
