@@ -48,8 +48,9 @@ normal_arr[BIOME.snow] = true;
 normal_arr[BIOME.forest] = true;
 // VAMPIRE
 normal_arr[BIOME.grass] = false;
-normal_arr[BIOME.desert] = false;
 normal_arr[BIOME.grave] = false;
+//normal_arr[BIOME.desert] = false;
+
 
 normal_loots = [];
 evil_loots = [o_heart];

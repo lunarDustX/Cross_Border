@@ -1,4 +1,5 @@
 /// @description 
 event_inherited();
-description = "对四周敌人造成1点伤害"
+cost = 3;
+description = "对四周敌人造成1-2点伤害"
 

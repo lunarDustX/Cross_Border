@@ -11,11 +11,22 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 			}
 		} else {
 			// HIT
-			PlaySound(a_hit);
-			target.hp -= atk;
-			with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
-				textColor = c_red;
-				text = "-" + string(other.atk);
+			DoDamageTo(target);
+			
+			// freeze?
+			if (sprite_index == s_snowman_big) {
+				if (irandom(1) < 0.2) {
+					var _tar = target;
+					if (_tar.myIce == noone) {
+						with (instance_create_layer(_tar.x+CELL_WIDTH/2, _tar.y+CELL_HEIGHT-15, "Instances", o_ice)) { // ice effect		
+							parent = _tar.id;
+							depth = parent.depth-1;
+							parent.myIce = id;
+							image_index = 1;
+						}
+						_tar.image_speed = 0;
+					}
+				}
 			}
 		}
 		

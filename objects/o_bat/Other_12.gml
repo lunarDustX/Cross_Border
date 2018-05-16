@@ -35,6 +35,10 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	var _convert = UpdateMonsterStateAfterMoving();
 	if (_convert) exit;
 	
+	if (sprite_index == s_vampire) {
+		CheckWeb();	
+	}
+	
 	// change state
 	moves--;
 	if (moves > 0 && sprite_index == s_bat) {

@@ -39,5 +39,5 @@ miss_rate = 0;
 webbed = false;
 myWeb = noone;
 
-
+myIce = noone;
 

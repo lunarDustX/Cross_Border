@@ -10,13 +10,8 @@ if (!moving(xnext, ynext, SPEED*2)) { // arrived
 				text = "MISS";
 			}
 		} else {
-			// HIT
-			PlaySound(a_hit);
-			target.hp -= atk;
-			with (instance_create_layer(target.x+CELL_WIDTH/2, target.y-CELL_HEIGHT/2, "Instances", o_text)) {
-				textColor = c_red;
-				text = "-" + string(other.atk);
-			}
+			// HIT 
+			DoDamageTo(target);
 		}
 		
 		set_shake(target, 4, seconds_to_steps(.25));

@@ -9,7 +9,11 @@
         "d57c5a10-e0ef-461c-bddc-cd36766572bc",
         "801e170a-0cd4-4fe7-bba3-1834d6808a86",
         "b1b1929f-1028-4be9-8c8a-2f9816b846ef",
-        "737a64f0-99e2-46c9-923d-7cdc8cc53b28"
+        "737a64f0-99e2-46c9-923d-7cdc8cc53b28",
+        "71b68609-6570-4ce2-b4ee-da39db86e489",
+        "d360321a-6d2c-4a80-a97e-ed0d178283af",
+        "d13127aa-767d-408e-a850-3676cef227de",
+        "758a39d9-97d6-42e2-b44a-c1a6ac4252df"
     ],
     "filterType": "GMSound",
     "folderName": "Hurt",

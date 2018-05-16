@@ -5,7 +5,7 @@ event_inherited();
 monsterNumber = 2;
 monster_grid = ds_grid_create(monsterNumber, 2);
 
-monster_grid[# 0, 0] = o_snowman;
+monster_grid[# 0, 0] = o_bat;
 monster_grid[# 0, 1] = [4, 1];
 
 monster_grid[# 1, 0] = o_ox;

@@ -20,10 +20,11 @@ normal_arr = array_create(5, false); // BIOME numbers
 delta_hp = 0;
 delta_atk = 0;
 delta_move = 0;
+delta_critical = 0;
 
 moves = 1;
 hp = 1;
-atk = 1;
+atk = 0;
 
 path = path_add();
 

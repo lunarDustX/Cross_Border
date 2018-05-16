@@ -71,11 +71,12 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 		}
 		var _tileType = noone;
 		if (random(1) < _p) {
-			if (_biome == BIOME.forest && random(1) < 0.12) {
-				_tileType = o_waterTile;
-			} else {
-				_tileType = tiles_arr[_biome];	
-			}
+			_tileType = tiles_arr[_biome];
+			//if (_biome == BIOME.forest && random(1) < 0.12) {
+			//	_tileType = o_waterTile;
+			//} else {
+			//	_tileType = tiles_arr[_biome];	
+			//}
 		} else {
 			_tileType = o_stoneTile;	
 		}
@@ -115,12 +116,12 @@ for (var j = 0; j < global.PATCH_SIZE; j++) {
 					_dec = o_spike;
 				break;
 				case BIOME.forest:
-					_dec = o_flower;
+					_dec = noone;
 				break;
 				default: _dec = o_tree;
 			}
 			if (_dec != noone) {
-				with (instance_create_depth(_x, _y, _depth-1, _dec)) {
+				with (instance_create_depth(_x, 0, _depth-1, _dec)) {
 					parentTile = _tile;	
 				}
 			}

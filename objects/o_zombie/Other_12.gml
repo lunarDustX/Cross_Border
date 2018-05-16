@@ -16,6 +16,10 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	var _convert = UpdateMonsterStateAfterMoving();
 	if (_convert) exit;
 	
+	// 
+	CheckWeb();
+	CheckTileDamage();
+	
 	// change state
 	moves--;
 	if (moves > 0) {

@@ -17,9 +17,16 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	var _convert = UpdateMonsterStateAfterMoving();
 	if (_convert) exit;
 	
+	//
+	CheckTileDamage();
+	
 	// change state
-	next_unit();
-	change_state(GHOST.wait);
+	if (position_meeting(x+CELL_WIDTH/2, y+CELL_HEIGHT/2, o_web)) { // EXTRA move on WEB
+		change_state(SPIDER.action);
+	} else {
+		next_unit();
+		change_state(SPIDER.wait);
+	}
 	
 } else { // moving to target position
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);

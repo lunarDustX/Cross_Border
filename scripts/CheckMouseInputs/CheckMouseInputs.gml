@@ -10,7 +10,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			instance_destroy(o_action_cue);
 		}
 	} else {
-		// ATTACK
+		// ATTACK or WAIT
 		var unit = global.unit_grid[# xnext div CELL_WIDTH, ynext div CELL_HEIGHT];
 		if (unit && _dis < CELL_HEIGHT*2) { 
 			if (object_is_ancestor(unit.object_index, o_unit)) {
@@ -20,8 +20,9 @@ if (mouse_check_button_pressed(mb_left)) {
 					if (instance_exists(o_action_cue)) {
 						instance_destroy(o_action_cue);
 					}
-				} else if (unit == id){ // Click Self
+				} else if (unit == id){ 
 					// Wait
+					PlaySound(a_wait)
 					change_state(PLAYER.wait);
 					if (instance_exists(o_action_cue)) {
 						instance_destroy(o_action_cue);

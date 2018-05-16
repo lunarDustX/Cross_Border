@@ -7,10 +7,11 @@ for (_dir=0; _dir<360; _dir+=90) {
 		//with (instance_position(_x, _y, o_monster)) { // Potential BUG? 
 		with (_monster) {
 			target = o_player.id;
-			hp--;
+			var _dmg = choose(1,2);
+			hp -= _dmg;
 			with (instance_create_layer(_monster.x+CELL_WIDTH/2, _monster.y-CELL_HEIGHT/2, "Instances", o_text)) {
 				textColor = c_red;
-				text = "-1";
+				text = "-" + string(_dmg);
 			}
 		}
 	}

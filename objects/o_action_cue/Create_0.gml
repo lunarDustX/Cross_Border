@@ -2,10 +2,13 @@
 
 //bad_tiles_arr = o_player.bad_tiles_arr;
 
-// 0.no action 1.move 2.attack
+// 0.no action 1.move 2.attack 3.wait
 for (var j=0; j<3; j++) {
 	for (var i=0; i<3; i++) {
-		if (j==1 && i==1) continue;
+		if (j==1 && i==1) {
+			active_cues[i, j] = 3;
+			continue;
+		}
 		var _x = (x-CELL_WIDTH)+i*CELL_WIDTH;
 		var _y = (y-CELL_HEIGHT)+j*CELL_HEIGHT;
 		active_cues[i, j] = grid_place_free(_x, _y) && point_distance(x, y, _x, _y) < (CELL_WIDTH + 1);

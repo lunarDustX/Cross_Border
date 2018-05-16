@@ -8,6 +8,6 @@ var _duration = argument2;
 
 if (!instance_exists(_object)) exit;
 with (_object) {
-	alarm[0] = _duration;
+	alarm[7] = _duration;
 	shake = _amount;
 }

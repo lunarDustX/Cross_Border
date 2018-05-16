@@ -10,3 +10,5 @@ if (!global.map) {
 		CloseMap();	
 	}
 }
+
+PlaySound(a_click);

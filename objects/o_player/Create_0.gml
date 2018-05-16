@@ -27,8 +27,8 @@ magic = noone;
 // Attribute
 SPEED = 6;
 atk = 1;
-critical_rate = 0.2;
-miss_rate = 0.1;
+critical_rate = 0.15;
+miss_rate = 0.05;
 
 hp = 5;
 maxhp = 5;

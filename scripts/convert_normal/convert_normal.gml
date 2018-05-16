@@ -14,6 +14,7 @@ if (sprite_index != normal_sprite) {
 
 hp -= delta_hp;
 atk -= delta_atk;
+critical_rate -= delta_critical;
 
 if (hp <= 0) {
 	instance_destroy();

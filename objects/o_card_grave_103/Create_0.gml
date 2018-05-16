@@ -5,10 +5,10 @@ event_inherited();
 monsterNumber = 2;
 monster_grid = ds_grid_create(monsterNumber, 2);
 
-monster_grid[# 0, 0] = o_bat;
+monster_grid[# 0, 0] = o_ghost;
 monster_grid[# 0, 1] = [0, 2];
 
-monster_grid[# 1, 0] = o_bat;
+monster_grid[# 1, 0] = o_ghost;
 monster_grid[# 1, 1] = [3, 1];
 
 

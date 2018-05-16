@@ -11,7 +11,7 @@ if (target != noone) {
 		xnext = x + lengthdir_x(CELL_WIDTH, _dir);
 		ynext = y + lengthdir_y(CELL_HEIGHT, _dir);
 		//
-		change_state(GHOST.attack);
+		change_state(SPIDER.attack);
 		exit;
 	}
 	
@@ -24,14 +24,14 @@ if (target != noone) {
 	if (grid_direction_free(x, y, _dir)) {
 		xnext = x + lengthdir_x(CELL_WIDTH, _dir);
 		ynext = y + lengthdir_y(CELL_HEIGHT, _dir);
-		change_state(GHOST.move);
+		change_state(SPIDER.move);
 		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
 		exit;
 	} 
 	
 	// 2. Advanced Move Method
 	if (mp_grid_find_path(x, y, target.x, target.y)) { // update xnext & ynext
-		change_state(GHOST.move);
+		change_state(SPIDER.move);
 		image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
 		exit;
 	}
@@ -52,7 +52,7 @@ if (_list_size > 0) {
 	_dir = new_locations[| irandom(_list_size-1)];
 	xnext = x+lengthdir_x(CELL_WIDTH, _dir);
 	ynext = y+lengthdir_y(CELL_HEIGHT, _dir);
-	change_state(GHOST.move);
+	change_state(SPIDER.move);
 	image_xscale = (target.x - x != 0) ? sign(target.x - x) : image_xscale;
 	exit;
 } else { // STAY
@@ -61,7 +61,7 @@ if (_list_size > 0) {
 		mp_grid_add_cell(global.AIGrid, x div CELL_WIDTH, y div CELL_HEIGHT);
 	}
 	next_unit();
-	change_state(GHOST.wait);
+	change_state(SPIDER.wait);
 }
 
 // Destroy the list

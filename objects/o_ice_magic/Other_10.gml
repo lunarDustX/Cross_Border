@@ -1,6 +1,7 @@
 /// @description freeze
 
-//PlaySound();
+PlaySound(a_ice);
+
 with(o_player) {
 	magic = MAGIC.ice;
 	change_state(PLAYER.magic);

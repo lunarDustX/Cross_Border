@@ -1,16 +1,8 @@
 /// @description InitializeCardList
 global.card_list = ds_list_create();
-ds_list_add(global.card_list, o_card_grass_1);
-ds_list_add(global.card_list, o_card_snow_1);
-ds_list_add(global.card_list, o_card_forest_1);
-ds_list_add(global.card_list, o_card_grave_1);
-
-ds_list_add(global.card_list, o_card_grass_2);
-ds_list_add(global.card_list, o_card_snow_2);
-ds_list_add(global.card_list, o_card_forest_2);
-ds_list_add(global.card_list, o_card_grave_2);
-
-ds_list_add(global.card_list, o_card_grass_1);
-ds_list_add(global.card_list, o_card_snow_1);
-ds_list_add(global.card_list, o_card_forest_1);
-ds_list_add(global.card_list, o_card_grave_1);
+for (var i = 0; i < 3; i++) {
+	ds_list_add(global.card_list, o_card_grass);
+	ds_list_add(global.card_list, o_card_snow);
+	ds_list_add(global.card_list, o_card_forest);
+	ds_list_add(global.card_list, o_card_grave);
+}

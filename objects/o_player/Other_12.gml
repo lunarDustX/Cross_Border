@@ -3,6 +3,8 @@ if (!moving(xnext, ynext, SPEED)) {
 	PlaySound(a_land);
 	UpdatePlayerStateAfterMoving();
 	// change state
+	CheckWeb();
+	CheckTileDamage();	
 	change_state(PLAYER.wait);
 } else {
 	var _total_distance = point_distance(xpre, ypre, xnext, ynext);

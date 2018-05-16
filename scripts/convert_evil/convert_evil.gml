@@ -17,8 +17,7 @@ if (sprite_index != evil_sprite) {
 // data
 hp += delta_hp;
 atk += delta_atk;
-
-
+critical_rate += delta_critical;
 
 if (hp <= 0) {
 	instance_destroy();

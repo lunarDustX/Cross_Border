@@ -1,6 +1,7 @@
 /// @description fireball
 
-//PlaySound();
+PlaySound(a_fire);
+
 with(o_player) {
 	magic = MAGIC.fire;
 	change_state(PLAYER.magic);

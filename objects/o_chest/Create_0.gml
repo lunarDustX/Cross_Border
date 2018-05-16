@@ -16,8 +16,8 @@ active_turns = 0;
 monsterName = "chest";
 monsterID = -1; //ID_CHEST;
 
-hp = 6;
-atk = 1;
+hp = 3;
+atk = 0;
 
 bad_tiles_arr = [];
 targets_arr = [o_player];
@@ -28,6 +28,8 @@ delta_atk = 1;
 
 normal_sprite = s_chest;
 evil_sprite = s_chest;
+
+myTile = global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT];
 
 /*
 normal_arr[BIOME.grass] = true;

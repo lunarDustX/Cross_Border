@@ -17,7 +17,7 @@ monsterID = ID_OX;
 hp = 2;
 atk = 1;
 
-lootChance = 0.4;
+lootChance = 0.3;
 normal_loots = [o_heart];
 evil_loots = [];
 
@@ -26,15 +26,16 @@ targets_arr = [o_player];
 
 // Convert
 delta_hp = 1;
-delta_atk = 1;
+delta_atk = 0;
+delta_critical = 0.8;
 
 normal_sprite = s_ox;
 evil_sprite = s_minotaur;
 
 normal_arr[BIOME.grass] = true;
+normal_arr[BIOME.forest] = true;
 normal_arr[BIOME.snow] = false;
 normal_arr[BIOME.desert] = false;
-normal_arr[BIOME.forest] = true;
 normal_arr[BIOME.grave] = false;
 
 normal = true;

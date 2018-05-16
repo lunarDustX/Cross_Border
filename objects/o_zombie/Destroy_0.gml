@@ -14,11 +14,11 @@ if (normal) {
 		if (_p < 0.5) {
 			_loot = o_sword;
 		}
-	} else {
-		if (_p < 0.5) {
-			_loot = o_shield;	
-		}
-	}
+	} //else if (sprite_index == s_skeleton_axe){
+	//	if (_p < 0.5) {
+	//		_loot = o_shield;	
+	//	}
+	//}
 	
 }
 if (_loot != noone) {

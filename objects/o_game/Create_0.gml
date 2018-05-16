@@ -83,11 +83,8 @@ global.view_height = camera_get_view_height(view_camera[0]);
 display_set_gui_size(global.view_width, global.view_height);
 //display_set_gui_size(view_wport[0], view_hport[0]);
 
-
-
-//tilemap 
-//var _layer_id = layer_get_id("Tiles");
-//global.tilemap_id = layer_tilemap_get_id(_layer_id);
-//InitializeAllPatchTemplates();
-
+CardsUsed[BIOME.grass] = 0;
+CardsUsed[BIOME.forest] = 0;
+CardsUsed[BIOME.grave] = 0;
+CardsUsed[BIOME.snow] = 0;
 

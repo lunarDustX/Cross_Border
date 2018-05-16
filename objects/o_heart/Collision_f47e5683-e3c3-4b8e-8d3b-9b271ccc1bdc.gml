@@ -22,10 +22,6 @@ if (other.state == PLAYER.wait) {
 			instance_create_layer(x+random(CELL_WIDTH), y+random(CELL_HEIGHT), "Instances", o_heal_effect);
 		}
 	}
-	
-	//with (other) {
-	//	change_state(PLAYER.heal);	
-	//}
 }
 
 

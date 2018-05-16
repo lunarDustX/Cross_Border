@@ -9,14 +9,14 @@ if (object_index != o_bridgeTile) { // add floor
 	}
 }
 
-
-// 2. anim version
 xCell = x div CELL_WIDTH;
 
-if (object_index == o_bridgeTile) {
+if (object_index == o_bridgeTile || object_index == o_flowerTile) {
 	yCell = y div CELL_HEIGHT; 	
 } else {
 	yCell = (y-TILE_UP_DIS-BIGNUM) div CELL_HEIGHT; 	
 }
 global.tile_grid[# xCell, yCell] = id;
 targetY = y;
+
+uh = false;

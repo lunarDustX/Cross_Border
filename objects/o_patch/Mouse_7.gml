@@ -9,6 +9,8 @@ patch_type = global.card_selected.biome;
 image_index = patch_type;  // alpha = 1;
 
 global.patch_grid[# mx, my] = id;
+PlaySound(a_card_place);
+
 global.remap = true;
 
 // reset RebornArr

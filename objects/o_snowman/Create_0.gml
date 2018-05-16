@@ -24,7 +24,7 @@ moves = 1;
 
 delta_hp = -1;
 delta_atk = 0;
-delta_moves = 1;
+delta_moves = 0;
 
 normal_sprite = s_snowman_big;
 evil_sprite = s_snowman_small;

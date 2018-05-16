@@ -1,7 +1,7 @@
 /// @description 
 event_inherited();
 
-// monster info
+// monster layout
 monsterNumber = 4;
 monster_grid = ds_grid_create(monsterNumber, 2);
 
@@ -20,6 +20,5 @@ monster_grid[# 3, 1] = [global.PATCH_SIZE-2, global.PATCH_SIZE-2];
 
 // biome info
 biome = BIOME.grass;
-//image_index = biome;
 sprite_index = s_card_grass;
 

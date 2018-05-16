@@ -17,6 +17,9 @@ if (!moving(xnext, ynext, SPEED)) { // after moving
 	var _convert = UpdateMonsterStateAfterMoving();
 	if (_convert) exit;
 	
+	//
+	CheckTileDamage();
+	
 	// change state
 	next_unit();
 	change_state(GHOST.wait);

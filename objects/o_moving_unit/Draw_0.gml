@@ -16,7 +16,6 @@ if (sprite_index != sprites_arr[_patch_type]) {
 }
 */
 
-
 /*
 // TEST : draw attributs
 draw_set_font(f_wawa);

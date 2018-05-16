@@ -8,11 +8,6 @@ if (frozen > 0) {
 	frozen--;
 	if (frozen == 0) {
 		myIce.image_index = 1;
-		//with (o_ice) {
-		//	if (parent == other.id) {
-		//		image_index = 1;
-		//	}
-		//}
 	} 
 	next_unit();
 	change_state(CREATURE.wait);
@@ -22,12 +17,6 @@ if (frozen > 0) {
 	instance_destroy(myIce);
 	myIce = noone;
 	image_speed = 1;
-	//with (o_ice) {
-	//	if (parent == other.id) {
-	//		instance_destroy();	
-	//		parent.image_speed = 1;
-	//	}
-	//}
 }
 #endregion
 
@@ -37,10 +26,17 @@ if (webbed) {
 	next_unit();
 	change_state(CREATURE.wait);
 	
+	// Get rid of WEB
 	instance_destroy(myWeb);
 	myWeb = noone;
 	webbed = false;
 	image_speed = 1;
+
+	with (instance_create_layer(x+CELL_WIDTH/2, y-CELL_HEIGHT/2, "Instances", o_text)) {
+		textColor = c_lime;
+		text = "挣脱";
+	}
+	
 	exit;
 }
 

@@ -34,12 +34,26 @@ with (_firstPatch) {
 } 
 global.newPatch = _mx + _my * MAP_SIZE;
 instance_deactivate_object(o_patch);
-
 global.discoveredPatch = 1;
-
-//global.patch_grid[# _mx, _my] = _firstPatch.patch_type;
 global.patch_grid[# _mx, _my] = _firstPatch;
 CreateRandomPatch(_mx, _my, _firstPatch.patch_type);
+
+#region Ajustment Cards List
+
+var _index = _firstPatch.patch_type -1;
+ds_list_delete(global.card_list, _index);
+
+//show_message(string(ds_list_size(global.card_list)));
+/*
+for (var i= 0; i < ds_list_size(global.card_list); i++) {
+	if (global.card_list[|i].biome == _firstPatch.patch_type) {
+		ds_list_delete(global.card_list, i);	
+		break;
+	}
+}
+*/
+
+#endregion
 
 // PlayerSpawn
 if (room == r_game) {
