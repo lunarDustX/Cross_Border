@@ -6,13 +6,15 @@ if (global.RebornArr[_patchNumner] > 0) { // Only Spawn Once
 	var _xPatch = _patchNumner mod MAP_SIZE;
 	var _yPatch = _patchNumner div MAP_SIZE;
 	if (room == r_game) {
-		var _xCell = _xPatch *(global.PATCH_SIZE+1) + irandom_range(2, 3);
-		var _yCell = _yPatch *(global.PATCH_SIZE+1) + irandom_range(2, 3);
+		var _xCell = _xPatch *(global.PATCH_SIZE+1) + irandom_range(1, 3);
+		var _yCell = _yPatch *(global.PATCH_SIZE+1) + irandom_range(1, 3);
 	}
+	/*
 	if (room == r_tutorial) {
 		var _xCell = _xPatch *(global.PATCH_SIZE+1) + 0;
 		var _yCell = _yPatch *(global.PATCH_SIZE+1) + 2;
 	}
+	*/
 	var _x = _xCell * CELL_WIDTH;
 	var _y = _yCell * CELL_HEIGHT;
 	

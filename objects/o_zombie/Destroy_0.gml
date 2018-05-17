@@ -1,11 +1,11 @@
-/// @description 
+/// @description Loot
 event_inherited();
 
 var _loot = noone;
 if (normal) {
 	// zombie loot
 	var _p = random(1);
-	if (_p < 0.5) {
+	if (_p < 0.3) {
 		_loot = o_bandage;	
 	}
 } else { 

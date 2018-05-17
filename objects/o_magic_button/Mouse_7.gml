@@ -2,6 +2,8 @@
 if (!instance_exists(o_player)) exit;
 if (!visible) exit;
 
+if (o_player.webbed || o_player.myIce != noone) exit;
+
 if (o_player.mana >= cost) {
 	o_player.mana -= cost;
 	event_user(0);

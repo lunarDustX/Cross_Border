@@ -4,7 +4,7 @@ event_inherited();
 var _loot = noone;
 if (normal) { // ox loot
 	var _p = random(1);
-	if (_p <= 0.99) {
+	if (_p <= 0.9) {
 		_loot = o_web;
 	} 
 } else { // 

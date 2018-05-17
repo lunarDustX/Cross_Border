@@ -16,7 +16,7 @@ active_turns = 0;
 monsterName = "chest";
 monsterID = -1; //ID_CHEST;
 
-hp = 3;
+hp = 1;
 atk = 0;
 
 bad_tiles_arr = [];
@@ -29,14 +29,8 @@ delta_atk = 1;
 normal_sprite = s_chest;
 evil_sprite = s_chest;
 
-myTile = global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT];
-
-/*
-normal_arr[BIOME.grass] = true;
-normal_arr[BIOME.snow] = true;
-normal_arr[BIOME.desert] = true;
-normal_arr[BIOME.forest] = true;
-normal_arr[BIOME.grave] = true;
-
-//normal = true;
-//UpdateMonsterStateAfterMoving();
+var _pos = calculate_patch_pos(x, y);
+var _x = _pos[0];
+var _y = _pos[1];
+myBiome = global.patch_grid[# _x, _y].patch_type;
+//myTile = global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT];

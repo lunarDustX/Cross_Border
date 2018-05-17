@@ -69,7 +69,7 @@ if (room == r_game) {
 		ds_list_delete(global.card_list, _index);
 		
 	} else {
-		show_message("BUG: nowhere to spawn card.");	
+		show_message("BUG~nowhere to spawn card.");	
 	}
 }
 #endregion

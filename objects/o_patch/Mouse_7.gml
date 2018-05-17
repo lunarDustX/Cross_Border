@@ -12,6 +12,7 @@ global.patch_grid[# mx, my] = id;
 PlaySound(a_card_place);
 
 global.remap = true;
+global.maps_discovered++;
 
 // reset RebornArr
 var _pn = mx + my *MAP_SIZE;

@@ -6,22 +6,33 @@ var _tile = global.tile_grid[# x div CELL_WIDTH, y div CELL_HEIGHT];
 var _treasure = noone;
 switch (_tile.object_index) {
 	case o_snowTile:
-		show_message("snow珍宝");
+		with (create_textbox_at_center("获得宝藏")) {
+			alarm[0] = seconds_to_steps(1.2);	
+		}
 	break;
 	
 	case o_forestTile:
-		show_message("forest珍宝");
+		with (create_textbox_at_center("获得宝藏")) {
+			alarm[0] = seconds_to_steps(1.2);	
+		}
 	break;
 	
 	case o_grassTile:
-		show_message("grass珍宝");
+		with (create_textbox_at_center("获得宝藏")) {
+			alarm[0] = seconds_to_steps(1.2);	
+		}
 	break;
 	
 	case o_graveTile:
-		show_message("grave珍宝");
+		with (create_textbox_at_center("获得宝藏")) {
+			alarm[0] = seconds_to_steps(1.2);	
+		}
 	break;
 	
-	default: show_message("BUG哦");
+	default: 
+		with (create_textbox_at_center("获得宝藏")) {
+			alarm[0] = seconds_to_steps(1.2);	
+		}
 }
 
 if (_treasure != noone) {

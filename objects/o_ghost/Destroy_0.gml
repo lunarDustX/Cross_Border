@@ -1,6 +1,7 @@
 /// @description 
 event_inherited();
 
+/*
 var _loot = noone;
 if (normal) { // ox loot
 	var _p = random(1);

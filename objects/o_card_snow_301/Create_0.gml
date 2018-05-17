@@ -11,7 +11,7 @@ monster_grid[# 0, 1] = [2, 2];
 monster_grid[# 1, 0] = choose(o_ox, o_bat);
 monster_grid[# 1, 1] = [2, 3];
 
-monster_grid[# 2, 0] = choose(o_ox, o_bat);
+monster_grid[# 2, 0] = choose(o_bat);
 monster_grid[# 2, 1] = [2, 1];
 
 monster_grid[# 3, 0] = o_snowman;

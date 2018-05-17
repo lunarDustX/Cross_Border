@@ -25,10 +25,9 @@ if (hp <= 0) {
 	if (global.achievement_convertkill == false) {
 		global.achievement_convertkill = true;
 		with (create_textbox_at_center("新成就：转换击杀！")) {
-			alarm[0] = seconds_to_steps(1.0);	
+			alarm[0] = seconds_to_steps(1.2);	
 		}
 	}
-	//show_message(string(ds_list_size(global.unit_list)));
 } else {
 	next_unit();
 	change_state(CREATURE.wait);	

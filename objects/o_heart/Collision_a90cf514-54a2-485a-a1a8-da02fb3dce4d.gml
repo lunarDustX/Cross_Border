@@ -18,6 +18,7 @@ if (other.state == BAT.wait or other.state == BAT.action) {
 	}
 	// sound
 	PlaySound(a_hp);
+	//PlaySound(a_blood);
 }
 
 

@@ -1065,6 +1065,44 @@
             }
         },
         {
+            "Key": "27c445b1-822b-4d7c-a871-4106c0f81296",
+            "Value": {
+                "id": "45068d2f-e26a-4a4f-9d18-e13b6e3d4e9f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/a_blood\/a_blood.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "283e0f77-9b0c-4791-ad64-4614b7ca7b16",
+            "Value": {
+                "id": "04c0c8fb-263b-43ea-ac58-1f23f7aee99c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/HealMagic\/HealMagic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2847b458-e98c-43b7-b845-4f68d32467d6",
             "Value": {
                 "id": "5ffb7c1b-0da0-4da8-9f68-d6bab7169a15",
@@ -2243,6 +2281,25 @@
             }
         },
         {
+            "Key": "4f55ceaa-2bf9-4a07-8c43-60ee01ad4dbc",
+            "Value": {
+                "id": "20ba0d7f-bb92-4c56-ac74-c455c70c0134",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/s_grave\/s_grave.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f7ee516-1c97-43a5-aff5-f691dc64b38c",
             "Value": {
                 "id": "d6b09a8c-7772-409e-9c5f-5c998be6479a",
@@ -3003,6 +3060,25 @@
             }
         },
         {
+            "Key": "6af12769-1797-4436-8efe-180e7562bd9f",
+            "Value": {
+                "id": "bb5fda5c-e7b0-4d0a-81af-f56952995f7f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/a_ghost\/a_ghost.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "6bebbcfa-0405-431b-b590-6266bfaac817",
             "Value": {
                 "id": "9f1c9b1b-06ff-4e27-a0dc-4b4dbc5fd8dc",
@@ -3478,6 +3554,25 @@
             }
         },
         {
+            "Key": "7bc23418-2b68-4860-85e4-866848408507",
+            "Value": {
+                "id": "cea07421-fbe8-409c-a9bf-4c856c5d19dc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/a_tree\/a_tree.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7bd2e351-2d80-4900-833f-5cac6e4a7342",
             "Value": {
                 "id": "f00f606f-6c6f-4b45-8d17-6920e9e7328f",
@@ -3513,6 +3608,25 @@
                 ],
                 "resourcePath": "scripts\/CheckWeb\/CheckWeb.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7c8c6666-7710-4cde-a178-019d2cc7fab9",
+            "Value": {
+                "id": "d110c33d-96f4-4ef9-a172-7b6fdb635b84",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_grave\/o_grave.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3706,6 +3820,25 @@
             }
         },
         {
+            "Key": "808eced8-7c78-432c-9fe5-d2758154e006",
+            "Value": {
+                "id": "fcf93c43-d0af-4c46-82e1-e52ad709a4e1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_heal_magic\/o_heal_magic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80dd0302-68ae-4d0f-9457-dbf3133ca45d",
             "Value": {
                 "id": "45dc2cd6-527e-4e45-aa54-bfcfb1e49721",
@@ -3797,6 +3930,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/s_stoneTile\/s_stoneTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "84b48418-525c-4e8d-9555-2a097dbea7a3",
+            "Value": {
+                "id": "1b1bf5f1-c040-4346-ac14-1f76f8ff2de1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/s_healMagic_button\/s_healMagic_button.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4482,6 +4634,25 @@
                 ],
                 "resourcePath": "sprites\/s_desertTile\/s_desertTile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "99fae794-7c3f-4a03-8248-7e13463470a6",
+            "Value": {
+                "id": "e6a5ebe1-8154-47ec-9ab4-a6dcfe170800",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/PlayHurtSound\/PlayHurtSound.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5354,7 +5525,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/o_book\/o_book.yy",
+                "resourcePath": "objects\/o_treasure\/o_treasure.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -6062,6 +6233,25 @@
             }
         },
         {
+            "Key": "d4ad039b-0f05-42a5-9f6a-773a3752874c",
+            "Value": {
+                "id": "1fa53ee7-133e-4f29-b4f3-4b301cb1f880",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/a_heal\/a_heal.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d4edc10e-5423-4a5f-99cb-a53f22913d47",
             "Value": {
                 "id": "407453e8-bbf0-4589-96e2-f823bb93a8d9",
@@ -6154,6 +6344,25 @@
                 ],
                 "resourcePath": "sprites\/s_icecream\/s_icecream.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6e3221a-7bf2-404e-9478-b2c1375a8fc2",
+            "Value": {
+                "id": "94bc0a34-e8e1-43f8-ab81-9b04bec4a5bd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/o_treeTile\/o_treeTile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7088,6 +7297,25 @@
             }
         },
         {
+            "Key": "f87b8c4c-364d-425b-b01c-80dc88c906a9",
+            "Value": {
+                "id": "2d174da1-95c1-48e7-920a-9e8ba43ef916",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/a_chest\/a_chest.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f91cd4e9-ac31-43fb-a8b1-2df397942bb7",
             "Value": {
                 "id": "ef750000-abdc-49b4-b3df-019261efc17e",
@@ -7318,6 +7546,7 @@
         "1c4c41ac-159e-483c-8ecb-b8c55d08ea17",
         "980e0ea7-c739-469c-b87b-ad498a2a3ada",
         "3975004b-4116-4d18-a250-5755aed244a8",
+        "283e0f77-9b0c-4791-ad64-4614b7ca7b16",
         "d23e26fe-4f01-4113-94e4-5186447e4f89",
         "13ec528a-1d79-4790-9abe-65906b268af1",
         "69913fbc-e782-44d0-96ee-6b1b1fcceef9",
@@ -7326,7 +7555,8 @@
         "ea517a2e-0608-4169-9b56-0059b4cbeadf",
         "33236301-dda1-4bd6-8257-819f57d692e7",
         "7c377a88-2b23-4e4a-90dc-1096809632d8",
-        "9370e145-d02e-4df8-a896-f2a2cd4eab7b"
+        "9370e145-d02e-4df8-a896-f2a2cd4eab7b",
+        "99fae794-7c3f-4a03-8248-7e13463470a6"
     ],
     "tutorial": ""
 }

@@ -37,7 +37,7 @@ instance_create_depth(57, 1141, depth-2, o_setting);
 
 // magic button
 instance_create_depth(global.view_width/2, global.view_height-100, depth-1, o_ice_magic);
-instance_create_depth(global.view_width/2+100, global.view_height-100, depth-1, o_fire_magic);
+instance_create_depth(global.view_width/2+100, global.view_height-100, depth-1, o_heal_magic);
 #endregion
 
 // Monster Log

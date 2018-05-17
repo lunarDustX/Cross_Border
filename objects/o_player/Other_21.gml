@@ -11,6 +11,9 @@ if (sprite_index != s_player_magic) {
 			case MAGIC.fire:
 				FireMagic();
 			break;
+			case MAGIC.heal:
+				HealMagic();
+			break;
 		}
 		magic = noone;
 	}

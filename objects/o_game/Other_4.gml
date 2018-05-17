@@ -43,7 +43,6 @@ CreateRandomPatch(_mx, _my, _firstPatch.patch_type);
 var _index = _firstPatch.patch_type -1;
 ds_list_delete(global.card_list, _index);
 
-//show_message(string(ds_list_size(global.card_list)));
 /*
 for (var i= 0; i < ds_list_size(global.card_list); i++) {
 	if (global.card_list[|i].biome == _firstPatch.patch_type) {
@@ -78,5 +77,6 @@ if (room == r_tutorial) {
 }
 
 global.kills = 0;
+global.maps_discovered = 1;
 
 

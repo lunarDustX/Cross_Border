@@ -17,7 +17,7 @@ monsterID = ID_GHOST;
 hp = 1;
 atk = 1;
 
-miss_rate = 0.6;
+miss_rate = 0.5;
 
 // loots
 lootChance = 0.4;
@@ -34,10 +34,10 @@ delta_atk = 1;
 normal_sprite = s_ghost;
 evil_sprite = s_minotaur;
 
-normal_arr[BIOME.grass] = false;
-normal_arr[BIOME.snow] = false;
-normal_arr[BIOME.desert] = false;
-normal_arr[BIOME.forest] = false;
+normal_arr[BIOME.grass] = true;
+normal_arr[BIOME.snow] = true;
+normal_arr[BIOME.desert] = true;
+normal_arr[BIOME.forest] = true;
 normal_arr[BIOME.grave] = true;
 
 normal = true;

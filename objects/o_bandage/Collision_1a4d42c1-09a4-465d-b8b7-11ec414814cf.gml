@@ -1,12 +1,10 @@
-/// @description 
+/// @description zombie special
 if (!canpick) exit;
-if (other.sprite_index != s_vampire) exit;
+if (other.sprite_index != s_zombie) exit;
 
 
-if (other.state == BAT.wait or other.state == BAT.action) {
+if (other.state == ZOMBIE.wait or other.state == ZOMBIE.action) {
 	if (!in_same_cell(self, other)) exit;
-	//if (other.x div CELL_WIDTH != x div CELL_WIDTH) exit;
-	//if (other.y div CELL_HEIGHT != y div CELL_HEIGHT) exit;
 	
 	// PICK UP
 	instance_destroy(); // destroy the heart
