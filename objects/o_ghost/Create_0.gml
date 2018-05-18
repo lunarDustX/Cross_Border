@@ -17,7 +17,7 @@ monsterID = ID_GHOST;
 hp = 1;
 atk = 1;
 
-miss_rate = 0.5;
+miss_rate = 0.35;
 
 // loots
 lootChance = 0.4;
